@@ -2,11 +2,20 @@
   "name": "Meylargues",
   "insee": "46138",
   "_notes_insee": "[FAIT] INSEE de la commune nouvelle Cœur de Causse (geo.api.gouv.fr). Meylargues = hameau de la commune déléguée Saint-Sauveur-la-Vallée (46240, Lot).",
+  "foncierInsee": [
+    "46138",
+    "46151",
+    "46252",
+    "46310",
+    "46113",
+    "46323"
+  ],
+  "_notes_foncierInsee": "[FAIT] communes intersectant lidarBbox (contours geo.api.gouv.fr, 2026-09-27) : Cœur de Causse 52,5 %, Lamothe-Cassel 21,4 %, Les Pechs du Vers 12,7 %, Soulomès 5,8 %, Frayssinet 4,3 %, Ussel 3,3 %. tools/prep/foncier.py charge le cadastre de chacune puis garde les parcelles qui touchent lidarBbox.",
   "center": [
     1.5405,
     44.6235
   ],
-  "_notes_center": "[FAIT] centre du hameau de Meylargues (polygone résidentiel OSM, Nominatim) — capture Google Maps fournie par Engue le 2026-09-27, maison « Papa » à ~100 m. [À VÉRIFIER] position exacte de la maison.",
+  "_notes_center": "[FAIT] centre du hameau de Meylargues (polygone résidentiel OSM via Nominatim, 2026-09-27). Point de départ des recherches.",
   "defaultZoom": 15,
   "bbox": [
     1.4405,

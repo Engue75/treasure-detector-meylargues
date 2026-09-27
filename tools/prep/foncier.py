@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 
 import requests
-from shapely.geometry import mapping, shape
+from shapely.geometry import box, mapping, shape
 from shapely.ops import unary_union
 
 
@@ -39,8 +39,9 @@ ZONE_CONFIG = json.loads((ROOT / "config" / "zone.json").read_text(encoding="utf
 # public/data/derived/ est régénéré depuis ici par predev/prebuild (package.json).
 OUT_DIR = ROOT / "data" / "derived"
 
-INSEE = ZONE_CONFIG["insee"]
-DEPT = INSEE[:2]
+# L'emprise déborde presque toujours de la commune : foncierInsee liste toutes
+# les communes qui la touchent (repli sur la seule commune de la zone).
+INSEE_LIST = ZONE_CONFIG.get("foncierInsee") or [ZONE_CONFIG["insee"]]
 # lidarBbox (commune + marge immédiate ~2 km), pas bbox (~11 km de marge,
 # cf. zone.json) : la couche foncier sert à savoir où marcher autour de la
 # zone de prospection, pas à couvrir tout l'environnement lointain.
@@ -54,10 +55,18 @@ WFS_URL = "https://data.geopf.fr/wfs/ows"
 
 
 def fetch_cadastre(layer: str) -> dict:
-    url = CADASTRE_URL.format(dept=DEPT, insee=INSEE, layer=layer)
-    resp = requests.get(url, timeout=30)
-    resp.raise_for_status()
-    return json.loads(gzip.decompress(resp.content))
+    """Cadastre de toutes les communes de INSEE_LIST, réduit aux objets qui touchent BBOX."""
+    emprise = box(*BBOX)
+    features = []
+    for insee in INSEE_LIST:
+        url = CADASTRE_URL.format(dept=insee[:2], insee=insee, layer=layer)
+        resp = requests.get(url, timeout=60)
+        resp.raise_for_status()
+        batch = json.loads(gzip.decompress(resp.content))["features"]
+        kept = [f for f in batch if shape(f["geometry"]).intersects(emprise)]
+        print(f"  {insee} : {len(kept)}/{len(batch)} dans l'emprise", file=sys.stderr)
+        features.extend(kept)
+    return {"type": "FeatureCollection", "features": features}
 
 
 def fetch_wfs(typename: str) -> dict:
@@ -158,7 +167,7 @@ def build_voies(troncons: dict) -> dict:
 
 def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    print(f"Commune {ZONE_CONFIG['name']} (INSEE {INSEE})", file=sys.stderr)
+    print(f"Zone {ZONE_CONFIG['name']} — communes {', '.join(INSEE_LIST)}", file=sys.stderr)
 
     print("Téléchargement PCI vecteur (bâtiments)...", file=sys.stderr)
     batiments = fetch_cadastre("batiments")
