@@ -25,10 +25,10 @@ COPY data/derived/*.geojson ./dist/data/derived/
 # Couches relief LiDAR : trop lourdes pour git et pour l'upload Railway (413).
 # Les assets GitHub Releases refusent le CORS navigateur mais se téléchargent
 # très bien au build : servis ensuite same-origin (Range via express.static).
-ADD https://github.com/oscardcstudio-cell/treasure-detector/releases/download/lidar-v1/hillshade.pmtiles ./dist/data/derived/hillshade.pmtiles
-ADD https://github.com/oscardcstudio-cell/treasure-detector/releases/download/lidar-v1/svf.pmtiles ./dist/data/derived/svf.pmtiles
-ADD https://github.com/oscardcstudio-cell/treasure-detector/releases/download/lidar-v1/lrm.pmtiles ./dist/data/derived/lrm.pmtiles
-ADD https://github.com/oscardcstudio-cell/treasure-detector/releases/download/lidar-v1/openness.pmtiles ./dist/data/derived/openness.pmtiles
+ADD https://github.com/Engue75/treasure-detector-meylargues/releases/download/lidar-v1/hillshade.pmtiles ./dist/data/derived/hillshade.pmtiles
+ADD https://github.com/Engue75/treasure-detector-meylargues/releases/download/lidar-v1/svf.pmtiles ./dist/data/derived/svf.pmtiles
+ADD https://github.com/Engue75/treasure-detector-meylargues/releases/download/lidar-v1/lrm.pmtiles ./dist/data/derived/lrm.pmtiles
+ADD https://github.com/Engue75/treasure-detector-meylargues/releases/download/lidar-v1/openness.pmtiles ./dist/data/derived/openness.pmtiles
 COPY server.js ./
 EXPOSE 3000
 CMD ["node", "server.js"]
