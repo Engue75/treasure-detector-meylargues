@@ -23,8 +23,8 @@ export default defineConfig({
       manifestFilename: 'manifest.json',
 
       manifest: {
-        name: 'treasure-detector',
-        short_name: 'Treasure',
+        name: 'Treasure — Meylargues',
+        short_name: 'Meylargues',
         description: 'Web app de prospection au détecteur de métaux',
         theme_color: '#15151c',
         background_color: '#f4f0e6',

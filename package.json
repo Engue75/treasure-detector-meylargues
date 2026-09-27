@@ -1,7 +1,7 @@
 {
-  "name": "treasure-detector",
+  "name": "treasure-detector-meylargues",
   "version": "1.0.0",
-  "description": "Web app de prospection au détecteur de métaux. Zone pilote : **Armous-et-Cau (Gers, 32)**.",
+  "description": "Web app de prospection au détecteur de métaux. Zone : **Meylargues (Cœur de Causse, Lot, 46)**.",
   "main": "index.js",
   "directories": {
     "doc": "docs"

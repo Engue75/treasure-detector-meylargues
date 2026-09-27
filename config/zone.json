@@ -1,11 +1,25 @@
 {
-  "name": "Armous-et-Cau",
-  "insee": "32009",
-  "center": [0.2008, 43.581],
-  "_notes_center": "[FAIT] maison d'Oscar (point central des recherches), géocodée via Nominatim/OSM sur le lieu-dit Barrotes à partir du lien Google Maps fourni par Oscar le 2026-08-10 — remplace l'ancien centre approximatif (annuaire, jamais vérifié). Carte au démarrage centrée ici pour concentrer le quadrillage débutant près de la maison.",
+  "name": "Meylargues",
+  "insee": "46138",
+  "_notes_insee": "[FAIT] INSEE de la commune nouvelle Cœur de Causse (geo.api.gouv.fr). Meylargues = hameau de la commune déléguée Saint-Sauveur-la-Vallée (46240, Lot).",
+  "center": [
+    1.5405,
+    44.6235
+  ],
+  "_notes_center": "[FAIT] centre du hameau de Meylargues (polygone résidentiel OSM, Nominatim) — capture Google Maps fournie par Engue le 2026-09-27, maison « Papa » à ~100 m. [À VÉRIFIER] position exacte de la maison.",
   "defaultZoom": 15,
-  "bbox": [0.0908, 43.4742, 0.2908, 43.6742],
-  "_notes_bbox": "9,33 km² commune + ~2 km de marge environnement immédiat (approximatif)",
-  "lidarBbox": [0.1473, 43.5427, 0.2343, 43.6057],
-  "_notes_lidarBbox": "Emprise du traitement LiDAR (T3.1) : centre ±3,5 km ≈ commune + 2 km de marge, 64 dalles MNT. Volontairement plus serrée que bbox (dont la marge réelle est ~11 km) : le disque de la machine de prep limite le volume traité. Élargir ici puis relancer tools/prep si besoin."
+  "bbox": [
+    1.4405,
+    44.5235,
+    1.6405,
+    44.7235
+  ],
+  "_notes_bbox": "Environnement élargi (~8-11 km autour du hameau), même logique que la zone pilote Armous-et-Cau.",
+  "lidarBbox": [
+    1.4963,
+    44.5921,
+    1.5847,
+    44.6549
+  ],
+  "_notes_lidarBbox": "Emprise LiDAR : centre ±3,5 km (comme Armous, ~64 dalles). Limitée par le disque de la machine de prep."
 }
