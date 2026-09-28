@@ -1,0 +1,1382 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "attribution": "Positions : © OpenStreetMap contributors (ODbL) ; noms : logainm.ie (Placenames Database of Ireland) ; monuments : National Monuments Service SMR open data",
+    "zone": "Grove / Tullaghanbrogue, Co. Kilkenny, Irlande — rayon ~5 km autour de 52.600940 N, -7.328378 W",
+    "date": "2026-09-28",
+    "note": "Cadrage patrimonial uniquement — aucune cible de prospection. Rang = force de l'indice HISTORIQUE porté par le nom, pas un indicateur de prospection."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.35694,
+          52.59722
+        ]
+      },
+      "properties": {
+        "name_en": "Tullaghanbrogue (paroisse civile)",
+        "name_ga": "Tulchán Bróg",
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [
+          "Thulachbroc, Tulachbroc, Tolachanbroc, Tulagbroc (Registre abbaye St Thomas, Dublin, XIIIe s.)",
+          "Tilhanbrog, Tylabrog, Tyllahtnebrog, Tillaghbrok, Tulohanbrog (Red Book of Ossory)",
+          "Tullachbroch / \"Chapel of Balykene\" (confirmation c.1230)",
+          "Tullaghanbroge (inquisition 1607 et 1626-7)",
+          "Tullihanbrog (épitaphe chest tomb, 1597)",
+          "Tullohaune (Down Survey, carte de baronnie, 1655-6)",
+          "Tullaghane (forfeiture 1653 ; renommé \"Cuffe's grove\" en 1666)"
+        ],
+        "meaning_fr": "tulchán = petit tumulus/petite colline (tulach au diminutif) + bróg, second élément non résolu cette session. Le nom paroissial fossilise l'élément tulach : voir Grove.",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK023-031004-",
+          "KK023-031001-",
+          "KK023-032----",
+          "KK023-093----",
+          "KK023-031005-",
+          "KK023-030001-",
+          "KK023-030002-",
+          "KK023-030003-",
+          "KK023-030004-",
+          "KK023-030005-"
+        ],
+        "loc_source": "logainm.ie (point général de la paroisse civile, via recherche web ; ID logainm exact non confirmé cette session)",
+        "status": "À VÉRIFIER",
+        "source": "logainm.ie (recherche \"Tullaghanbrogue\") ; townlands.ie/kilkenny/tullaghanbrogue1/ ; Carrigan 1905 vol.3 p.385-389 (lu intégralement, archive.org historyantiquiti0003revw)",
+        "logainm_note": "Forme irlandaise « Tulchán Bróg » confirmée comme nom de la paroisse civile sur la fiche logainm du townland Grove (https://www.logainm.ie/en/26411, lue le 2026-09-28) ; ID propre de la paroisse non relevé."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3286,
+          52.6006
+        ]
+      },
+      "properties": {
+        "name_en": "Grove",
+        "name_ga": "An Garrán",
+        "logainm_id": 26411,
+        "logainm_url": "https://www.logainm.ie/en/26411",
+        "historical_forms": [
+          "voir Tullaghanbrogue ci-dessus : Grove est la MÊME unité de peuplement, renommée en 1666"
+        ],
+        "meaning_fr": "garrán = bosquet, taillis (§ lexique). Nom purement descriptif et RÉCENT (1666) : voir avertissement §5 — l'ancien nom Tullaghanbroge/tulachán portait le vrai signal archéologique, celui-ci l'efface.",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK023-031004-",
+          "KK023-031001-",
+          "KK023-032----",
+          "KK023-093----",
+          "KK023-031005-",
+          "KK023-030001-",
+          "KK023-030002-",
+          "KK023-030003-",
+          "KK023-030004-",
+          "KK023-030005-"
+        ],
+        "loc_source": "logainm.ie (townland Grove, via townlands.ie)",
+        "status": "FAIT",
+        "source": "townlands.ie/kilkenny/shillelogher/tullaghanbrogue/tullaghanbrogue/grove/ ; logainm.ie/en/26411 ; Carrigan 1905 p.385-389 ; SMR open data"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.33781,
+          52.59138
+        ]
+      },
+      "properties": {
+        "name_en": "Kyleandangan",
+        "name_ga": "Coill an Daingin",
+        "logainm_id": 26413,
+        "logainm_url": "https://www.logainm.ie/en/26413",
+        "historical_forms": [],
+        "meaning_fr": "coill (bois) + daingean (forteresse, place forte — apparenté à dún) : \"le bois de la forteresse\". Nom qui désigne directement une fortification.",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK023-034----"
+        ],
+        "loc_source": "monument SMR KK023-034---- (Enclosure), seul point disponible pour ce townland cette session",
+        "status": "FAIT",
+        "source": "townlands.ie/kilkenny/shillelogher/tullaghanbrogue/tullaghanbrogue/kyleandangan/ ; logainm.ie/en/26413"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.33926,
+          52.59404
+        ]
+      },
+      "properties": {
+        "name_en": "Aghenderry",
+        "name_ga": "Achadh an Doire",
+        "logainm_id": 26403,
+        "logainm_url": "https://www.logainm.ie/en/26403",
+        "historical_forms": [],
+        "meaning_fr": "achadh (champ) + doire (bois de chênes, chênaie) : \"le champ du bois de chênes\". Nom purement descriptif — ne signale aucun monument, alors qu'un ringfort y est enregistré : cas d'école de nom \"silencieux\" (§5).",
+        "rank": 3,
+        "smr_confirmed": [
+          "KK023-033----"
+        ],
+        "loc_source": "monument SMR KK023-033---- (Ringfort - rath), seul point disponible pour ce townland cette session",
+        "status": "FAIT",
+        "source": "townlands.ie/kilkenny/shillelogher/tullaghanbrogue/tullaghanbrogue/aghenderry/ ; logainm.ie/en/26403"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3339,
+          52.5781
+        ]
+      },
+      "properties": {
+        "name_en": "Booly",
+        "name_ga": "An Bhuaile",
+        "logainm_id": 26121,
+        "logainm_url": "https://www.logainm.ie/en/26121",
+        "historical_forms": [],
+        "meaning_fr": "buaile = pacage d'estive, enclos à bétail saisonnier (transhumance). Type de site reconnu en archéologie du paysage irlandais.",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK023-064----"
+        ],
+        "loc_source": "townlands.ie/logainm.ie (townland Booly)",
+        "status": "FAIT",
+        "source": "townlands.ie/kilkenny/shillelogher/burnchurch/burnchurch/booly/ ; logainm.ie/en/26121"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3212,
+          52.5989
+        ]
+      },
+      "properties": {
+        "name_en": "Ballybur",
+        "name_ga": "Baile an Bhurraigh",
+        "logainm_id": 26405,
+        "logainm_url": "https://www.logainm.ie/en/26405",
+        "historical_forms": [
+          "Ballibur / Balybur (Comerford, lord of Ballibur, altar-tomb 1637, Carrigan p.391)"
+        ],
+        "meaning_fr": "baile (ville, hameau, tenure) + \"an Bhurraigh\" — élément non traduit par logainm (probablement patronymique, cf. de Burgh/Burke ou un nom personnel). Aucun monument SMR recensé sur ce townland dans le rayon étudié.",
+        "rank": 3,
+        "smr_confirmed": [],
+        "loc_source": "logainm.ie (recherche web)",
+        "status": "À VÉRIFIER",
+        "source": "townlands.ie/kilkenny/shillelogher/tullaghanbrogue/tullaghanbrogue/ballybur/ ; logainm.ie/en/26405 ; Carrigan 1905 p.391"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.31543,
+          52.59232
+        ]
+      },
+      "properties": {
+        "name_en": "Ballybur Lower",
+        "name_ga": "Baile an Bhurraigh Íochtarach",
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "baile an Bhurraigh (voir Ballybur) + íochtarach (inférieur/bas). Anthroponyme probable — aucun monument SMR recensé dans le rayon étudié.",
+        "rank": 3,
+        "smr_confirmed": [],
+        "loc_source": "Nominatim (relation OSM, boundary/administrative, County Kilkenny confirmé)",
+        "status": "À VÉRIFIER",
+        "source": "Recherche web (logainm.ie) ; Nominatim OSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.29648,
+          52.5932
+        ]
+      },
+      "properties": {
+        "name_en": "Ballybur Upper",
+        "name_ga": "Baile an Bhurraigh Uachtarach",
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "baile an Bhurraigh (voir Ballybur) + uachtarach (supérieur/haut). Anthroponyme probable — SMR : tower house et enclos recensés au townland voisin Ballybur Upper (barony Shillelogher) selon la synthèse SMR du brief commun.",
+        "rank": 3,
+        "smr_confirmed": [
+          "KK023-039----",
+          "KK023-051----",
+          "KK023-052----"
+        ],
+        "loc_source": "Nominatim (relation OSM, boundary/administrative, County Kilkenny confirmé)",
+        "status": "À VÉRIFIER",
+        "source": "Recherche web (logainm.ie) ; Nominatim OSM ; smr_5km.geojson"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.30764,
+          52.59976
+        ]
+      },
+      "properties": {
+        "name_en": "Church Hill",
+        "name_ga": "Cnoc an Teampaill",
+        "logainm_id": 26880,
+        "logainm_url": "https://www.logainm.ie/en/26880",
+        "historical_forms": [],
+        "meaning_fr": "cnoc (colline) + teampall (église) : \"la colline de l'église\". Nom qui désigne directement un monument ecclésiastique.",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK023-038----",
+          "KK023-037----",
+          "KK023-036002-",
+          "KK023-036004-",
+          "KK023-036005-",
+          "KK023-036003-",
+          "KK023-036001-",
+          "KK023-094----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland)",
+        "status": "FAIT",
+        "source": "townlands.ie/kilkenny/shillelogher/grange/grange/church-hill/ ; logainm.ie/en/26880 ; Carrigan 1905 p.391 (\"a green artificial mound known as the Moat. It is in the townland of Church Hill, otherwise Cnoc a' Teampuill\")"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.29147,
+          52.6209
+        ]
+      },
+      "properties": {
+        "name_en": "Castleinch or Inchyolaghan",
+        "name_ga": "Inse Uí Uallacháin",
+        "logainm_id": 1273,
+        "logainm_url": "https://www.logainm.ie/en/1273",
+        "historical_forms": [
+          "Inchevolahane (grant de 1666, renommé \"Castle Inch\" à cette date — Carrigan p.389)",
+          "Inchywoolahan / Inchyholohan (formes attestées, GENUKI)"
+        ],
+        "meaning_fr": "Nom irlandais officiel : inis (île, pré riverain) + Ó Uallacháin (patronyme, \"Woulahan\"). Nom anglais \"Castleinch\" = renommage de 1666 signalant EXPLICITEMENT le château (l'inverse du cas Grove : ici le nom récent révèle le monument, l'ancien nom irlandais ne le signale pas).",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK023-001----",
+          "KK023-002----",
+          "KK019-038----",
+          "KK023-003004-",
+          "KK023-003002-",
+          "KK023-003001-",
+          "KK023-003003-",
+          "KK019-108----"
+        ],
+        "loc_source": "logainm.ie (direct)",
+        "status": "FAIT",
+        "source": "logainm.ie/en/1273 ; Carrigan 1905 p.388-389 ; GENUKI Castleinch"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.34645,
+          52.58398
+        ]
+      },
+      "properties": {
+        "name_en": "Desart Court / Desart Demesne",
+        "name_ga": "Lios Loinín (logainm.ie) — Lios Cluainín (lecture de Carrigan)",
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [
+          "Lyslonyn, Lislonyn, Leslonyn, Lislone (inquisitions 1607, 1626-7, 1636)",
+          "Lissnonyne (1641)",
+          "Lislonen, 520 ac. (forfeiture 1653)",
+          "Lislonen (renommé \"Cuffe's Desert\" en 1666 — Carrigan p.389)",
+          "Dizart / Desart (dès 1691, \"Geoffry St. Leger of Dizart\")",
+          "Lischlooineen / Lislooineen (prononciation irlandaise relevée par Carrigan, 1905)"
+        ],
+        "meaning_fr": "Le nom moderne \"Desart\" ressemble à díseart (ermitage — piège, voir §5) mais son origine documentée est \"Lios\" (ringfort/enclos), + un second élément disputé : Loinín (nom propre, logainm.ie) ou Cluainín (petit pré, lecture de Carrigan 1905). Segmentation non tranchée cette session.",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK022-021003-",
+          "KK022-021001-",
+          "KK022-021004-",
+          "KK022-021002-",
+          "KK022-020----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements \"Desart Demesne\")",
+        "status": "À VÉRIFIER",
+        "source": "Carrigan 1905 vol.3 p.388-391 (lu intégralement) ; en.wikipedia.org/wiki/Desart_Court ; townlands.ie (Desart Court, \"aka Desart Demesne\", non encore lié à logainm.ie)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.33009,
+          52.5711
+        ]
+      },
+      "properties": {
+        "name_en": "Ballymack (Desart)",
+        "name_ga": "Baile Mhic Dháith (Desart)",
+        "logainm_id": 26118,
+        "logainm_url": "https://www.logainm.ie/en/26118",
+        "historical_forms": [],
+        "meaning_fr": "baile + Mac Dáith (patronyme). Carrigan donne lui-même la traduction : \"the Town of David's Son\" — cas d'école de piège anthroponymique (§5). Comerford family (Ballymacka) attestée XVIe-XVIIe s.",
+        "rank": 3,
+        "smr_confirmed": [
+          "KK023-065----",
+          "KK023-163----",
+          "KK023-068----"
+        ],
+        "loc_source": "logainm.ie (direct)",
+        "status": "FAIT",
+        "source": "logainm.ie/en/26118 ; Carrigan 1905 p.383-384 (\"the local Irish pronunciation of Ballymack is ... Baile mic Dáith, or the Town of David's Son\")"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.29531,
+          52.6012
+        ]
+      },
+      "properties": {
+        "name_en": "Grangecuffe",
+        "name_ga": "Gráinseach Chuffe",
+        "logainm_id": 26882,
+        "logainm_url": "https://www.logainm.ie/en/26882",
+        "historical_forms": [
+          "Cuffe's Grange / Cuff's Grange (formes locales, logainm.ie)"
+        ],
+        "meaning_fr": "gráinseach = grange, ferme monastique. Carrigan situe ICI (et non au townland \"Grange\" tout court) les vestiges concrets de la grange monastique : fondations, \"monastery yard\", cimetière (champ dit Mooneearawrdh).",
+        "rank": 2,
+        "smr_confirmed": [],
+        "loc_source": "logainm.ie (direct)",
+        "status": "À VÉRIFIER",
+        "source": "logainm.ie/en/26882 ; Carrigan 1905 p.391-392 — NON confirmé par un point SMR dans l'extraction 5 km utilisée cette session, bien que Carrigan atteste des vestiges de visu en 1905"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.30958,
+          52.6081
+        ]
+      },
+      "properties": {
+        "name_en": "Raheenduff",
+        "name_ga": "An Ráithín Dubh",
+        "logainm_id": 26884,
+        "logainm_url": "https://www.logainm.ie/en/26884",
+        "historical_forms": [],
+        "meaning_fr": "ráithín (diminutif de ráth, \"petit ringfort\") + dubh (noir). Nom qui désigne directement un monument.",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK023-035----"
+        ],
+        "loc_source": "logainm.ie (direct)",
+        "status": "FAIT",
+        "source": "logainm.ie/en/26884"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3363,
+          52.61393
+        ]
+      },
+      "properties": {
+        "name_en": "Grange (Shillelogher By.)",
+        "name_ga": "An Ghráinseach (générique)",
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "gráinseach = grange, ferme monastique (lexique). Distinct de Grangecuffe (ci-dessus), où Carrigan situe la grange monastique effective.",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK023-132----"
+        ],
+        "loc_source": "monument SMR KK023-132---- (Enclosure)",
+        "status": "À VÉRIFIER",
+        "source": "smr_5km.geojson ; logainm.ie (glossaire) ; ID logainm.ie précis du townland \"Grange\" non confirmé cette session (page townlands.ie 404)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.37705,
+          52.60388
+        ]
+      },
+      "properties": {
+        "name_en": "Kilballykeefe",
+        "name_ga": "Cill Bhaile Uí Chaoimh",
+        "logainm_id": 26385,
+        "logainm_url": "https://www.logainm.ie/en/26385",
+        "historical_forms": [
+          "Balykene / Balykeeffe (\"Chapel of Balykene\", confirmation c.1230)"
+        ],
+        "meaning_fr": "cill (église) + baile Uí Chaoimh (ville des Ó Caoimh/O'Keeffe). Chapelle de secours de la paroisse de Tullaghanbroge ; puits Thubberniclaush (Tobar Naomh Nioclás, saint patron St Nicolas) attesté à proximité.",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK022-015001-",
+          "KK022-015002-",
+          "KK022-006----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland)",
+        "status": "FAIT",
+        "source": "logainm.ie/en/26385 ; Carrigan 1905 p.436 (\"Kyleballykeeffe church... chapel of ease... St. Nicholas's well, called Thubberniclaush\")"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.29594,
+          52.57816
+        ]
+      },
+      "properties": {
+        "name_en": "Burnchurch",
+        "name_ga": "An Teampall Loiscthe",
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "teampall loiscthe = \"l'église brûlée\" : le nom anglais \"Burnchurch\" est la traduction directe et exacte de l'irlandais, pas une simple ressemblance. Confirmé massivement par le complexe SMR (église, 2 puits sacrés, cimetière, 5 tombeaux).",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK023-053001-",
+          "KK023-054----",
+          "KK023-053002-",
+          "KK023-053003-",
+          "KK023-100----",
+          "KK023-072011-",
+          "KK023-072007-",
+          "KK023-072005-",
+          "KK023-072012-",
+          "KK023-072008-",
+          "KK023-072010-",
+          "KK023-072009-",
+          "KK023-072004-",
+          "KK023-072003-",
+          "KK023-072001-",
+          "KK023-072002-",
+          "KK023-072006-"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland)",
+        "status": "À VÉRIFIER",
+        "source": "WebSearch (logainm.ie, paroisse civile de Burnchurch) ; ID logainm.ie précis non confirmé cette session ; smr_5km.geojson"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.38574,
+          52.61093
+        ]
+      },
+      "properties": {
+        "name_en": "Ballykeefe",
+        "name_ga": "Baile Uí Chaoimh",
+        "logainm_id": 26345,
+        "logainm_url": "https://www.logainm.ie/en/26345",
+        "historical_forms": [],
+        "meaning_fr": "baile + Ó Caoimh (O'Keeffe, patronyme). Carrigan : \"the Town of O'Keeffe\" — anthroponyme explicite.",
+        "rank": 3,
+        "smr_confirmed": [
+          "KK022-057----",
+          "KK022-056----"
+        ],
+        "loc_source": "monument SMR (moyenne, townland \"Ballykeefe Hill\" voisin)",
+        "status": "FAIT",
+        "source": "logainm.ie/en/26345 ; Carrigan 1905 p.435-436"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.36634,
+          52.62078
+        ]
+      },
+      "properties": {
+        "name_en": "Ballycallan",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "baile + patronyme probable (Callan/Ó Cathaláin ?) [HYPOTHÈSE]. Complexe église/croix/tombes (KK018-072) distinct d'un enclos (KK022-010) et d'une pierre inscrite (KK022-007) dans le même townland.",
+        "rank": 2,
+        "smr_confirmed": [
+          "KK022-010----",
+          "KK022-007----",
+          "KK018-072004-",
+          "KK018-072001-",
+          "KK018-072003-",
+          "KK018-072006-",
+          "KK018-072007-",
+          "KK018-072002-",
+          "KK018-072005-",
+          "KK018-099----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "HYPOTHÈSE",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.39061,
+          52.59294
+        ]
+      },
+      "properties": {
+        "name_en": "Ballykeefe Bog",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "baile Uí Chaoimh + \"bog\" (tourbière, qualificatif anglais moderne) [HYPOTHÈSE].",
+        "rank": 3,
+        "smr_confirmed": [
+          "KK022-014----",
+          "KK022-059----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "HYPOTHÈSE",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.38574,
+          52.61093
+        ]
+      },
+      "properties": {
+        "name_en": "Ballykeefe Hill",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "baile Uí Chaoimh + \"hill\" (colline) [HYPOTHÈSE]. Cf. Ballykeefe ci-dessus (Tier 1).",
+        "rank": 2,
+        "smr_confirmed": [
+          "KK022-057----",
+          "KK022-056----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "HYPOTHÈSE",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.38881,
+          52.59993
+        ]
+      },
+      "properties": {
+        "name_en": "Ballykeefecastle",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "baile Uí Chaoimh + \"castle\" : le nom anglais signale directement le château, confirmé par SMR (Castle + Bawn).",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK022-013001-",
+          "KK022-013005-"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "À VÉRIFIER",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.26168,
+          52.60438
+        ]
+      },
+      "properties": {
+        "name_en": "Bodalmore",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "élément non identifié cette session + mór (grand ?) [HYPOTHÈSE].",
+        "rank": 3,
+        "smr_confirmed": [
+          "KK023-011----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "HYPOTHÈSE",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.29893,
+          52.63798
+        ]
+      },
+      "properties": {
+        "name_en": "Castleblunden",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "\"castle\" + Blunden (famille anglo-normande/anglaise). Le mot \"castle\" désigne directement le monument, confirmé par SMR (Castle + Bawn).",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK019-107----",
+          "KK019-032002-",
+          "KK019-032001-",
+          "KK019-031----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "À VÉRIFIER",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3007,
+          52.571
+        ]
+      },
+      "properties": {
+        "name_en": "Coalsfarm",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "nom anglais descriptif (ferme + patronyme Coals ?) [HYPOTHÈSE]. Un enclos SMR non prédit par le nom.",
+        "rank": 3,
+        "smr_confirmed": [
+          "KK023-070----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "HYPOTHÈSE",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.37062,
+          52.61325
+        ]
+      },
+      "properties": {
+        "name_en": "Curragh (Crannagh By.)",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "curragh < currach (marécage, plaine humide) — descriptif topographique.",
+        "rank": 3,
+        "smr_confirmed": [
+          "KK022-009----",
+          "KK022-008----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "À VÉRIFIER",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.34144,
+          52.63468
+        ]
+      },
+      "properties": {
+        "name_en": "Damma Upper",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "élément non identifié cette session + \"upper\" [HYPOTHÈSE]. Maison du XVIIe s. recensée (pas un monument médiéval).",
+        "rank": 3,
+        "smr_confirmed": [
+          "KK019-125----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "HYPOTHÈSE",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3019,
+          52.57605
+        ]
+      },
+      "properties": {
+        "name_en": "Farmley",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "nom anglais (ferme + -ley) [HYPOTHÈSE]. Tower house et bawn confirmés par SMR — nom ne les annonce pas.",
+        "rank": 3,
+        "smr_confirmed": [
+          "KK023-170----",
+          "KK023-071003-",
+          "KK023-071001-"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "HYPOTHÈSE",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.37209,
+          52.62845
+        ]
+      },
+      "properties": {
+        "name_en": "Gorteenteen",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "goirtín (petit champ) + élément additionnel non résolu [HYPOTHÈSE]. Ringfort-rath confirmé, non annoncé par \"gort\" seul.",
+        "rank": 2,
+        "smr_confirmed": [
+          "KK018-071----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "HYPOTHÈSE",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.2728,
+          52.62201
+        ]
+      },
+      "properties": {
+        "name_en": "Goslingstown",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "patronyme anglais Gosling + \"town\" — anthroponyme explicite.",
+        "rank": 3,
+        "smr_confirmed": [
+          "KK019-039001-",
+          "KK019-039003-"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "À VÉRIFIER",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.38263,
+          52.57186
+        ]
+      },
+      "properties": {
+        "name_en": "Graigueooly",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "gráig (hameau, village) + élément non résolu [HYPOTHÈSE]. Ringfort-rath confirmé.",
+        "rank": 2,
+        "smr_confirmed": [
+          "KK022-049----",
+          "KK022-024----",
+          "KK022-050----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "HYPOTHÈSE",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.36429,
+          52.58514
+        ]
+      },
+      "properties": {
+        "name_en": "Greatwood",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "nom anglais descriptif (\"grand bois\") — pas un mot de monument, malgré une église et un enclos ecclésiastique recensés : nom \"silencieux\".",
+        "rank": 3,
+        "smr_confirmed": [
+          "KK022-019001-",
+          "KK022-019002-"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "À VÉRIFIER",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.25835,
+          52.59969
+        ]
+      },
+      "properties": {
+        "name_en": "Grevine West",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "élément non identifié cette session + \"west\" [HYPOTHÈSE].",
+        "rank": 3,
+        "smr_confirmed": [
+          "KK023-042----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "HYPOTHÈSE",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.26957,
+          52.60968
+        ]
+      },
+      "properties": {
+        "name_en": "Knocklegan",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "cnoc (colline) + élément non résolu [HYPOTHÈSE]. Pierre dressée (standing stone) confirmée — \"cnoc\" seul n'annonce pas un mégalithe.",
+        "rank": 2,
+        "smr_confirmed": [
+          "KK023-008----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "HYPOTHÈSE",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.37526,
+          52.56903
+        ]
+      },
+      "properties": {
+        "name_en": "Knockreagh",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "cnoc (colline) + riabhach (grisâtre/tacheté) — descriptif topographique.",
+        "rank": 3,
+        "smr_confirmed": [
+          "KK022-053----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "À VÉRIFIER",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.34592,
+          52.64429
+        ]
+      },
+      "properties": {
+        "name_en": "Michaelschurch",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "\"church\" dédiée à St Michael : le nom anglais désigne directement le monument, confirmé par SMR (Church + 2 Wall monuments + Graveyard).",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK018-051005-",
+          "KK018-051004-",
+          "KK018-051001-",
+          "KK018-051002-"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "À VÉRIFIER",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.26611,
+          52.58348
+        ]
+      },
+      "properties": {
+        "name_en": "Newlands",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "nom anglais moderne, purement descriptif (\"terres nouvelles\").",
+        "rank": 3,
+        "smr_confirmed": [
+          "KK023-056----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "À VÉRIFIER",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.33479,
+          52.56111
+        ]
+      },
+      "properties": {
+        "name_en": "Newtown (Baker)",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "baile nua (ville neuve) + patronyme Baker (disambiguation) — nom générique très fréquent en Irlande.",
+        "rank": 3,
+        "smr_confirmed": [
+          "KK023-067----",
+          "KK027-079----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "À VÉRIFIER",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.27975,
+          52.58768
+        ]
+      },
+      "properties": {
+        "name_en": "Oldtown (Shillelogher By.)",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "baile sean (vieille ville) — nom générique. Deux systèmes de champs anciens (field system) et deux enclos confirmés.",
+        "rank": 2,
+        "smr_confirmed": [
+          "KK023-135----",
+          "KK023-136----",
+          "KK023-134----",
+          "KK023-133----",
+          "KK023-055----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "À VÉRIFIER",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3131,
+          52.56486
+        ]
+      },
+      "properties": {
+        "name_en": "Ovenstown",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "nom anglais (four ?) + \"town\" [HYPOTHÈSE].",
+        "rank": 3,
+        "smr_confirmed": [
+          "KK023-069----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "HYPOTHÈSE",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.28582,
+          52.61911
+        ]
+      },
+      "properties": {
+        "name_en": "Parkmore",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "páirc mór (grand champ/parc) — descriptif topographique, souvent lié à un demesne.",
+        "rank": 3,
+        "smr_confirmed": [
+          "KK023-004----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "À VÉRIFIER",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.27997,
+          52.61499
+        ]
+      },
+      "properties": {
+        "name_en": "Raheenapisha",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "ráithín (petit ringfort) + a' phíosa (?) [HYPOTHÈSE sur le 2e élément]. Fortement confirmé : moated site + 2 enclos + four à sécher le grain.",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK023-174----",
+          "KK023-005----",
+          "KK023-007----",
+          "KK023-180----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "HYPOTHÈSE",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.28233,
+          52.6083
+        ]
+      },
+      "properties": {
+        "name_en": "Rathaleek",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "ráth (ringfort) + élément non résolu [HYPOTHÈSE]. Enclos confirmé.",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK023-006----"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "HYPOTHÈSE",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.355,
+          52.5665
+        ]
+      },
+      "properties": {
+        "name_en": "Tullamaine (Ashbrook)",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "tulach (colline, tertre — lexique) + élément additionnel. Fortement confirmé : enclos, église, cimetière, habitat groupé, puits sacré. Cité par Carrigan comme \"Kiltullaghmaine\" dans les limites du manoir de Tullaghanbroge (1607/1626-7).",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK022-025----",
+          "KK022-027001-",
+          "KK022-027002-",
+          "KK022-027005-",
+          "KK022-027004-"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "À VÉRIFIER",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.26598,
+          52.60707
+        ]
+      },
+      "properties": {
+        "name_en": "Kilmog or Racecourse",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "cill (église) + Mogh (saint ou personnel) [HYPOTHÈSE sur le 2e élément]. Cité par Carrigan comme \"Kilmeggeth otherwise Kilmogg, now the Race Course\" dès le XIIIe s. Confirmé : église, cimetière, bullaun stone, arbre/arbuste sacré, midden.",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK023-041----",
+          "KK023-010----",
+          "KK023-009004-",
+          "KK023-009001-",
+          "KK023-009002-",
+          "KK023-009003-"
+        ],
+        "loc_source": "monument SMR (moyenne des enregistrements du townland, smr_5km.geojson)",
+        "status": "À VÉRIFIER",
+        "source": "smr_5km.geojson (National Monuments Service, SMR open data) ; lecture du nom anglais, non vérifiée sur logainm.ie cette session — sauf mentions Carrigan 1905 citées"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.33222,
+          52.600674
+        ]
+      },
+      "properties": {
+        "name_en": "Roilig a Tulacháin",
+        "name_ga": "Roilig an Tulcháin",
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "\"le cimetière du tulchán/tertre\" — nom du cimetière de Tullaghanbrogue relevé par les OS Letters de 1839. Rattache littéralement le cimetière (SMR KK023-030002-) au mot tulach du nom paroissial.",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK023-030002-"
+        ],
+        "loc_source": "point SMR KK023-030002- (Graveyard), ~250 m à l'O du point de départ",
+        "status": "FAIT",
+        "source": "O'Flanagan (comp.) 1930, Letters... Ordnance Survey in 1839 (Kilkenny), cité par le SMR (WEB_NOTES) et le brief commun"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.329,
+          52.5993
+        ]
+      },
+      "properties": {
+        "name_en": "The Glebe (Grove)",
+        "name_ga": null,
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "champ dit \"the glebe\" (la glèbe, terre d'église) à l'est d'un puits probablement sacré et de fondations dites d'un \"ancien monastère\", à Tullaghanbrogue/Grove.",
+        "rank": 1,
+        "smr_confirmed": [],
+        "loc_source": "position APPROXIMATIVE [HYPOTHÈSE] : champ au S de la route L1013, en face du champ de la motte (« opposite this field, at the other side of the road », Carrigan 1905 p. 386). Le puits KK023-031002- cité par le SMR n'est pas publié dans l'open data SMR : aucune coordonnée officielle.",
+        "status": "À VÉRIFIER",
+        "source": "Carrigan 1905 vol.3 p.386 (\"many traces of foundations, which are said to mark the site of an ancient monastery... known as 'the glebe'\"), lu intégralement cette session"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.34645,
+          52.58398
+        ]
+      },
+      "properties": {
+        "name_en": "Cill Féichín / Tamplefeighane (Desart)",
+        "name_ga": "Cill Féichín",
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "\"église de saint Féichín\" — église et enclos ecclésiastique détruits, à un quart de mile à l'est de Desart Court, dans le \"Church field\" du demesne. Puits sacré et cimetière associés.",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK022-021001-",
+          "KK022-021003-",
+          "KK022-021002-",
+          "KK022-021004-"
+        ],
+        "loc_source": "coïncide avec le point Desart Court/Demesne (monument SMR)",
+        "status": "FAIT",
+        "source": "Carrigan 1905 vol.3 p.389 (\"the site of a church is pointed out... called Kilfeachin or Kilfechine, that is Cill Féichín... also called Tamplefeighane\"), lu intégralement cette session"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.37705,
+          52.60388
+        ]
+      },
+      "properties": {
+        "name_en": "Thubberniclaush (Kilballykeefe)",
+        "name_ga": "Tobar Naomh Nioclás",
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "\"le puits de saint Nicolas\", patron de l'église de Kylegballykeeffe, tout près de celle-ci.",
+        "rank": 1,
+        "smr_confirmed": [
+          "KK022-015001-"
+        ],
+        "loc_source": "coïncide avec le point Kilballykeefe (monument SMR)",
+        "status": "FAIT",
+        "source": "Carrigan 1905 vol.3 p.436 (\"the patron was St. Nicholas, whose holy well, called Thubberniclaush... is close by\"), lu intégralement cette session"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.29531,
+          52.6012
+        ]
+      },
+      "properties": {
+        "name_en": "Pawrknagullam (Grangecuffe)",
+        "name_ga": "Páirc na gColúr",
+        "logainm_id": null,
+        "logainm_url": null,
+        "historical_forms": [],
+        "meaning_fr": "\"le champ des pigeons\" — champ où Carrigan situe les vestiges (fondations, \"monastery yard\") de la grange monastique de Cuffe's Grange.",
+        "rank": 2,
+        "smr_confirmed": [],
+        "loc_source": "coïncide avec le point Grangecuffe (approximatif, logainm.ie)",
+        "status": "FAIT",
+        "source": "Carrigan 1905 vol.3 p.391-392, lu intégralement cette session"
+      }
+    }
+  ]
+}
