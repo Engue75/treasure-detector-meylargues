@@ -53,6 +53,7 @@ Google affiche « Grange Lower » : c'est un libellé de Google, pas le townland
 
 | Fichier | Contenu |
 |---|---|
+| [`SYNTHESE.md`](SYNTHESE.md) + [PDF](Grove-Tullaghanbrogue-St-Leger.pdf) | Synthèse lisible en 6 pages : plan du site ([`plan-grove.svg`](plan-grove.svg)), famille St Leger, Lyslonine (Desart), histoire, loi, sources. C'est la version à partager. |
 | [`CADRE_LEGAL.md`](CADRE_LEGAL.md) | Droit irlandais (lois de 1930, 1987, 1994 et 2023) appliqué au site, avec citations exactes, peines, un cas réel et ce qui reste légal. Comparaison France/Irlande. |
 | [`HISTOIRE.md`](HISTOIRE.md) | Chronologie sourcée du manoir de Tullaghanbrogue et de ses environs. |
 | [`SOURCES.md`](SOURCES.md) | Inventaire opérationnel des sources : URL, accès testé, licence, procédure. |
