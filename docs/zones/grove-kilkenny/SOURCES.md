@@ -259,7 +259,7 @@ Chaque polygone porte les champs `DATA_URL`, `DATA_NAME`, `LICENCE`, `RESOLUTION
 
 mais **aucune tuile ne couvre la case E 644-648 × N 648-652, qui contient précisément le site**. Un manque de couverture localisé apparaît donc dans cette génération de données (2011-2018).
 
-Le jeu national fédérateur `open-topographic-lidar-data` sur `data.gov.ie` (CKAN `package_show`, HTTP 200) confirme que ces mêmes contributeurs — GSI, DCHG, Discovery Programme, Heritage Council, TII, NYU, OPW, Westmeath CoCo — couvrent la période 2015-2021 sous licence CC BY 4.0 (contact `grainne.oshea@gsi.ie`).
+Le jeu national fédérateur `open-topographic-lidar-data` sur `data.gov.ie` (CKAN `package_show`, HTTP 200) confirme que ces mêmes contributeurs — GSI, DCHG, Discovery Programme, Heritage Council, TII, NYU, OPW, Westmeath CoCo — couvrent la période 2015-2021 sous licence CC BY 4.0.
 
 **[FAIT] Contre-vérification de l'orchestrateur (2026-09-28)** : le dossier REST `Lidar` de GSI publie 9 services d'index. Chacun a été interrogé au point exact (ITM 645497/650176, `inSR=2157`, sur le bon numéro de couche) : OPW_NASC/3, OPW/3, GSI_Phase2/12, TII/0, GSI_DCHG_DP/0, OPW_Cork/2, NYU_Dublin/4, WH_CoCo/0 et Photogrammetry_GSI/3. **Les 9 renvoient 0 entité.** Aucune couverture LiDAR ou photogrammétrique ouverte n'est donc indexée sur Grove. **[À VÉRIFIER]** Reste possible un programme postérieur à ces index (après 2021) ou un levé non versé à GSI.
 

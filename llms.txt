@@ -70,6 +70,9 @@ treasure-detector/
 - §10 : Risques et inconnues à lever
 - §13 : Ordre d'exécution, graphe de dépendances, Definition of Done v1
 
+## Dossiers de recherche hors zone active
+- [docs/zones/grove-kilkenny/README.md](docs/zones/grove-kilkenny/README.md) : Grove / Tullaghanbrogue (Co. Kilkenny, Irlande) — village médiéval déserté, motte, site à douves, église des St Leger. Dossier patrimonial **sans cibles** : la détection y est illégale (droit irlandais, voir `CADRE_LEGAL.md`)
+
 ## Mémoire projet (état, décisions, blocages)
 - [memory/MEMORY.md](memory/MEMORY.md) : Index de la mémoire projet
 - [memory/ETAT.md](memory/ETAT.md) : Avancement, ce qui existe, prochaines étapes
