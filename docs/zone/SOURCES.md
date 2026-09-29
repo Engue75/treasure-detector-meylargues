@@ -1,10 +1,10 @@
-# Sources de données — Armous-et-Cau (INSEE 32009)
+# Sources de données — Meylargues (Saint-Sauveur-la-Vallée / Cœur de Causse, Lot 46)
 
-Inventaire opérationnel de toutes les sources exploitables pour la prospection et l'analyse du secteur. Ce document est destiné aux lots **T3.1** (pipeline de données) et **T3.4** (zones signalées). Chaque source est vérifiée [FAIT] / [À VÉRIFIER] / [HYPOTHÈSE], avec procédure d'accès concrète.
+Inventaire opérationnel des sources exploitables pour la prospection et l'analyse du secteur. Destiné aux lots pipeline de données et zones signalées (voir [`../PLAN.md`](../PLAN.md) pour l'équivalent des lots T3.1/T3.4 sur ce repo). Statuts : **[FAIT]** = sourcé/testé utilisable · **[À VÉRIFIER]** = plausible non confirmé · **[HYPOTHÈSE]** = inférence sans source.
 
-**Date d'inventaire** : 2026-08-08
-**Zone** : Armous-et-Cau (Gers 32230, INSEE 32009, 43.5742°N / 0.1908°E, 9,33 km²)
-**Clé de lecture** : voir §0 du [PLAN.md](../PLAN.md) — [FAIT] = sourcé/testé utilisable ; [À VÉRIFIER] = plausible non confirmé ; [HYPOTHÈSE] = inférence sans source
+**Date d'inventaire** : 2026-09-27. **Corrigé le** : 2026-09-27 (relecture croisée + revérification WFS/HTTP).
+**Zone** : hameau de Meylargues, commune déléguée Saint-Sauveur-la-Vallée, commune nouvelle Cœur de Causse (Lot 46, 46240). Centre lon 1.5405 / lat 44.6235. Emprise d'étude (lidarBbox) : lon 1.4963–1.5847 / lat 44.5921–44.6549 (~7×7 km, 48,9 km²). Environnement large (bbox) : lon 1.4405–1.6405 / lat 44.5235–44.7235.
+**Réseau** : `curl -4` obligatoire (IPv6 échoue sur ce Mac) ; User-Agent navigateur requis pour Gallica (403 sinon) et recommandé pour POP-Mérimée. **Toujours mettre les URL de requête WFS/WMTS entre guillemets** dans le shell — le `&` non protégé tronque l'URL au premier paramètre. Nominatim : 1 req/s. Overpass : `overpass-api.de` renvoie 406 depuis cette machine → utiliser le miroir `https://overpass.kumi.systems/api/interpreter`. WFS `data.geopf.fr` en EPSG:4326 : **BBOX en ordre lat,lon** avec CRS urn (ex. `BBOX=44.5921,1.4963,44.6549,1.5847,urn:ogc:def:crs:EPSG::4326`) et **toujours ajouter `SRSNAME=urn:ogc:def:crs:EPSG::4326`**, sinon les couches `patrinat_*` reviennent en EPSG:3857 et les calculs de surface/distance sont faux sans erreur visible — l'ordre lon,lat renvoie 0 résultat **sans erreur**.
 
 ---
 
@@ -12,784 +12,256 @@ Inventaire opérationnel de toutes les sources exploitables pour la prospection 
 
 | Source | Contenu utile | Format/Protocole | Statut | Accessibilité | Attribution |
 |--------|---|---|---|---|---|
-| **Cartes anciennes** |
-| Cassini (BnF, 1756–1815) | Bâti, moulins, chapelles, chemins | WMTS `BNF-IGNF_GEOGRAPHICALGRIDSYSTEMS.CASSINI` | [FAIT] | data.geopf.fr, z6–14 | Etalab 2.0 / IGN |
-| État-major (1820–1866) | Habitats, voies, parcellaire | WMTS `GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40` | [FAIT] | data.geopf.fr, z6–15 | Etalab 2.0 / IGN |
-| **Orthophotos modernes** |
-| Ortho RVB courante | Marqueurs de sol, accès, bâti | WMTS `ORTHOIMAGERY.ORTHOPHOTOS` | [FAIT] | data.geopf.fr, z0–19 | Etalab 2.0 / IGN |
-| Ortho très haute résolution | 10–20 cm GSD, détails fins | WMTS `THR.ORTHOIMAGERY.ORTHOPHOTOS` | [FAIT] | data.geopf.fr, z6–21 | Etalab 2.0 / IGN |
-| Ortho infrarouge (IRC) | **Traces phytographiques**, humidité | WMTS `ORTHOIMAGERY.ORTHOPHOTOS.IRC` | [FAIT] | data.geopf.fr, z6–19 | Etalab 2.0 / IGN |
-| **Ortho multi-millésime (analyseur temporel)** |
-| IRC 2024, 2025, 2026 | Comparaison année à année, crop marks saisonniers | WMTS `ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.{2024,2025,2026}` | [FAIT] | data.geopf.fr | Etalab 2.0 / IGN |
-| RVB Express 2025, 2026 | Idem, canal visible | WMTS `ORTHOIMAGERY.ORTHOPHOTOS.RVB-EXPRESS.{2025,2026}` | [FAIT] | data.geopf.fr | Etalab 2.0 / IGN |
-| Ortho Express 2024 | Avant remembrement / modifications | WMTS `ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2024` | [FAIT] | data.geopf.fr | Etalab 2.0 / IGN |
-| **Orthophotos historiques** |
-| Ortho 1950–1965 | Avant remembrement, talus, chemins creux | **WMTS `ORTHOIMAGERY.ORTHOPHOTOS.1950-1965`** (PM, png) | **[FAIT — GetTile 200 sur la zone]** | Flux direct dans l'app ; remonterletemps en plan B | Etalab 2.0 / IGN |
+| **Cartes anciennes (flux national IGN — repris du spike Gers)** |
+| Cassini (BnF, 1756–1815) | Bâti, moulins, chapelles, chemins | WMTS `BNF-IGNF_GEOGRAPHICALGRIDSYSTEMS.CASSINI` | [FAIT — vérifié GetTile z14 sur l'emprise] | data.geopf.fr, z6–14 (préfixe `BNF-IGNF_` requis, plafonne à z14) | Etalab 2.0 / IGN |
+| État-major (1820–1866) | Habitats, voies, parcellaire | WMTS `GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40` | [FAIT — vérifié GetTile z15 sur l'emprise] | data.geopf.fr, z6–15 | Etalab 2.0 / IGN |
+| **Orthophotos modernes (flux national IGN)** |
+| Ortho RVB courante | Marqueurs de sol, accès, bâti | WMTS `ORTHOIMAGERY.ORTHOPHOTOS` | [FAIT — vérifié GetTile z17 sur l'emprise] | data.geopf.fr, z0–19 | Etalab 2.0 / IGN |
+| Ortho très haute résolution (THR) | 10–20 cm GSD, détails fins | WMTS `THR.ORTHOIMAGERY.ORTHOPHOTOS` | **[INDISPONIBLE SUR LA ZONE]** — 404 « No data found » testé aux zooms 14/16/18/19 sur 5 points de l'emprise | data.geopf.fr, PM_6_21 (couverture partielle nationale, pas ici) | Etalab 2.0 / IGN |
+| Ortho infrarouge (IRC) | Traces phytographiques, humidité | WMTS `ORTHOIMAGERY.ORTHOPHOTOS.IRC` | [FAIT — vérifié GetTile z17 sur l'emprise] | data.geopf.fr, z6–19 | Etalab 2.0 / IGN |
+| IRC-Express multi-millésime | Comparaison année à année, crop marks | WMTS `ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.{2024,2025,2026}` | **[SEUL 2025 DISPONIBLE]** — 2024, 2023 et 2026 renvoient 404 aux zooms 14–16 sur l'emprise (2024 : 200 seulement au z12, couverture voisine) ; 2025 répond 200 aux z16–17 sur les 5 points testés | data.geopf.fr, PM_0_19 | Etalab 2.0 / IGN |
+| Ortho 1950–1965 | Avant remembrement, chemins creux, parcellaire ancien | WMTS `ORTHOIMAGERY.ORTHOPHOTOS.1950-1965` (PM, `image/png`, style `BDORTHOHISTORIQUE` ou `normal`) | [FAIT — vérifié GetTile z16–17 sur l'emprise, en plus du test Gers 2026-08-08] | data.geopf.fr | Etalab 2.0 / IGN |
 | **Relief et terrain** |
-| LiDAR HD (MNT 0,5 m) | Micro-topographie, anomalies de terrain | COPC.LAZ, dalles 1 km×1 km | [À VÉRIFIER] | geoservices.ign.fr/lidarhd — **[MACHINE LOCALE]** | Etalab 2.0 / IGN |
+| LiDAR HD (MNT 0,5 m + nuage de points) | Micro-topographie, anomalies de terrain (mottes, enclos, ruines arasées de Nougayrol/Puycalvel) | GeoTIFF (MNT, via WMS-R) + COPC.LAZ (nuage de points), dalles 1 km×1 km | **[FAIT]** — non bloquant, voir détail §4 | data.geopf.fr (WFS métadonnées + WMS-R/téléchargement direct) | Etalab 2.0 / IGN |
 | **Parcellaire et usage des terres** |
-| Cadastre Express (parcelles actuelles) | Délimitations de parcelles, repérage terrain | WMTS `CADASTRALPARCELS.PARCELLAIRE_EXPRESS` | [FAIT] | data.geopf.fr | Etalab 2.0 / IGN |
-| RPG (Registre parcellaire graphique) | Cultures déclarées, distinguer labour/prairie | Open data, flux ou téléchargement | [HYPOTHÈSE] | api.gouv.fr/api/rpg ; commune INSEE 32009 | MAAF / Open data |
-| **Archives historiques** |
-| Cadastre napoléonien (AD32) | États de sections, plans 1/2500 (1813–1819), toponymie ancienne | Images zoomables, visionneuse | [FAIT] | archives32.fr — portail fonds numérisés | Domaine public |
-| Fichiers Polge (AD32) | Dictionnaire topographique, dictionnaire archéologique, patronages | Salle de lecture (original) + recherche en ligne | [FAIT] | AD32 (Auch) ; Répertoire des patronages : persee.fr/doc/rio | Domaine public |
+| Cadastre Express (parcelles actuelles) | Délimitations de parcelles, repérage terrain | WMTS `CADASTRALPARCELS.PARCELLAIRE_EXPRESS` | [FAIT — vérifié GetTile z17 sur l'emprise] | data.geopf.fr | Etalab 2.0 / IGN |
+| RPG (Registre parcellaire graphique) | Cultures déclarées, labour vs prairie | WFS | [FAIT — voir détail ci-dessous] | data.geopf.fr, couches `IGNF_RPG_PARCELLES-AGRICOLES-CATEGORISEES_2024:...` et `RPG.LATEST:parcelles_graphiques` | MAAF / IGN, Etalab 2.0 |
+| **Archives historiques du Lot** |
+| Cadastre napoléonien (AD46) | États de sections, plans (1808–1842), toponymie ancienne — cherché sous **Soulomès**, pas Saint-Sauveur-la-Vallée | Visionneuse zoomable en ligne | [FAIT — cotes identifiées, voir détail §1] | [archives.lot.fr/recherche-en-ligne/archives-numerisees/cadastre](https://archives.lot.fr/recherche-en-ligne/archives-numerisees/cadastre) (nouvelle URL) | Domaine public |
+| Fonds seigneuriaux et iconographiques (AD46) | Chartrier de Vaillac (20 J), fonds Mailhol (34 Fi 2), J 2847, archives communales | Moteur BACH | [FAIT — voir détail §8] | [bach.lot.fr/archives/search](https://bach.lot.fr/archives/search) — **anti-robot, navigateur uniquement** | Domaine public / AD46 |
+| Monographies Albe (Quercy.net) | Histoire paroissiale et seigneuriale commune par commune (Saint-Sauveur, Labastide-Murat, Saint-Cernin, Saint-Martin-de-Vers) | Pages HTML | [FAIT] — transcription retravaillée, sans cote d'archive (voir détail §2) | [archives.quercy.net/qmedieval/histoire/monog_albe/](http://www.archives.quercy.net/qmedieval/histoire/monog_albe/saintsauveur.html) | Public |
 | **Patrimoine et archéologie** |
-| Atlas des patrimoines (Patriarche) | Entités archéologiques, ZPPA, monuments historiques, opérations | Export manuel (aucun WMS/WFS public confirmé — testé 2026-08-08) | [À VÉRIFIER via navigateur] | atlas.patrimoines.culture.fr | Public |
-| Gallica / BnF — Cassini HD | Feuille Cassini haute résolution (400 dpi, BnF) | Image zoomable + PDF | [À VÉRIFIER] | gallica.bnf.fr/selections/carte-de-cassini — **[MACHINE LOCALE]** | Public / BnF |
-| CAG 32 (Carte archéologique de la Gaule) | **Inventaire sites archéologiques par commune**, Lapart & Petit 1993 | Ouvrage imprimé (354 p.) ± partiellement sur Gallica | [À VÉRIFIER] | AIBL (en ligne), FRANTIQ, Gallica : gallica.bnf.fr/.../selections/carte-archeologique | Public |
-| Bulletin de la Société archéologique du Gers | 125 ans de signalements de découvertes locales | Numérisé (65 années en ligne) | [FAIT] | gallica.bnf.fr/ark:/12148/cb34426497s/date ; Internet Archive | Public |
-| Monographie — Abbaye de La Case-Dieu | Contexte monastique (réseau de granges, moulins, bastides) | PDF (Mém. Soc. archéo. Midi, t.64) | [FAIT] | societearcheologiquedumidi.fr/_samf/memoires/t_64/balagna.pdf | Public |
+| Atlas des patrimoines (Patriarche) | Entités archéologiques, ZPPA, monuments historiques | Interface web ; pas de WMS/WFS public confirmé | [À VÉRIFIER] | [atlas.patrimoines.culture.fr/atlas/trunk/](http://atlas.patrimoines.culture.fr/atlas/trunk/) — **URL http, pas https** (l'ancienne URL https échoue en TLS, « wrong version number ») | Public / Ministère de la Culture |
+| POP-Mérimée | Fiches détaillées des monuments historiques (Puycalvel, Labastide, Goudou, Vaillac, Soulomès) | Base web consultable par notice | [FAIT — 5 notices vérifiées HTTP 200] | [pop.culture.gouv.fr](https://pop.culture.gouv.fr/) | Public |
+| Servitudes AC1 (abords MH) / PM1 (PPRI) | Périmètres réels de protection des MH, zones inondables | WFS `wfs_sup:assiette_sup_s` | [FAIT] | data.geopf.fr | Public / DGALN |
+| CAG 46 — Carte archéologique de la Gaule, *Le Lot* | Inventaire des sites archéologiques par commune, âge du Fer → haut Moyen Âge | Ouvrage imprimé (AIBL), **2<sup>e</sup> édition, 2011** (A. Filippini et al., 264 p. ; 1<sup>re</sup> éd. 1990) | [À VÉRIFIER — non consulté en détail] | [aibl.fr/collections/carte-archeologique-de-la-gaule-46-le-lot](https://aibl.fr/collections/carte-archeologique-de-la-gaule-46-le-lot/) | AIBL |
+| Société des études du Lot | Bulletin trimestriel, signalements de découvertes locales | Bulletin numérisé, 118 années disponibles | [FAIT — accessible sur Gallica] | [gallica.bnf.fr/ark:/12148/cb343873149/date](https://gallica.bnf.fr/ark:/12148/cb343873149/date) ; date de début exacte **[À VÉRIFIER]** (fondation de la société en 1872, 1<sup>er</sup> bulletin probablement 1873, pas 1875) | Public / Gallica |
+| Inventaire des mégalithes — PNR Causses du Quercy | Localisation des dolmens/tumulus/menhirs du causse de Gramat | PDF de vulgarisation | [FAIT pour le PDF ; aucun mégalithe recensé (Wikipedia/Clottes) dans les 6 communes de l'emprise] | [parc-causses-du-quercy.fr — PDF mégalithes](https://www.parc-causses-du-quercy.fr/wp-content/uploads/2023/06/decouvrir_megalithes2014.pdf) | PNR Causses du Quercy |
+| ADLFI (Archéologie de la France - Informations) | Notices d'opérations archéologiques par secteur | Revue en ligne (OpenEdition) | **[À VÉRIFIER]** — la notice « Causse de Gramat » (adlfi/10912) est protégée par un mur anti-robot Anubis, non contournée ; la notice probablement pertinente est adlfi/10772 (« Causse de Gramat et causse de Martel », Girault 1988-1991) | [journals.openedition.org/adlfi/10772](https://journals.openedition.org/adlfi/10772) — navigateur uniquement | Public / Ministère de la Culture |
+| **Réglementation et zonages environnementaux** |
+| Natura 2000 — ZSC FR7300910 « Vallées de la Rauze et du Vers » | Périmètre (~33 % de l'emprise), DOCOB, espèces/habitats protégés, 11 communes dont Cœur de Causse | WFS `patrinat_sic:sic` + PDF DOCOB | [FAIT — périmètre vérifié par WFS, DOCOB HTTP 200] | [DOCOB FR7300910](https://www.occitanie.developpement-durable.gouv.fr/IMG/pdf/docob_fr_7300910.pdf) ; [inpn.mnhn.fr/site/natura2000/FR7300910](https://inpn.mnhn.fr/site/natura2000/FR7300910) | Public / DREAL Occitanie, PNR (animation) |
+| Natura 2000 — ZSC FR7300909 « Zone centrale du Causse de Gramat » | **Hors emprise** (≥2,25 km à l'est) — à ne plus utiliser pour ce secteur | WFS `patrinat_sic:sic` | [FAIT — hors emprise, vérifié WFS] | [inpn.mnhn.fr/site/natura2000/FR7300909](https://inpn.mnhn.fr/site/natura2000/FR7300909) | Public |
+| ZNIEFF I 730010297 « Vallée du Vers » + 730010296 | Inventaire naturel non opposable, 36,6 % + 1 % du bbox large | WFS `patrinat_znieff1:znieff1` | [FAIT] | data.geopf.fr | Public |
+| PNR Causses du Quercy / Géoparc mondial UNESCO | Charte du parc, patrimoine géologique et culturel — couvre 75,3 % du lidarBbox, pas l'intégralité | WFS `patrinat_pnr:pnr` / `patrinat_geoparc:geoparc` + site web | [FAIT — périmètre vérifié par WFS] | [parc-causses-du-quercy.fr](https://www.parc-causses-du-quercy.fr/) | Public |
+| Code du patrimoine — détection de métaux | Cadre légal L542-1/R542-1/R544-3, déclaration L531-14, propriété L541-4 | Texte de loi + démarche en ligne | [FAIT] | [culture.gouv.fr — démarche autorisation](https://www.culture.gouv.fr/catalogue-des-demarches-et-subventions/autorisation/utilisation-de-materiel-permettant-la-detection-d-objets-metalliques-a-l-effet-de-recherches-de-monuments-et-d-objets-pouvant-interesser-la-prehist) ; Légifrance | Public / Légifrance |
 | **Géologie et sols** |
-| BRGM InfoTerre | Molasse gersoise, terrasses alluviales, substrat | Cartes géologiques 1/50000 | [HYPOTHÈSE] | infoterre.brgm.fr (requête par commune) | Open data / BRGM |
+| BRGM InfoTerre | Géologie karstique du causse (calcaires, dolines, réseau souterrain) | Cartes géologiques 1/50000 | [HYPOTHÈSE — non interrogé pour cette zone] | [infoterre.brgm.fr](https://infoterre.brgm.fr/) | Open data / BRGM |
 | **Météorologie historique** |
-| Open-Meteo (ERA5-Land) | Précipitations, humidité du sol depuis 1940 | API REST JSON | [FAIT] | open-meteo.com/en/docs/historical-weather-api (gratuit, 10k appels/j) | ERA5/Copernicus |
-| **Ressources linguistiques et toponymie** |
-| DicoTopo (CTHS) | Version numérique des dictionnaires topographiques départementaux (Gers) | Recherche web | [HYPOTHÈSE] | dicotopo.cths.fr | Public / CTHS |
+| Open-Meteo | Précipitations (ERA5, depuis 1940), humidité du sol (ERA5-Land, depuis 1950) | API REST JSON | [FAIT — national, URL d'exemple corrigée] | [open-meteo.com](https://open-meteo.com/en/docs/historical-weather-api) (gratuit, 10k appels/j) | ERA5-Land/Copernicus |
 | **Sources humaines** |
-| Exploitant agricole de la zone | Connaissance empirique du terrain (tuilerie, labours anciens) | Visite terrain, entretien | [HYPOTHÈSE] | À identifier par Oscar | — |
-| Société archéologique, historique, littéraire et scientifique du Gers | Mémoire locale, découvertes anciennes non publiées | Correspondance, adhésion | [HYPOTHÈSE] | Auch (tél. société) ; site web | — |
-| Mairie et anciens d'Armous-et-Cau | Localisation ancienne églises, souvenirs fondations, micro-toponymie | Visite, entretien | [HYPOTHÈSE] | Mairie (95 hab., tous se connaissent) | — |
+| Mairie déléguée de Saint-Sauveur-la-Vallée / Cœur de Causse | Micro-toponymie vivante, mémoire locale, accès terrain | Visite, entretien | [HYPOTHÈSE] | Mairie de Cœur de Causse | — |
+| Exploitant(s) agricole(s) du causse | Connaissance empirique du terrain (cailloux, tuile, labours anciens) | Visite terrain | [HYPOTHÈSE] | À identifier sur place | — |
 
 ---
 
-## Détail des sources
+## Détail des sources spécifiques au Lot
 
-### 1. Cartes anciennes (§4.1 du PLAN.md)
+### 1. Cadastre napoléonien — Archives départementales du Lot (AD46)
 
-#### 1.1 Carte de Cassini (1756–1815)
+**Contenu** : le cadastre dit « napoléonien » du Lot a été levé entre **1808 et 1842** (et non 1807–1842). Les **4 119 plans** du département sont numérisés et consultables en ligne ([lot.fr — le cadastre napoléonien en ligne](https://lot.fr/node/1242), [departements.fr](https://departements.fr/le-cadastre-napoleonien-du-lot-accessible-sur-internet/)). Les feuilles sont au **1/2000, 1/2500 ou 1/5000** (pas uniformément 1/2500), le tableau d'assemblage au 1/10000–1/20000. Des **plans consulaires 1803–1807** existent aussi ; leur mise en ligne est annoncée pour le 2<sup>e</sup> semestre 2026.
 
-**Contenu** : Bâti, moulins, chapelles, chemins du XVIII<sup>e</sup> s., géométrie parcellaire.
+**Règle de recherche** : « la recherche doit être effectuée sur la commune existante au moment de la réalisation du cadastre ». **Meylargues et Saint-Sauveur sont donc dans le cadastre de SOULOMÈS (1840)**, pas dans un cadastre propre à « Saint-Sauveur-la-Vallée » (voir [HISTOIRE.md](HISTOIRE.md) §1 et §8, divergence 1793/1845/1865 sur la création de la commune).
 
-**Identifiant WMTS** : `BNF-IGNF_GEOGRAPHICALGRIDSYSTEMS.CASSINI` (préfixe `BNF-IGNF_` requis ; sans lui : erreur 404)
+**Cotes identifiées** (base « Cadastre napoléonien » AD46, consultée au navigateur le 2026-09-27) :
+- **Soulomès (1840)**, cote **3 P 2731** : Section A de Soulomès (3 f.), B de Nougayrol (4 f.), C de Saint-Sauveur (4 f.), **D de Meylargues (2 f., 15/07 et 05/11/1840)**. État de sections 1842 : **3 P 2309**. Matrices 1842–1932 : **3 P 2304 à 2308**.
+- **Labastide-Murat (1840)**, cote **3 P 2619** : A la Ville, B Goudou, C Bramarigue, D la Devèze, E Trouals, F Soyris, G La Vaysse, H Crouzaval. État de sections 1842 : **3 P 1090**. Matrices : **3 P 1084–1087**.
+- **Lamothe-Cassel (1826–1827)**, cote **3 P 2926** : A Murat, B Lamothe, C Puicalvel. État de sections 1829 : **3 P 1170**. Matrice : **3 P 1165**.
+- **Saint-Cernin (1828)**, cote **3 P 2695** : A Negrié, B du Cayre, C Saint-Sernin (+ « Développement du village »), D Lespinasse…
 
-**Détail technique** :
-- Format : image/png
-- TileMatrixSet : `PM` (Web Mercator, EPSG:3857)
-- Zoom natif : z6–14 (plafonne à z14 ; au-delà : pas de tuile native → prévoir `maxNativeZoom: 14`)
-- Template REST GetTile : `https://data.geopf.fr/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=BNF-IGNF_GEOGRAPHICALGRIDSYSTEMS.CASSINI&STYLE=normal&TILEMATRIXSET=PM&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/png`
-- Renumérisée à **400 dpi** depuis l'exemplaire BnF en novembre 2024 ([geoservices.ign.fr/actualites](https://geoservices.ign.fr/actualites/2024-11-carte-de-cassini))
+**Accès** : nouvelle URL **[archives.lot.fr/recherche-en-ligne/archives-numerisees/cadastre/cadastre-napoleonien](https://archives.lot.fr/recherche-en-ligne/archives-numerisees/cadastre/cadastre-napoleonien)** — les anciennes URL `/r/32/…` et `/a/236/…` sont périmées. **Une réutilisation publique des images suppose de vérifier la licence de réutilisation des AD46** avant tout usage dans l'app.
 
-**Statut** : [FAIT] — GetCapabilities vérifiée, tuiles test réussies (spike prototype 2026-08-08)
+**Importance critique** : plans non géoréférencés → calage manuel nécessaire (amers : église, croisements de chemins, limites parcellaires pérennes). **Priorité haute** pour la section D « de Meylargues » (domaine seigneurial mentionné par Albe, voir [HISTOIRE.md](HISTOIRE.md) §4.2).
 
-**Attribution** : Etalab 2.0 / © IGN
-
-**Accès** : data.geopf.fr (WMTS direct, public, sans authentification)
-
-**Gotcha** : Proxy Claude Code bloque data.geopf.fr → tâches `[MACHINE LOCALE]` uniquement (vérifier sur Mac local ou preview Railway)
+**Attribution** : Domaine public / © Archives départementales du Lot
 
 ---
 
-#### 1.2 Carte d'État-major (1820–1866)
+### 2. Monographies Albe (Quercy.net)
 
-**Contenu** : Positions d'habitats, voies, parcellaire. Plus précis que Cassini, antérieur au remembrement.
+**Contenu** : monographies paroissiales et seigneuriales rédigées par l'abbé **Edmond Albe** (1861–1926), conservées en manuscrit aux **Archives diocésaines de Cahors**, et **transcrites par l'association Quercy.net** — le style télégraphique a été réécrit et les références d'archives d'origine ont été supprimées ; ce n'est donc **pas une édition fidèle**. Le « Dictionnaire des paroisses du diocèse de Cahors », qu'Albe préparait avec A. Viré, est **resté inachevé** à sa mort en 1926 ([présentation Quercy.net](http://www.archives.quercy.net/qmedieval/histoire/monog_albe/albe_presentation.html)).
 
-**Identifiant WMTS** : `GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40`
+**Monographies en ligne couvrant l'emprise** : Saint-Sauveur-la-Vallée, Labastide-Murat, Saint-Cernin, Saint-Martin-de-Vers. **Pas de monographie en ligne** (HTTP 404 testé le 2026-09-27) pour Soulomès, Lamothe-Cassel/Puycalvel, Ussel, Vaillac, Frayssinet, Montfaucon — pour ces communes, consulter les Archives diocésaines de Cahors ou les AD46 directement.
 
-**Détail technique** :
-- Format : image/jpeg
-- TileMatrixSet : `PM`
-- Zoom : z6–15
-- Template : idem Cassini, remplacer `LAYER=GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40&FORMAT=image/jpeg`
+**Accès** : [archives.quercy.net/qmedieval/histoire/monog_albe/saintsauveur.html](http://www.archives.quercy.net/qmedieval/histoire/monog_albe/saintsauveur.html), [.../labastide_murat.html](http://www.archives.quercy.net/qmedieval/histoire/monog_albe/labastide_murat.html), [.../saint_cernin.html](http://www.archives.quercy.net/qmedieval/histoire/monog_albe/saint_cernin.html), [.../saintmartindevers.html](http://www.archives.quercy.net/qmedieval/histoire/monog_albe/saintmartindevers.html)
 
-**Statut** : [FAIT] — GetCapabilities vérifiée, tuiles test réussies
+**Statut** : [FAIT] — pages consultées le 2026-09-27, chaque [FAIT] tiré d'Albe doit être cité comme « transcription Quercy.net », la cote d'archive originale restant à retrouver.
 
-**Attribution** : Etalab 2.0 / © IGN
-
-**Accès** : data.geopf.fr (WMTS, public)
-
-**Gotcha** : Idem Cassini (proxy)
-
----
-
-### 2. Orthophotos modernes (WMTS, §4.1)
-
-#### 2.1 Orthophoto RVB courante (« BD ORTHO »)
-
-**Contenu** : Marqueurs de sol, bâti, accès parcellaire, végétation.
-
-**Identifiant WMTS** : `ORTHOIMAGERY.ORTHOPHOTOS`
-
-**Détail technique** :
-- Format : image/jpeg
-- TileMatrixSet : `PM`
-- Zoom : z0–19
-- Template : `https://data.geopf.fr/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=ORTHOIMAGERY.ORTHOPHOTOS&STYLE=normal&TILEMATRIXSET=PM&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/jpeg`
-- Résolution variable (20–10 cm selon date ; millésimes dans les métadonnées)
-
-**Statut** : [FAIT]
-
-**Attribution** : Etalab 2.0 / © IGN – BD ORTHO® V3
-
-**Accès** : data.geopf.fr
-
----
-
-#### 2.2 Orthophoto très haute résolution (THR)
-
-**Contenu** : 10–20 cm GSD ; détails fins sur marqueurs critiques (petites tegulae, limites anciennes).
-
-**Identifiant WMTS** : `THR.ORTHOIMAGERY.ORTHOPHOTOS`
-
-**Détail technique** :
-- Format : image/jpeg
-- TileMatrixSet : `PM`
-- Zoom : z6–21
-- Couverture inégale (régions à densité d'acquisition vérifiée)
-
-**Statut** : [FAIT]
-
-**Attribution** : Etalab 2.0 / © IGN
-
-**Accès** : data.geopf.fr
-
-**Note** : À vérifier si Armous-et-Cau est couvert à z21 complet (zones rurales peu prioritaires) ; sinon z18–19 disponible.
-
----
-
-#### 2.3 Orthophoto infrarouge (IRC, **détecteur de traces phytographiques**)
-
-**Contenu** : **Proche infrarouge, fausses couleurs (NIR), détecte les structures enfouies par différentiel hydrique** — technique publiée et reconnue en archéologie télédétection ([Springer, Near-Infrared Aerial Crop Mark Archaeology](https://link.springer.com/article/10.1007/s10816-011-9104-5)).
-
-**Identifiant WMTS** : `ORTHOIMAGERY.ORTHOPHOTOS.IRC`
-
-**Détail technique** :
-- Format : image/jpeg (fausses couleurs : R=NIR, G=RG, B=B)
-- TileMatrixSet : `PM`
-- Zoom : z6–19
-- Interprétation : structures humides = bleu/violet foncé en IRC ; stress hydrique = rouge/orange clair
-
-**Statut** : [FAIT]
-
-**Attribution** : Etalab 2.0 / © IGN
-
-**Accès** : data.geopf.fr
-
-**Portée** : Non une baguette magique (littérature note résultats « incertains »), mais un indice de plus, gratuit, déjà servi en WMTS. À traiter comme canal supplémentaire, pas preuve.
-
----
-
-#### 2.4 Orthophoto infrarouge multi-millésime (IRC-EXPRESS, **élément clé**)
-
-**Contenu** : **Comparaison IRC année à année (2024, 2025, 2026)** — une trace phytographique n'apparaît pas tous les ans (bon stade de croissance, déficit hydrique). Trois millésimes multiplient les chances de détection.
-
-**Identifiants WMTS** :
-- `ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2024`
-- `ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2025`
-- `ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2026`
-
-**Détail technique** :
-- Format : image/jpeg (fausses couleurs IRC)
-- TileMatrixSet : `PM`
-- Zoom : z0–19
-
-**Statut** : [FAIT]
-
-**Attribution** : Etalab 2.0 / © IGN
-
-**Accès** : data.geopf.fr
-
-**Usage** : T1.1 doit pouvoir enchaîner IRC 2024 → 2025 → 2026 sur la même vue (rideau de comparaison, opacité variable). Trace qui apparaît une seule année au bon endroit = signal fort.
-
----
-
-#### 2.5 Orthophoto RVB Express (2025, 2026) et Ortho Express (2024)
-
-**Contenu** : Variantes saisonnières, avant remembrement (Express 2024).
-
-**Identifiants WMTS** :
-- `ORTHOIMAGERY.ORTHOPHOTOS.RVB-EXPRESS.2025`
-- `ORTHOIMAGERY.ORTHOPHOTOS.RVB-EXPRESS.2026`
-- `ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2024`
-
-**Statut** : [FAIT]
-
-**Attribution** : Etalab 2.0 / © IGN
-
-**Accès** : data.geopf.fr
-
----
-
-### 3. Orthophotos historiques 1950–1965
-
-#### 3.1 Ortho 1950–1965 — DISPONIBLE EN WMTS
-
-**Contenu** : **Avant remembrement, talus, chemins creux, parcellaire ancien — critique pour localiser les deux noyaux villageois (Armous + Cau).**
-
-**Statut** : **[FAIT — GetTile réel réussi sur la zone, 2026-08-08]** — la couche est absente de l'annexe `ortho.xml` mais **présente dans le GetCapabilities global** :
-
-- Identifiant : **`ORTHOIMAGERY.ORTHOPHOTOS.1950-1965`** · TMS `PM` · style `normal` · format **`image/png`** (le `image/jpeg` renvoie 400)
-- Preuve (tuile réelle sur Armous-et-Cau, z14 col 8200 row 5984) :
+**Gotcha réseau** : le site sert en HTTP simple (pas de TLS moderne) — `WebFetch` standard échoue (`TLSV1_ALERT_INTERNAL_ERROR`) ; **utiliser `curl -4` avec un User-Agent de navigateur** :
+```bash
+curl -4 -s -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36" \
+  "http://www.archives.quercy.net/qmedieval/histoire/monog_albe/saintsauveur.html"
 ```
-curl -4 -s 'https://data.geopf.fr/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=ORTHOIMAGERY.ORTHOPHOTOS.1950-1965&STYLE=normal&TILEMATRIXSET=PM&FORMAT=image/png&TILEMATRIX=14&TILEROW=5984&TILECOL=8200'
-→ 200 image/png
-```
-- Leçon de méthode : les annexes thématiques (`ortho.xml`) ne listent pas tout — tester le **GetCapabilities global** avant de conclure à une absence.
-- [À VÉRIFIER] : bornes de zoom exactes de la couche (à lire dans le GetCapabilities global, prévoir `maxNativeZoom` comme pour Cassini).
+Encodage **ISO-8859-1** (pas UTF-8).
 
-**Conséquence** : la vue avant remembrement se consomme **en flux direct dans l'app (T1.1)** — l'export manuel remonterletemps redevient un simple plan B.
-
-#### 3.2 Procédure de récupération (plan B, si le flux se révélait incomplet sur la zone)
-
-**Source** : https://remonterletemps.ign.fr/
-
-**Procédure** (manuelle, non-automatisée) :
-1. Naviguer sur remonterletemps.ign.fr
-2. Positionner la carte sur Armous-et-Cau (INSEE 32009)
-3. Afficher la couche « Photographies aériennes 1950–1965 » (ou équivalent disponible)
-4. Télécharger la tuile au format GeoTIFF ou PNG (export PNG à géoréférencer manuellement, ou utiliser QGIS pour requête WMS/WFS si disponible)
-5. Reprojeter en EPSG:3857 si nécessaire (§5.6 du PLAN.md)
-6. Intégrer en PMTiles pour l'app (ou servir comme overlay staticRaster externe)
-
-**Gotcha** : Vérifier si remonterletemps.ign.fr expose un endpoint WMS/WFS. Si oui (probable), il peut être intégré directement ; sinon, export PNG manuel par zone.
-
-**Statut de cette source** : [À VÉRIFIER] — La disponibilité effective pour Armous-et-Cau et la procédure précise d'export doivent être confirmées sur machine locale (IPv4, navigateur humain).
-
-**Attribution** : Etalab 2.0 / © IGN
+**Attribution** : Public / Quercy.net
 
 ---
 
-### 4. LiDAR HD (§4.2 du PLAN.md)
+### 3. Atlas des patrimoines et POP-Mérimée (DRAC Occitanie)
 
-#### 4.1 Présentation
+**Contenu** : entités archéologiques, ZPPA, monuments historiques classés/inscrits, opérations de fouille.
 
-**Contenu** : **Modèle numérique de terrain (MNT) à 0,5 m de résolution, dalles 1 km×1 km, format COPC.LAZ** (cloud-optimized Point Cloud).
+**Accès** : Atlas des patrimoines à l'**URL http** (pas https) : [atlas.patrimoines.culture.fr/atlas/trunk/](http://atlas.patrimoines.culture.fr/atlas/trunk/) — l'ancienne URL https renvoie une erreur TLS (« wrong version number »), testée le 2026-09-27. POP-Mérimée : [pop.culture.gouv.fr](https://pop.culture.gouv.fr/) — 5 fiches vérifiées HTTP 200 pour cette zone : [PA00095306](https://pop.culture.gouv.fr/notice/merimee/PA00095306) (château de Labastide-Murat), [PA00095121](https://pop.culture.gouv.fr/notice/merimee/PA00095121) (église de Puycalvel), [PA00125599](https://pop.culture.gouv.fr/notice/merimee/PA00125599) (église de Goudou), [PA00095277](https://pop.culture.gouv.fr/notice/merimee/PA00095277) (château de Vaillac), [PA00095266](https://pop.culture.gouv.fr/notice/merimee/PA00095266) (église et presbytère de Soulomès).
 
-**Cas d'usage** :
-- Micro-topographie de motte castrale, enceinte, levée de chemin
-- Anomalies subtiles (effondrements, lits fossiles)
-- Algorithmes de détection automatisée d'anomalies (publications [HAL](https://hal.science/hal-05042607))
-
-**Couverture nationale** : ~80% fin 2025 (Programme LiDAR HD, IGN)
-
-**Statut d'Armous-et-Cau** : [À VÉRIFIER] — **Commune en bleu sur la carte de suivi IGN = « nuages et modèles numériques disponibles »** (levé 2026-08-08)
-
-**Vérification à mener** : Consulter
-- https://geoservices.ign.fr/lidarhd (carte interactive)
-- https://macarte.ign.fr/carte/mThSup/diffusionMNxLiDARHD (fiche commune)
-
-pour confirmer le **libellé exact du statut** et la **procédure de téléchargement des dalles 1 km×1 km**.
-
-#### 4.2 Dalles concernant Armous-et-Cau
-
-**Emprise nominale** : 43.55–43.60°N / 0.15–0.23°E (environ, à affiner)
-
-**Système de projection des dalles** : **Lambert-93 (EPSG:2154)** (standard français pour LiDAR, pas Web Mercator)
-
-**Identifiants de dalles** : **À lister manuellement depuis la plateforme IGN** (format type : `1km_D123_E456.laz`, dépend du découpage 1 km×1 km en L93)
-
-**Procédure** : **[MACHINE LOCALE]**
-1. Accéder à https://geoservices.ign.fr/lidarhd ou plateforme de diffusion associée
-2. Sélectionner la commune Armous-et-Cau (INSEE 32009)
-3. Télécharger les dalles COPC.LAZ couvrant la bbox commune
-4. Reprojeter MNT / nuages en EPSG:3857 (Web Mercator) pour intégration app, **ou** garder en L93 pour traitement `tools/prep/` et export PMTiles dérivées (hillshade, SVF, LRM)
-
-**Statut source** : [À VÉRIFIER]
-
-**Statut données** : [MACHINE LOCALE] — Proxy Claude Code bloque geoservices.ign.fr
-
-**Attribution** : Etalab 2.0 / © IGN – Programme LiDAR HD
-
-#### 4.3 Plan B (si LiDAR HD absent)
-
-Si la commune n'est pas couverte (peu probable mais possible fin 2026) : repli sur **RGE ALTI 1 m** (résolution dégradée, détection réduite d'anomalies subtiles).
-
-À documenter dans le README si appliqué.
-
----
-
-### 5. Cadastre moderne (§4.1)
-
-#### 5.1 Cadastre Express (WMTS)
-
-**Contenu** : Délimitations de parcelles actuelles, repérage terrain.
-
-**Identifiant WMTS** : `CADASTRALPARCELS.PARCELLAIRE_EXPRESS`
-
-**Détail technique** :
-- Format : vecteur (GeoJSON ou MVT selon configuration)
-- TileMatrixSet : `PM`
-- Zoom : z0–20
-- Attributs : références cadastrales (département-commune-section-numéro)
-
-**Statut** : [FAIT]
-
-**Attribution** : Etalab 2.0 / © Cadastre
-
-**Accès** : data.geopf.fr
-
----
-
-#### 5.2 RPG (Registre parcellaire graphique)
-
-**Contenu** : Cultures déclarées — distinguer labour (mobilier remonté, sol pénétrable) de prairie permanente (couvert résistant).
-
-**Format** : Open data (flux JSON/GeoJSON ou téléchargement annuel)
-
-**Accès** : https://api.gouv.fr/api/rpg ; filtrer par commune INSEE 32009
-
-**Statut** : [HYPOTHÈSE] — Source existe (données publiques MAAF) ; utilité confirmée (agriculture) ; accès exact et structure de données à vérifier pour Armous-et-Cau
-
-**Attribution** : MAAF / Open data
-
-**Gotcha** : Millésimes varient par année ; s'assurer d'utiliser le millésime correspondant au vol ortho multi-millésime (ex. RPG 2024 ↔ Ortho Express 2024)
-
----
-
-### 6. Archives et cadastre historique (§4.3)
-
-#### 6.1 Cadastre napoléonien (AD32 — Archives départementales du Gers)
-
-**Contenu** :
-- Plans numérisés 1/2500 (sections « d'Armous », « de Barroles », « de Rozes », « de Mauran »)
-- États de sections (noms de propriétaires, superficies, métier, moyen de culture)
-- Matrices (analyse des variations foncières 1813–1860)
-- Tableau d'assemblage 1/10000
-
-**Statut** : [FAIT] — Vérifiée 2026-08-08 (memory/DECISIONS.md)
-
-**Détail** :
-- 9 planches numérisées pour Armous-et-Cau
-- Cote : **3P**
-- Sections : C1/C2 (« dite d'Armous »), A (« de Barroles »), B (« de Rozes »), D (« de Mauran »)
-- Dates : 1813–1819 (géomètres Daubas et autres)
-
-**Acces** : https://archives32.fr → Fonds numérisés → « Recherche de plans cadastraux napoléoniens »
-
-**Consultation** : Visionneuse zoomable sur site (zoom_n.php) ; export pleine résolution à confirmer lors du calage (lot T3.1)
-
-**Importance critique** : Plans **non géoréférencés** (§4.4 du PLAN.md) → calage manuel nécessaire (amers : angles d'église, croisements de chemins, limites parcellaires pérennes). Travail long, c'est le prix d'entrée du meilleur prédicteur du projet.
-
-**Attribution** : Domaine public / © Archives départementales du Gers
-
-**Gotcha** : Aucune section « de Cau » identifiée → noyau de Cau en limite de commune ou dans une section existante. À confirmer (T2.3 ou T2.4).
-
----
-
-#### 6.2 Fichiers Henri Polge (AD32)
-
-**Contenu** :
-- **Dictionnaire topographique du Gers** (microtoponymes anciens, patronymes, **domaines gallo-romains -an/-ac**)
-- **Dictionnaire archéologique du Gers** (sites connus, découvertes anciennes)
-- **Répertoire des patronages anciens et modernes des églises et chapelles** (vocables de saints, localisations)
-
-**Auteur/Contexte** : Polge, directeur AD32 de 1948–1978, spécialiste onomastique gallo-romaine
-
-**Accès** :
-- Salle de lecture AD32 (Auch) — originaux
-- Persée (onomastique) : [*Appellations de domaines antiques dans le département du Gers*](https://www.persee.fr/doc/rio_0048-8151_1965_num_17_1_1876) (article 1965)
-
-**Statut** : [FAIT] — existants, vérifiables ; recherche en salle de lecture à mener
-
-**Attribution** : Domaine public / © Polge
-
-**Usage** : **Essentiel pour décodage toponymie gasconne** (§2.5 du PLAN.md). `-an` / `-ac` = domaine gallo-romain (*fundus*) ; `castèra`, `mothe`, `glèisa`, etc. = marqueurs d'occupation.
-
----
-
-### 7. Patrimoine et archéologie (§4.3)
-
-#### 7.1 Atlas des patrimoines (Patriarche)
-
-**Contenu** : Entités archéologiques, opérations de fouille, ZPPA (zones de présomption de prescriptions archéologiques), monuments historiques, périmètres.
-
-**URL** : https://atlas.patrimoines.culture.fr/
-
-**Protocoles** : WMS/WFS (à confirmer) + interface web interactive
-
-**Statut** : [À VÉRIFIER] — **Test réseau en cours**
-
-**Vérification faite** :
-```
-curl -4 -s https://atlas.patrimoines.culture.fr/geoserver/ows -I
-```
-Résultat : Pas de réponse / timeout. À retester sur machine locale (IPv4, firewall).
-
-**Procédure à valider** :
-1. Tester endpoint WMS : `https://atlas.patrimoines.culture.fr/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities`
-2. Tester endpoint WFS : `https://atlas.patrimoines.culture.fr/geoserver/ows?service=WFS&version=2.0.0&request=GetCapabilities`
-3. Si disponible : intégrer en overlay WMS/WFS (T1.2) ; sinon : export manuel (interface web) et vectorisation (T3.1)
-
-**Cas usage** : Drapeau ZPPA et MH sur cellules de scoring (§7 du PLAN.md) — à traiter avant creusage.
-
-**Gotcha** : À vérifier si les entités **archéologiques** de la commune (vrais sites, pas juste bâti protégé) sont présentes et précises.
+**Statut** : [FAIT] pour POP-Mérimée ; **[À VÉRIFIER]** pour un flux WMS/WFS Patriarche exploitable en direct — aucun endpoint OGC public trouvé (comme pour le Gers). **Les servitudes AC1 (abords MH) et PM1 (PPRI) sont en revanche disponibles en WFS** sur `wfs_sup:assiette_sup_s` de data.geopf.fr — utilisé pour délimiter précisément les abords de Puycalvel, Labastide et Goudou (voir [HISTOIRE.md](HISTOIRE.md) §0). **La couche ZPPA du service national n'existe que pour le Centre-Val de Loire** (`zppa_cvl_…`) — les ZPPA du Lot restent à obtenir via l'Atlas des patrimoines ou la DRAC.
 
 **Attribution** : Public / © Ministère de la Culture
 
 ---
 
-#### 7.2 Gallica / BnF — Cassini et autres fonds
+### 4. LiDAR HD — couverture du Lot confirmée
 
-**Contenu** :
-- Feuille Cassini haute résolution (400 dpi, exemplaire BnF)
-- Cartes antérieures au XVIII<sup>e</sup> s. (rares pour Gers)
-- Autres documents géographiques et historiques
+**Contenu** : **MNT GeoTIFF à 0,5 m** (via WMS-R) — utile pour repérer mottes, enclos, ruines arasées (Nougayrol, Puycalvel) — et **nuage de points COPC.LAZ** (dalles 1 km×1 km), deux produits distincts du programme LiDAR HD.
 
-**URL** : https://gallica.bnf.fr/ → [Sélection Carte de Cassini](https://gallica.bnf.fr/selections/fr/html/carte-de-cassini)
+**Statut** : **[FAIT]** — **64 dalles** de 1×1 km intersectent le lidarBbox, chacune avec une `url_mnt` exploitable, réparties sur deux missions : **21LHD2IN** (13/09–01/10/2021, 48 dalles) et **22LHD3JN** (27/04–10/05/2022, 16 dalles), éditées en 2025. **Ce n'est plus un bloquant.** Le pipeline du repo a déjà produit hillshade, SVF, LRM et openness dans `data/derived/` (constaté par listing, fichiers non touchés par ce lot).
 
-**Statut** : [À VÉRIFIER] — Web publique et gratuite, mais **IPv6 timeout** (proxy local bloque)
+**Vérification effectuée** (2026-09-27) :
+```bash
+curl -4 -s "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=IGNF_LIDAR-HD_METADONNEE:metadata&BBOX=44.5921,1.4963,44.6549,1.5847,urn:ogc:def:crs:EPSG::4326&SRSNAME=urn:ogc:def:crs:EPSG::4326&OUTPUTFORMAT=application/json&COUNT=200"
+```
+→ HTTP 200, 64 entités. La carte de suivi `macarte.ign.fr` (précédemment citée comme voie de vérification `[MACHINE LOCALE]`) est **remplacée par cette couche WFS**, accessible sans contrainte réseau particulière.
 
-**Accès** : Machine locale (Mac, navigateur) → Gallica fonctionne nativement
+**Plan B si une dalle manque** : repli sur RGE ALTI 1 m (résolution dégradée).
 
-**Utilité** : Référence visuelle haute définition (confirmation nomenclature IGN, évaluation détails levés). Les tuiles WMTS Cassini sont dérivées de l'exemplaire BnF.
-
-**Attribution** : Domaine public / © BnF
+**Attribution** : Etalab 2.0 / © IGN – Programme LiDAR HD
 
 ---
 
-#### 7.3 CAG 32 (Carte archéologique de la Gaule, *Le Gers*)
+### 5. Natura 2000, ZNIEFF, PNR/Géoparc — périmètres vérifiés par WFS
 
-**Titre complet** : *Carte archéologique de la Gaule — Le Gers (32)*, Lapart & Petit, AIBL 1993, ISBN 978-2-87754-019-3, 354 p.
-
-**Contenu** : **Inventaire exhaustif des découvertes archéologiques depuis l'âge du Fer au haut Moyen Âge, commune par commune, site par site**. Référence pour Armous-et-Cau.
+**Contenu** : le site pertinent pour l'emprise est la **ZSC FR7300910 « Vallées de la Rauze et du Vers et vallons tributaires »** (4 807 ha, ~33 % du lidarBbox), **pas** la ZSC FR7300909 « Zone centrale du Causse de Gramat » (6 413 ha), qui est **hors emprise** (≥2,25 km à l'est). Contexte non opposable : ZNIEFF I 730010297 « Vallée du Vers » (36,6 % du bbox large) et ZNIEFF I 730010296 (~1 %).
 
 **Accès** :
-- AIBL (Académie des Inscriptions et Belles-Lettres) — [catalogue en ligne](https://aibl.fr/collections/carte-archeologique-de-la-gaule-32-le-gers/)
-- FRANTIQ (Fédération des recherches archéologiques) — [catalogue](https://catalogue.frantiq.fr/cgi-bin/koha/opac-detail.pl?biblionumber=690365)
-- Gallica (partiellement) — https://gallica.bnf.fr/selections/fr/html/carte-archeologique-de-la-gaule ; **[À VÉRIFIER] si vol. 32 est numérisé**
+- WFS Natura 2000 : `TYPENAMES=patrinat_sic:sic`, BBOX de l'emprise, `SRSNAME=urn:ogc:def:crs:EPSG::4326`.
+- DOCOB FR7300910 : [occitanie.developpement-durable.gouv.fr/IMG/pdf/docob_fr_7300910.pdf](https://www.occitanie.developpement-durable.gouv.fr/IMG/pdf/docob_fr_7300910.pdf) (HTTP 200 vérifié).
+- Fiche du site (PNR, animateur) : [reseaunatura2000lot.n2000.fr](https://reseaunatura2000lot.n2000.fr/reseau-lotois/vallees-de-la-rauze-et-du-vers-et-vallons-tributaires).
+- WFS ZNIEFF : `TYPENAMES=patrinat_znieff1:znieff1` / `patrinat_znieff2:znieff2`.
+- WFS PNR/Géoparc : `TYPENAMES=patrinat_pnr:pnr` / `patrinat_geoparc:geoparc` — confirme **75,3 % de couverture du lidarBbox**, pas l'intégralité (voir [HISTOIRE.md](HISTOIRE.md) §0).
 
-**Statut** : [À VÉRIFIER] — Ouvrage imprimé certain (date, auteurs, cote) ; numérisation sur Gallica à confirmer
+**Statut** : [FAIT] pour les deux périmètres (vérifiés WFS le 2026-09-27) et pour le DOCOB (HTTP 200).
 
-**Priorité** : **Très haute** — Source primaire pour localiser sites gallo-romains et médiévaux du secteur
+**Implication réglementaire** : voir §0 de [HISTOIRE.md](HISTOIRE.md).
 
-**Attribution** : Domaine public (ouvrage 1993, AIBL)
-
----
-
-#### 7.4 Bulletin de la Société archéologique du Gers
-
-**Contenu** : Trimestriel depuis 1900 (fondée 1891 à Auch). Un siècle de signalements locaux : découvertes monétaires, fragments, fouilles de crise.
-
-**Couverture** : 65 années numérisées en ligne (1900–1965 environ)
-
-**Accès** :
-- Gallica : https://gallica.bnf.fr/ark:/12148/cb34426497s/date (accès en ligne, gratuit)
-- Internet Archive : https://archive.org/details/bulletindelasoc04gersgoog (backup)
-- Archives imprimées de la société : déposées aux AD32, musée d'Auch
-
-**Statut** : [FAIT] — Accès confirmé en ligne
-
-**Recherche** : Filtrer par année / numéro couvrant Armous-et-Cau ou communes proches (Beaumarchés, Marciac, Bassoues)
-
-**Attribution** : Domaine public (publications anciennes) / Gallica
+**Attribution** : Public / DREAL Occitanie, opérateur PNR Causses du Quercy
 
 ---
 
-#### 7.5 Monographie — Abbaye de La Case-Dieu
+### 6. PNR Causses du Quercy — Géoparc mondial UNESCO
 
-**Titre** : Article/mémoire sur l'abbaye de La Case-Dieu et son réseau foncier (XII<sup>e</sup>–XVI<sup>e</sup> s.)
+**Contenu** : patrimoine géologique et culturel du causse (environ 600 dolmens recensés dans le Lot, pas 365), patrimoine bâti rural (caselles, gariottes, lavognes, murets de pierre sèche).
 
-**Source** : Mémoires de la Société archéologique du Midi, t. 64, auteur Balagna (ou variante)
+**Accès** : [parc-causses-du-quercy.fr](https://www.parc-causses-du-quercy.fr/) ; PDF *Découvrir... Les mégalithes des Causses du Quercy* : [lien direct](https://www.parc-causses-du-quercy.fr/wp-content/uploads/2023/06/decouvrir_megalithes2014.pdf) ; PDF phosphatières : [lien](https://www.parc-causses-du-quercy.fr/wp-content/uploads/2023/06/3-les-phosphatieres.pdf).
 
-**Accès** : https://societearcheologiquedumidi.fr/_samf/memoires/t_64/balagna.pdf (PDF direct, gratuit)
+**Statut** : [FAIT] pour le label et le contenu général — **couvre 75,3 % du lidarBbox, pas l'intégralité** (le quart SO, Lamothe-Cassel + Ussel, en est exclu). **[À VÉRIFIER]** si une règle interne du parc s'ajoute au droit commun pour la détection ou l'approche des mégalithes — à confirmer auprès du PNR ; charte en révision pour la période 2027–2042.
 
-**Contenu utile** : Réseau de granges monastiques, moulins, bastides fondées sur propriété abbatiale (notamment **Marciac 1298** sur grange du Houga). Contexte pour hypothèse grange/moulin Armous-et-Cau.
-
-**Statut** : [FAIT] — Vérifié présent sur site
-
-**Attribution** : Public / © Société archéologique du Midi
+**Attribution** : Public / PNR Causses du Quercy
 
 ---
 
-### 8. Géologie et pédologie
+### 7. RPG (Registre parcellaire graphique)
 
-#### 8.1 BRGM InfoTerre
+**Contenu** : parcelles agricoles catégorisées, avec un attribut permettant de distinguer labour et prairie — utile pour cibler les sols déjà retournés.
 
-**Contenu** : Géologie du Gers (molasse tertaire, terrasses alluviales, substrat limono-argileux). Utile pour :
-- Corrélation implantation antique / substrat (plutôt pente, plutôt terrasse)
-- **Calibrage des presets de sensibilité du détecteur** (§9.8 du PLAN.md) : minéralisation et conductivité du sol imposent des seuils
+**Statut** : **[FAIT]** — l'ancien lien `api.gouv.fr/api/rpg` redirige désormais vers le catalogue générique data.gouv.fr, mais le RPG est disponible en WFS sur data.geopf.fr : couches `IGNF_RPG_PARCELLES-AGRICOLES-CATEGORISEES_2024:parcelles_agricole_categorisees_2024` et `RPG.LATEST:parcelles_graphiques`. Test `GetFeature` avec BBOX 44.615,1.53,44.63,1.55 → 20 entités renvoyées.
 
-**Accès** : https://infoterre.brgm.fr/ → requête par commune ou coord
-
-**Statut** : [HYPOTHÈSE] — Service BRGM existant et public ; couverture Gers à confirmer (probablement oui)
-
-**Attribution** : Open data / © BRGM
-
-**Utile pour** : Lot T3.2 (calibrage presets)
+**Attribution** : MAAF / Open data, IGN Etalab 2.0
 
 ---
 
-### 9. Données climatiques et météorologiques
+### 8. Fonds seigneuriaux et iconographiques — Archives départementales du Lot (AD46)
 
-#### 9.1 Open-Meteo (ERA5-Land)
+**Contenu** (au-delà du seul cadastre) : **Chartrier de Vaillac (20 J)**, sous-série « Territoire de Labastide-Murat, Goudou, Soyris, Soulomès » (ex. 20 J 21 : donation de Foulque de Soyris sur la paroisse de Soyris, 1294, et ventes de 1310 ; 20 J 7 : arrentement de 1334 ; 20 J 43 : testament de 1362). **J 2847** (Maylargues, XVI<sup>e</sup> s.). Saint-Sauveur-la-Vallée, archives communales déposées **EDT 291** (1740–1907 ; BMS 1740–1789). Dossiers communaux **2 O 310** (Saint-Sauveur) et **2 O 329** (Soulomès). Fonds Mailhol **34 Fi 2**, photos 1935–1960 (Nougayrol 2/897-901 ; Soyris 2/855, 2/864 ; Saint-Sauveur 2/884-886 ; Soulomès 2/894-902). **5 J** (collection Gransault-Lacoste et Laroussilhe, 1315–1916). « Table générale des archives antérieures à 1790 » (Fourastié et Prat, 1938/1950).
 
-**Contenu** : Historique de précipitations, humidité du sol, température depuis 1940, grille 0,1° (~11 km).
+**[À VÉRIFIER]** Aucun compoix de Saint-Sauveur, Soulomès ou Labastide trouvé dans BACH ; Albe cite un « cadastre de Goudou » de 1788, non retrouvé.
 
-**Format** : API REST, réponse JSON
+**Accès et piège** : moteur BACH — [bach.lot.fr/archives/search](https://bach.lot.fr/archives/search/default/Goudou?view=list) (chercher « Goudou », « Soyris », « Nougayrol », « Maylargues », « Saint-Sauveur-la-Vallée »). **`archives.lot.fr` et `francearchives.gouv.fr` opposent un mur anti-robot JavaScript** — `curl` renvoie `403 Attack detected` — **consultation au navigateur uniquement**.
 
-**URL** : https://open-meteo.com/en/docs/historical-weather-api
-
-**Caractéristiques** :
-- Pas de clé d'API (gratuit)
-- 10 000 appels/jour (suffisant)
-- Données ERA5-Land (réanalyse Copernicus/ECMWF)
-
-**Statut** : [FAIT] — Service public, documenté
-
-**Usage** : Alimente la **fenêtre de sortie recommandée** (§9.3 du PLAN.md) — « labours frais après pluie » réalisable si précipitations = données. Optimise timing prospection.
-
-**Attribution** : ERA5/Copernicus (CC BY 4.0)
+**Attribution** : Domaine public / © Archives départementales du Lot
 
 ---
 
-### 10. Toponymie et ressources linguistiques
+## Résumé — bloquants avant pipeline de données
 
-#### 10.1 DicoTopo (CTHS)
-
-**Contenu** : Version numérique des dictionnaires topographiques départementaux (Gers inclus).
-
-**Format** : Recherche web / base de données
-
-**URL** : https://dicotopo.cths.fr/
-
-**Statut** : [HYPOTHÈSE] — Service CTHS existant (Comité des Travaux Historiques et Scientifiques) ; couverture Gers probable
-
-**Usage** : Complément aux fichiers Polge (autre source), vérification orthographe et sens micro-toponyme.
-
-**Attribution** : Public / © CTHS
-
----
-
-### 11. Sources humaines (§4.4 du PLAN.md)
-
-#### 11.1 Exploitant agricole
-
-**Rôle** : Connaissance empirique du terrain — « ça fait des cailloux », concentration de tuile, labours anciens, parcelles jamais cultivées récemment.
-
-**Accessibilité** : À identifier via mairie locale ou reconnaissance visite. Seul contact pertinent pour accès au champ.
-
-**Rendement estimé** : [HYPOTHÈSE] — Un après-midi de discussion = plusieurs semaines de dépouillement archives (selon PLAN.md §4.4 ; à tester).
-
-**Attribution** : Entretien privé
-
----
-
-#### 11.2 Société archéologique, historique, littéraire et scientifique du Gers
-
-**Rôle** : Mémoire locale, découvertes anciennes non publiées, connexions académiques.
-
-**Localisation** : Auch (siège)
-
-**Accès** : Visite, adhésion (probablement modique), correspondance
-
-**Gotcha** : Milieu académique généralement **hostile à la détection de loisir**. Approche : « intérêt historique de la commune » plutôt que « mon détecteur ».
-
-**Site** : https://www.societearcheologiquehistoriquelitteraireetscientifique.com/
-
-**Attribution** : Entretien / Adhésion
-
----
-
-#### 11.3 Mairie et anciens d'Armous-et-Cau
-
-**Rôle** : Localisation ancienne églises, souvenirs de fondations en creusant, micro-toponymie locale toujours vivante, historique parcellaire.
-
-**Caractéristique de la zone** : 95 habitants → tout le monde se connaît ; archives locales souvent détenues par habitants (vieilles photos, vieilles cartes).
-
-**Accès** : Visite mairie, café local
-
-**Attribution** : Entretien / Récit
-
----
-
-## Verdict des 3 bloquants (§8 du PLAN.md)
-
-### 1. Atlas des patrimoines — WMS/WFS exploitable ?
-
-**Test mené** : Requête `curl -4 https://atlas.patrimoines.culture.fr/geoserver/ows -I`
-
-**Résultat** : Pas de réponse HTTP (timeout ou bloqu réseau sur machine Docker)
-
-**Statut** : [À VÉRIFIER — testé aussi depuis la machine locale le 2026-08-08, sans succès] :
-
-```
-curl -4 'https://atlas.patrimoines.culture.fr/geoserver/ows?service=WMS&...&request=GetCapabilities'
-→ échec TLS (curl exit 35), aucun GetCapabilities servi
-curl -4 'http://atlas.patrimoines.culture.fr/atlas/rest/services' → 404
-```
-
-Aucun endpoint WMS/WFS public confirmé à ces URLs. Reste à tester **dans un navigateur** : l'interface web de l'Atlas (atlas.patrimoines.culture.fr) et l'inspection réseau de ses appels de couches (l'appli cartographique interne appelle forcément un service — à identifier via l'onglet réseau). Si rien d'exploitable → plan B ci-dessous, considéré comme la voie par défaut.
-
-**Plan B (voie par défaut)** : Export manuel via interface web (atlas.patrimoines.culture.fr), vectorisation des entités archéologiques d'Armous-et-Cau en GeoJSON versionné dans `data/derived/`, intégration en overlay (lot T3.4, données préparées en T3.1).
-
----
-
-### 2. LiDAR HD Gers — Disponible et procédure de téléchargement ?
-
-**Blocant initial** : Couverture LiDAR HD d'Armous-et-Cau
-
-**Test / Vérification** : Consulter carte de suivi (memory/DECISIONS.md, 2026-08-08) → commune en **bleu** (« nuages et modèles numérique disponibles »)
-
-**Statut** : [À VÉRIFIER] — Levé comme « bleu » en 2026-08-08, mais procédure exacte de téléchargement des dalles et identifiants restent à confirmer
-
-**Procédure à mener (machine locale, [MACHINE LOCALE])** :
-1. Accéder https://geoservices.ign.fr/lidarhd (carte interactive)
-2. Consulter https://macarte.ign.fr/carte/mThSup/diffusionMNxLiDARHD (fiche de diffusion commune)
-3. Confirmer libellé exact du statut
-4. Lister les identifiants de dalles 1 km×1 km couvrant bbox Armous-et-Cau (43.55–60°N / 0.15–23°E approx.)
-5. Télécharger dalles COPC.LAZ (format standard) avec hash de vérification
-6. Tester décompression et format (tool `pdal`)
-
-**Résultat attendu** : Liste des dalles (ex. `D1234_E5678.laz`) + URL de téléchargement + format confirmé COPC.LAZ
-
-**Plan B si absent** : Repli sur RGE ALTI 1 m, documenté dans README avec limitation (détection réduite anomalies subtiles)
-
----
-
-### 3. Orthophotos 1950–65 — Accessibles en WMTS ?
-
-**Test mené** : Téléchargement et parsing `ortho.xml` (data.geopf.fr/annexes/ressources/wmts/ortho.xml)
-
-**Résultat** :
-```
-✓ HTTP 200, fichier complet téléchargé
-✓ 66 couches WMTS extraites
-✗ Zéro couche datée 1950–1965, zéro « historique »
-✗ Aucune mention d'orthophotos XIXe ou très anciennes
-```
-
-**Couches trouvées** :
-- Standards (ORTHOIMAGERY.ORTHOPHOTOS, THR, IRC, IRC-EXPRESS 2024–2026, ORTHO-EXPRESS 2024, RVB-EXPRESS 2025–2026)
-- **Aucune antérieure à 2023**
-
-**Statut final : [FAIT] — DISPONIBLES en WMTS.** Le test initial concluait à tort à l'absence : il ne regardait que l'annexe `ortho.xml` et testait une tuile aux coordonnées erronées (row 6062 au lieu de 5984). Test corrigé du 2026-08-08 sur machine locale :
-
-```
-curl -4 -s 'https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetCapabilities' \
-  | grep -o '<ows:Identifier>[^<]*1950[^<]*</ows:Identifier>'
-→ ORTHOIMAGERY.ORTHOPHOTOS.1950-1965 (+ SCAN50.1950)
-
-GetTile LAYER=ORTHOIMAGERY.ORTHOPHOTOS.1950-1965, PM, image/png, z14/row5984/col8200
-→ 200 image/png (image/jpeg → 400)
-```
-
-Voir §3.1 ci-dessus. **Plan B (non nécessaire sauf trou de couverture)** : https://remonterletemps.ign.fr (interface web interactive)
-
-**Procédure d'export (manuel)** :
-1. Naviguer https://remonterletemps.ign.fr/
-2. Positionner sur Armous-et-Cau (INSEE 32009)
-3. Chercher couche « Photographies aériennes 1950–1965 » (ou vol. disponible de cette période)
-4. Si trouvé : télécharger en PNG ou GeoTIFF (vérifier géoréférencement)
-5. Reprojeter EPSG:3857 si nécessaire (§5.6 du PLAN.md)
-6. Intégrer en PMTiles (tools/prep/) ou overlay externe en T1.2
-
-**Gotcha** : Vérifier si remonterletemps expose un endpoint WMS/WFS (probable). Si oui, peut être intégré directement en flux ; sinon export manuel par zone.
-
-**Validation finale** : À tester effectivement sur remonterletemps (access machine locale, IPv4) — ne pas supposer que la couche 1950-65 existe pour Armous-et-Cau (petite commune ruraleayant pu ne pas être couverte à cette époque)
-
----
-
-## Résumé — État avant T3.1 (pipeline de données)
-
-| Catégorie | Verdict | Bloquant T3.1 ? |
+| Catégorie | Verdict | Bloquant ? |
 |-----------|---------|---|
-| **Cartes WMTS IGN** (Cassini, État-major, Ortho, IRC multi-millésime) | [FAIT] — 8 couches confirmées, flux testé | Non — utilisable immédiatement |
-| **LiDAR HD Gers** | [À VÉRIFIER] — commune probablement en bleu, procédure à confirmer | Oui (moyen) — gérer plan B RGE ALTI 1m en parallèle |
-| **Atlas des patrimoines (WMS/WFS)** | [À VÉRIFIER] — testé en local 2026-08-08 : échec TLS + 404, aucun service OGC public trouvé ; reste l'inspection réseau via navigateur | Oui (moyen) — plan B export manuel = voie par défaut |
-| **Ortho 1950-65 (WMTS)** | [CONFIRMÉ ABSENT] — recours unique remonterletemps.ign.fr | Oui (moyen) — prévoir export manuel + reprojection |
-| **Cadastre napoléonien (AD32)** | [FAIT] — 9 planches en ligne, visualisation OK | Non — calage manuel long mais pas bloquant |
-| **Archives historiques (Polge, Bulletin Soc. archéo., CAG 32)** | [FAIT] pour certaines (Bulletin Gallica confirmé), [À VÉRIFIER] pour CAG vol. 32 | Non — enrichissement, pas bloquant |
-| **RPG, BRGM, Open-Meteo** | [HYPOTHÈSE] — sources existantes, accès à confirmer pour Armous-et-Cau | Non — enrichissement scoring |
-| **Sources humaines (exploitant, mairie, société archéo.)** | [HYPOTHÈSE] — à initier par Oscar | Non — complémentaire |
-
----
-
-## Intégrations recommandées par lot
-
-### T3.1 (Pipeline de données)
-
-**Sources prioritaires** :
-1. Télécharger WMTS IGN (Cassini, État-major, Ortho multi-millésime, IRC) → PMTiles
-2. Confirmer + télécharger LiDAR HD Gers (dalles COPC.LAZ) → hillshade/SVF/LRM génération
-3. Géoréférencer cadastre napoléonien AD32 → GeoJSON
-4. **Si disponible** : WMS/WFS Atlas patrimoines → overlay ; sinon export manuel + vectorisation
-5. **Si disponible** : Ortho 1950-65 remonterletemps → GeoTIFF + reprojection
-
-**Dépendances externes** :
-- GDAL / GDAL Python (calage cadastre, reprojection, hillshade)
-- `pdal` (validation COPC.LAZ)
-- `protomaps-cli` ou `tippecanoe` (génération PMTiles)
-- `ogr2ogr` (conversions vecteur)
-
----
-
-### T3.4 (Zones signalées)
-
-**Sources pour scoring** :
-1. Cadastre napoléonien géoréférencé (drapeau mottes, enclos, vocables saints)
-2. Toponymie (Polge + DicoTopo + cadastre napoléonien) → identification `-an/-ac`, `castèra`, `glèisa`, etc.
-3. LiDAR SVF/LRM (anomalies micro-topographiques)
-4. IRC multi-millésime (crop marks saisonniers)
-5. Atlas patrimoines (ZPPA, MH) → drapeau avant creusage
-6. Bulletin Soc. archéo. + CAG 32 (sites existants)
-7. Cassini + État-major (bâti disparu, ancien parcellaire)
+| **Cartes WMTS IGN** (Cassini, État-major, Ortho, IRC, 1950-65) | [FAIT — vérifié GetTile sur l'emprise Meylargues] | Non |
+| **THR et IRC-Express 2023/2024/2026** | **Indisponibles sur la zone** (404 testés) | Non pour le pipeline (couches optionnelles) — **ne pas les afficher comme disponibles dans l'UI** |
+| **LiDAR HD** | **[FAIT]** — 64 dalles, missions 2021/2022, non bloquant | Non |
+| **Atlas des patrimoines (WMS/WFS)** | [À VÉRIFIER] — pas d'endpoint OGC public confirmé ; ZPPA nationale limitée au Centre-Val de Loire | Oui (moyen) — plan B export manuel = voie par défaut |
+| **Cadastre napoléonien (AD46)** | [FAIT] — cotes identifiées, sous la commune de **Soulomès** | Non — calage manuel long mais pas bloquant |
+| **Fonds seigneuriaux AD46 (BACH)** | [FAIT] pour l'accès, anti-robot sur `curl` | Non — navigateur uniquement |
+| **CAG 46 (Le Lot, 2<sup>e</sup> éd. 2011)** | [À VÉRIFIER] — ouvrage non consulté en détail | Non — enrichissement |
+| **Natura 2000 (FR7300910), ZNIEFF, PNR/Géoparc (75,3 %)** | [FAIT] — périmètres vérifiés WFS | Non pour le pipeline technique, **oui pour la conformité réglementaire avant sortie terrain** |
+| **RPG** | [FAIT] — WFS testé | Non |
+| **BRGM, Open-Meteo** | [HYPOTHÈSE]/[FAIT national] | Non — enrichissement scoring |
 
 ---
 
 ## Procédures d'accès (synthèse)
 
-### IGN / data.geopf.fr (WMTS direct)
+### IGN / data.geopf.fr (WMTS/WFS — identifiants identiques au spike Gers)
 
 ```bash
-# GetCapabilities exemple
-curl -4 https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetCapabilities
-
-# GetTile exemple (Cassini)
-curl -4 "https://data.geopf.fr/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=BNF-IGNF_GEOGRAPHICALGRIDSYSTEMS.CASSINI&STYLE=normal&TILEMATRIXSET=PM&TILEMATRIX=12&TILEROW=2045&TILECOL=2048&FORMAT=image/png"
+curl -4 "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetCapabilities"
+curl -4 "https://data.geopf.fr/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=BNF-IGNF_GEOGRAPHICALGRIDSYSTEMS.CASSINI&STYLE=normal&TILEMATRIXSET=PM&TILEMATRIX=14&TILEROW=<row>&TILECOL=<col>&FORMAT=image/png"
+curl -4 "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=patrinat_sic:sic&BBOX=44.5921,1.4963,44.6549,1.5847,urn:ogc:def:crs:EPSG::4326&SRSNAME=urn:ogc:def:crs:EPSG::4326&OUTPUTFORMAT=application/json"
 ```
+**Toujours entre guillemets** — un `&` non protégé tronque l'URL au premier paramètre dans le shell. **Accès** : public, sans authentification. **Gotcha** : proxy Docker/conteneur bloque `data.geopf.fr` → tâches `[MACHINE LOCALE]` en environnement conteneurisé (non rencontré depuis ce Mac).
 
-**Accès** : Public, pas d'authentification
-**Gotcha** : Proxy Docker bloque → [MACHINE LOCALE]
-
-### Archives 32 (AD32)
+### Archives départementales du Lot (AD46)
 
 ```
-https://archives32.fr → Fonds numérisés → Plans cadastraux napoléoniens
-Accès : Zoomable en visionneuse web + export PDF/TIF à la demande
+https://archives.lot.fr/recherche-en-ligne/archives-numerisees/cadastre/cadastre-napoleonien → cadastre napoléonien (par commune : Soulomès, Labastide-Murat, Lamothe-Cassel, Saint-Cernin)
+https://bach.lot.fr/archives/search → fonds seigneuriaux et iconographiques (BACH)
+Anti-robot JavaScript sur archives.lot.fr et francearchives.gouv.fr → navigateur uniquement, curl → 403
 ```
 
-### Gallica / BnF
+### Quercy.net / monographies Albe
+
+```bash
+curl -4 -s -A "Mozilla/5.0 ..." "http://www.archives.quercy.net/qmedieval/histoire/monog_albe/<commune>.html"
+```
+Encodage ISO-8859-1. `WebFetch` standard échoue (TLS) — utiliser `curl`.
+
+### Atlas des patrimoines / POP
 
 ```
-https://gallica.bnf.fr/ → rechercher « Cassini Gers » ou « Carte archéologique »
-Accès : Gratuit ; IPv6 timeout sur Docker → [MACHINE LOCALE]
+http://atlas.patrimoines.culture.fr/atlas/trunk/ (interface web, http pas https, pas de WMS/WFS confirmé)
+https://pop.culture.gouv.fr/ (recherche par notice Mérimée)
 ```
 
-### remonterletemps.ign.fr
+### Gallica (Combarieu 1881, Clottes 1977, Bulletin de la Société des études du Lot)
 
+```bash
+curl -4 -s -A "Mozilla/5.0 ..." "https://gallica.bnf.fr/ark:/12148/bpt6k939800h"
 ```
-https://remonterletemps.ign.fr/ → Interface web interactive
-Accès : Gratuit ; export manuel (PNG/GeoTIFF)
-Procédure WMS : à vérifier (probablement disponible)
+User-Agent navigateur requis (403 sinon).
+
+### Overpass (chemins de pèlerinage, relations OSM)
+
+```bash
+curl -4 -s "https://overpass.kumi.systems/api/interpreter" --data-urlencode 'data=[out:json];rel(3371974,3372015,6439814);out geom;'
 ```
+`overpass-api.de` renvoie 406 depuis cette machine → utiliser le miroir.
 
 ### Open-Meteo
 
 ```
-https://open-meteo.com/en/docs/historical-weather-api
-Exemple : https://archive-api.open-meteo.com/v1/archive?latitude=43.5742&longitude=0.1908&start_date=1940-01-01&end_date=2026-08-08&daily=precipitation,soil_moisture_0_to_10cm
-Accès : Gratuit, REST, 10k appels/jour
+https://archive-api.open-meteo.com/v1/archive?latitude=44.6235&longitude=1.5405&start_date=1950-01-01&end_date=2026-09-27&daily=precipitation_sum&hourly=soil_moisture_0_to_7cm
 ```
-
-### geoservices.ign.fr / lidarhd (LiDAR HD)
-
-```
-https://geoservices.ign.fr/lidarhd → Carte interactive
-https://macarte.ign.fr/carte/mThSup/diffusionMNxLiDARHD → Fiche commune
-Accès : Public ; géoservices.ign.fr bloqué par proxy Docker → [MACHINE LOCALE]
-Procédure : Consulter carte, lister dalles, télécharger COPC.LAZ
-```
+Corrigé : `precipitation` seul est invalide (le paramètre correct est `precipitation_sum` en `daily`), `soil_moisture_0_to_10cm` n'existe pas dans l'API d'archive (le pas correct est `soil_moisture_0_to_7cm`). URL testée, HTTP 200. Accès : gratuit, REST, 10k appels/jour.
 
 ---
 
 ## Notes pour l'orchestrateur
 
-- **Trois bloquants de portée moyenne** → À lever avant T3.1 en mode complet
-- **Machine locale requise** : 4 points (Cassini Gallica, LiDAR HD, remonterletemps, Atlas patrimoines)
-- **Pas de secrétaire / clé requise** — tout est public
-- **Proxy Docker** : À garder en tête pour tests distants
-- Résultats bloquants à remonter dans **memory/DECISIONS.md** dès vérification complète
+- **Flux IGN nationaux** : Cassini, État-major, Ortho, IRC et 1950-65 sont **confirmés sur la nouvelle bbox** (GetTile testé). **THR et IRC-Express 2023/2024/2026 sont indisponibles ici** — seul IRC-Express 2025 répond ; à ne pas proposer comme couches actives par défaut dans l'UI pour cette zone.
+- **LiDAR HD n'est plus un bloquant** : 64 dalles couvrent l'emprise (missions 2021/2022), MNT et nuage de points tous deux accessibles en WFS/WMS-R/téléchargement direct.
+- **Un bloquant de portée moyenne subsiste** : Atlas des patrimoines / ZPPA (pas d'endpoint OGC public pour l'Occitanie) — export manuel par défaut.
+- **Réglementaire, pas seulement pipeline** : le site Natura 2000 pertinent est **FR7300910**, pas FR7300909 ; le PNR/Géoparc couvre 75,3 % de l'emprise, pas l'intégralité — à vérifier avant toute sortie terrain (voir §0 de [HISTOIRE.md](HISTOIRE.md)). Le Géoparc/PNR en tant que label n'est **pas** un bloquant réglementaire en soi (retiré du tableau des bloquants).
+- **AD46** : deux portails distincts — le cadastre napoléonien (visionneuse) et le moteur BACH (chartrier de Vaillac, fonds Mailhol, J 2847) — tous deux bloqués pour `curl` par un mur anti-robot, consultation au navigateur uniquement.
+- **Pas de clé/secret requis** — tout est public.
 
 ---
 
-**Rédigé par** : T2.2 (Agent) | **Date** : 2026-08-08 | **Verrous levés** : 3/3 en attente de test local
-
+**Rédigé le** : 2026-09-27 | **Corrigé le** : 2026-09-27 | **Zone** : Meylargues / Saint-Sauveur-la-Vallée / Cœur de Causse (Lot 46)

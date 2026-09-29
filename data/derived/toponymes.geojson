@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "Toponymie — Armous-et-Cau (INSEE 32009)",
+  "name": "Toponymie — Meylargues / Saint-Sauveur-la-Vallée, Cœur de Causse (INSEE 46138) — corrigé",
   "crs": {
     "type": "name",
     "properties": {
@@ -11,414 +11,1347 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Caussade",
-        "sourceForm": "Caussade (Impasse de Caussade)",
-        "source": "BAN (Base d'Adresses Nationale), IGN",
-        "rank": 1,
-        "interpretation": "Voie antique empierrée (calciata). Étymologie confirmée. Scorer poids 24.",
-        "status": "[FAIT]"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.18361,
-          43.58099
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Hountan",
-        "sourceForm": "Hountan (lieu-dit)",
-        "source": "Nominatim/OSM, IGN, Cassini",
-        "rank": 1,
-        "interpretation": "Source / fontaine (hont = source en gascon). Zone source du Midour confirmée. Sanctuaire de source probable. Scorer poids 25.",
-        "status": "[FAIT]"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.20287,
-          43.57191
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Lamothe",
-        "sourceForm": "Lamothe (motte castrale probable)",
-        "source": "FINDINGS.md (spike carto, OSM Overpass)",
-        "rank": 1,
-        "interpretation": "Motte castrale probable, médiéval XI–XIII siècles. Mobilier attendu : monnaies féodales, ferronnerie, plomb. Dépôt en surface.",
-        "status": "[FAIT]"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.19112,
-          43.55358
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Église disparue d'Armous",
-        "sourceForm": "Église d'Armous (site du bourg médiéval)",
-        "source": "Cadastre napoléonien section C1/C2, FINDINGS.md, documentation §2.2 du plan",
-        "rank": 1,
-        "interpretation": "Noyau villageois disparu d'Armous, XI siècle (abbaye bénédictine Saint-Mont). Pierres réutilisées au XIXe pour l'église Saint-Martin actuelle. SITE PRIORITAIRE (cible n°1 du projet). Scorer poids 30. — position OSM du spike, à caler sur le cadastre 1813 (section C)",
-        "status": "[À VÉRIFIER]"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.17489,
-          43.56254
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Église disparue de Cau",
-        "sourceForm": "Église de Cau (ancien noyau villageois)",
-        "source": "FINDINGS.md (OSM), cadastre napoléonien (section indéterminée)",
-        "rank": 1,
-        "interpretation": "Noyau villageois disparu de Cau, médiéval-moderne. Fusion avec Armous 1790-94. PROBLÈME : aucune section cadastrale nommée « de Cau ». À croiser limite paroissiale/communale. Scorer poids 30 si localisation confirmée.",
-        "status": "[À VÉRIFIER]"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.18647,
-          43.57179
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Le Cau — ancien village",
-        "sourceForm": "Le Cau (habitat ancien)",
-        "source": "FINDINGS.md (OSM)",
-        "rank": 2,
-        "interpretation": "Ancien noyau villageois. Attention : cau = creux/abri en gascon (piège Polge). Peut être topographique ou anthroponyme. Croiser cadastre.",
-        "status": "[HYPOTHÈSE]"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.19164,
-          43.57283
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Au Castérot",
-        "sourceForm": "Au Castérot (fort probable)",
-        "source": "FINDINGS.md (OSM)",
-        "rank": 1,
-        "interpretation": "Fort ou enceinte fortifiée probable (castèra/castérot = enceinte, tertre fortifié). Médiéval. Mobilier : ferronnerie, pointes, monnaies, plomb.",
-        "status": "[FAIT]"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.1745,
-          43.57655
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Au Priou",
-        "sourceForm": "Au Priou (prieuré probable)",
-        "source": "FINDINGS.md (OSM)",
-        "rank": 1,
-        "interpretation": "Prieuré probable (priou < prior). Dépendance monastique possible (La Case-Dieu ?). Médiéval. Mobilier : monnaies, plomb, objets religieux.",
-        "status": "[À VÉRIFIER]"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.18818,
-          43.55774
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Saint-Lanne",
-        "sourceForm": "Saint-Lanne (vocable hagionymique)",
-        "source": "FINDINGS.md (OSM), IGN",
-        "rank": 1,
-        "interpretation": "Vocable hagionymique hors-bourg (chapelle ou église disparue probable). Culte médiéval rare. À croiser avec Polge Répertoire des patronages (AD32). Scorer poids 18 si confirmé.",
-        "status": "[HYPOTHÈSE]"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.17065,
-          43.58031
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Saint-Mesplin",
-        "sourceForm": "Saint-Mesplin (vocable hagionymique)",
-        "source": "FINDINGS.md (OSM), IGN",
-        "rank": 1,
-        "interpretation": "Vocable hagionymique hors-bourg (chapelle ou église disparue probable). Culte médiéval rare et localisé. À croiser Polge AD32. Scorer poids 18 si confirmé.",
-        "status": "[HYPOTHÈSE]"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.20095,
-          43.58878
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Las Carretères",
-        "sourceForm": "Las Carretères (voie ancienne)",
-        "source": "FINDINGS.md (OSM)",
-        "rank": 2,
-        "interpretation": "Voie ancienne ou chemin romain (carrère = voie). Antique à moderne. Mobilier : monnaies perdues, ferrures, plombs, clous.",
-        "status": "[FAIT]"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.20128,
-          43.57094
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Les Peyrères",
-        "sourceForm": "Les Peyrères (empierrement, voie)",
-        "source": "FINDINGS.md (OSM)",
-        "rank": 2,
-        "interpretation": "Empierrement / voie ancienne (peyra/peyre = pierre). Possible chemin antique calciata. À distinguer de Caussade.",
-        "status": "[À VÉRIFIER]"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.20148,
-          43.5727
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "À Carrère (sud)",
-        "sourceForm": "À Carrère — chemin",
-        "source": "FINDINGS.md (OSM)",
-        "rank": 2,
-        "interpretation": "Chemin ancien (carrère). Perte d'objets probable le long du tracé.",
-        "status": "[FAIT]"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.16948,
-          43.54173
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Le Bourdiou",
-        "sourceForm": "Le Bourdiou (métairie)",
-        "source": "FINDINGS.md (OSM)",
-        "rank": 2,
-        "interpretation": "Métairie ou ferme (borde). XVI–XIX siècles. Mobilier : monnaies royales, boutons, boucles, dés.",
-        "status": "[FAIT]"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.18731,
-          43.55501
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Au Sarthou",
-        "sourceForm": "Au Sarthou (essart)",
-        "source": "FINDINGS.md (OSM)",
-        "rank": 2,
-        "interpretation": "Essart (défrichement médiéval, défriché d'origine). Mobilier : ferraille agricole, monnaies.",
-        "status": "[FAIT]"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.19475,
-          43.55865
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Au Four",
-        "sourceForm": "Au Four (ancien four)",
-        "source": "FINDINGS.md (OSM)",
-        "rank": 2,
-        "interpretation": "Four ancien (four à pain ou four de potier ?). Mobilier : scories, terre cuite, ferronnerie.",
-        "status": "[FAIT]"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.20341,
-          43.56176
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "À l'Église (sud)",
-        "sourceForm": "À l'Église — chapelle possible",
-        "source": "FINDINGS.md (OSM)",
-        "rank": 1,
-        "interpretation": "Chapelle ou édifice religieux disparu (sud de la commune). Médiéval probable. Mobilier : plomb, monnaies, éléments d'édifice.",
-        "status": "[À VÉRIFIER]"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.19009,
-          43.54944
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Église Saint-Martin (repère)",
-        "sourceForm": "Église Saint-Martin (église actuelle, XIX siècle)",
-        "source": "FINDINGS.md (OSM), cadastre",
+        "name": "Saint-Sauveur-la-Vallée (bourg actuel)",
+        "sourceForm": "Saint-Sauveur-la-Vallée",
+        "source": "Cadastre Etalab (lieux-dits), BAN, BD TOPO V3 (WFS BDTOPO_V3:commune_associee_ou_deleguee, mairie)",
         "rank": 0,
-        "interpretation": "Église actuelle (1840s env.), bâtie avec les pierres des deux églises disparues d'Armous et de Cau. Repère cartographique, pas signal archéologique.",
-        "status": "[FAIT]"
+        "interpretation": "Ancien chef-lieu de commune (fusionné dans Cœur de Causse le 01/01/2016), église et bourg toujours en activité. Repère cartographique central de la zone, pas une cible archéologique — sol occupé et bâti moderne.",
+        "status": "[FAIT]",
+        "commune": "Cœur de Causse (46138)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.1876,
-          43.57359
+          1.55298,
+          44.60653
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Bilas",
-        "sourceForm": "À Bilas",
-        "source": "Nominatim/OSM",
-        "rank": 2,
-        "interpretation": "Possible domaine gallo-romain (villa > bilas ?) ou anthroponyme. Suffixe -as douteux. À croiser cadastre napoléonien.",
-        "status": "[HYPOTHÈSE]"
+        "name": "Labastide-Murat (bourg, ancienne bastide La Bastide-Fortunière)",
+        "sourceForm": "Labastide-Murat / la Bastide-Fortunière",
+        "source": "WFS BDTOPO_V3:commune_associee_ou_deleguee (lien_vers_chef_lieu=PAIHABIT0000000015051984) ; BDTOPO_V3:zone_d_habitation ; Wikipédia FR « Labastide-Murat » (toponymie/histoire, revérifié 2026-09-27)",
+        "rank": 0,
+        "interpretation": "Chef-lieu de la commune déléguée Labastide-Murat (Cœur de Causse). Ancienne bastide fondée en 1238 par Fortanier de Gourdon sur la paroisse primitive de Soyris ; nommée La Bastide-Fortunière jusqu'au 15/04/1852, renommée en hommage à Joachim Murat (né ici en 1767). Repère, pas une cible : bâti actuel dense.",
+        "status": "[FAIT]",
+        "commune": "Labastide-Murat (46138)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.18801,
-          43.57435
+          1.56778,
+          44.64668
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Caubet",
-        "sourceForm": "À Caubet",
-        "source": "Nominatim/OSM",
-        "rank": 2,
-        "interpretation": "Lien possible avec village disparu Cau (cau + diminutif -bet ?). Ou simple anthroponyme. À clarifier via cadastre.",
-        "status": "[HYPOTHÈSE]"
+        "name": "Le Bourg — polygone cadastral (Labastide-Murat)",
+        "sourceForm": "Le Bourg",
+        "source": "Cadastre Etalab cadastre-46138-lieux_dits (polygone 29,4 ha) ; à 21 m du chef-lieu IGN et 47 m de l'église Sainte-Catherine (OSM way/298757449)",
+        "rank": 0,
+        "interpretation": "Le polygone cadastral « LE BOURG » recouvre le centre actuel de Labastide-Murat, pas un hameau distinct nommé « Soyris » : Soyris (paroisse disparue, voir plus bas) est à 886 m au SSE. Fusionné avec le repère du bourg ci-dessus — géométrie conservée pour référence de zone bâtie à exclure.",
+        "status": "[FAIT]",
+        "commune": "Labastide-Murat (46138)",
+        "role": "exclusion",
+        "protection": "bâti dense actuel (pas un MH, simple zone habitée)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.18143,
-          43.56472
+          1.56866,
+          44.64617
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Cambos",
-        "sourceForm": "À Cambos",
-        "source": "Nominatim/OSM",
-        "rank": 2,
-        "interpretation": "Possible de campos (champs). Domaine gallo-romain potentiel ou métairie. À vérifier cadastre.",
-        "status": "[HYPOTHÈSE]"
+        "name": "La Bastide (écart/quartier de la bastide)",
+        "sourceForm": "la Bastide",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (PAIHABIT0000000015051973, IGN, validé 1985) ; à 50 m du lotissement de la Barthe, 97 m de la gendarmerie, 529 m du chef-lieu ; dans le polygone cadastral LA BARTHE (46138)",
+        "rank": 0,
+        "interpretation": "Aucun lieu-dit cadastral « La Bastide » n'existe dans les 6 communes de l'emprise : le nom vient de la BD TOPO seule et désigne un écart/quartier périphérique nord-est de la bastide de Labastide-Murat (lotissements la Barthe/le Hasard), pas un site distinct. Repère de tissu bâti périphérique, pas une cible.",
+        "status": "[FAIT]",
+        "commune": "Labastide-Murat (46138)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.17436,
-          43.57969
+          1.57242,
+          44.6501
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Rozès",
-        "sourceForm": "Rozès (section B du cadastre napoléonien)",
-        "source": "Cadastre napoléonien (section B « de Rozes »), Nominatim/OSM",
-        "rank": 2,
-        "interpretation": "Section cadastrale B (1819). Possible topographique (rosaies ?) ou anthroponyme. Probable métairie.",
-        "status": "[À VÉRIFIER]"
+        "name": "Château de Labastide-Murat — MONUMENT HISTORIQUE INSCRIT",
+        "sourceForm": "le Château",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (PAIHABIT0000000279271165, nature=Château, toponyme « le Château », 1.56216/44.64168) ; OSM way/298756904 (historic=castle, ref:mhs=PA00095306, mhs:inscription_date=1991-09-16, start_date=C19) ; Wikidata Q15944355 (P1435=monument historique inscrit, P580=1991-09-16 et 1992-03-24) ; cadastre-46138-parcelles (bâtiment = parcelle A599, ancien point du doc = parcelle A600, à l'intérieur du même lieu-dit LE CHATEAU)",
+        "rank": 0,
+        "interpretation": "Château néoclassique construit 1807–1815 pour Joachim Murat (architecture classique/Empire, 3e quart XIXe s. selon la fiche de protection), PAS un site castral médiéval. Inscrit MH : façades et toitures le 16/09/1991, parc le 24/03/1992 (parcelles A 599 et 600). L'ancien point du relevé (1.55997/44.64136) tombait à 180 m du bâtiment, dans le parc inscrit (parcelle A600) — corrigé ici sur le bâtiment (parcelle A599). Exclu du scoring comme cible : propriété privée protégée. Un site castral antérieur éventuel resterait une hypothèse non sourcée.",
+        "status": "[FAIT]",
+        "commune": "Labastide-Murat (46138)",
+        "role": "exclusion",
+        "protection": "MH inscrit PA00095306 (façades/toitures 16/09/1991, parc 24/03/1992)",
+        "buffer_m": 500
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.18668,
-          43.56853
+          1.56216,
+          44.64168
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Mauran",
-        "sourceForm": "Mauran (section D du cadastre napoléonien)",
-        "source": "Cadastre napoléonien (section D « de Mauran »), Nominatim/OSM",
-        "rank": 2,
-        "interpretation": "Section cadastrale D. Suffixe -an potentiel (domaine romain *Maurianum* ?). À confirmer Polge.",
-        "status": "[À VÉRIFIER]"
+        "name": "Église Saint-Vit de Puycalvel — MONUMENT HISTORIQUE INSCRIT",
+        "sourceForm": "Église Saint-Vit de Puycalvel",
+        "source": "OSM way/298267132 (heritage=3, ref:mhs=PA00095121, mhs:inscription_date=1927-06-28, start_date=C12) ; WFS BDTOPO_V3:zone_d_activite_ou_d_interet (Culte chrétien, 1.52402/44.60346) ; cimetière contigu WFS BDTOPO_V3:cimetiere (CIMETIER0000000216795575, 1.52424/44.60345)",
+        "rank": 0,
+        "interpretation": "Église romane du XIIe siècle, agrandie/transformée au XVe, inscrite monument historique le 28/06/1927. Cimetière communal contigu. Exclue du scoring comme cible — MH + emprise funéraire.",
+        "status": "[FAIT]",
+        "commune": "Lamothe-Cassel (46151)",
+        "role": "exclusion",
+        "protection": "MH inscrit PA00095121 (28/06/1927)",
+        "buffer_m": 300
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.16765,
-          43.57539
+          1.52402,
+          44.60346
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Puycalvel (hameau)",
+        "sourceForm": "Puycalvel",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (PAIHABIT0000000015053227, 1.52307/44.60291) ; cadastre-46151 PUYCALVEL (2,83 ha)",
+        "rank": 1,
+        "interpretation": "Habitat groupé autour de l'église Saint-Vit (XIIe s.). Noyau ancien probable — mobilier d'occupation continue possible en périphérie de l'église (hors périmètre MH/cimetière).",
+        "status": "[À VÉRIFIER]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.52307,
+          44.60291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Murat — église de l'Assomption et cimetière",
+        "sourceForm": "Murat",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Murat, 1.51118/44.62291) ; zone_d_activite_ou_d_interet Culte chrétien (1.50969/44.62232) ; cimetiere (CIMETIER0000000015046046, 1.5098/44.62221) ; Wikipédia FR « Murat » (type toponymique muratum = lieu fortifié)",
+        "rank": 0,
+        "interpretation": "Hameau de Lamothe-Cassel avec église et cimetière actifs. Toponyme muratum (latin) = lieu fortifié/muré. Repère bâti + zone funéraire — exclu du scoring.",
+        "status": "[FAIT]",
+        "commune": "Lamothe-Cassel (46151)",
+        "role": "exclusion",
+        "protection": "cimetière communal actif",
+        "buffer_m": 150
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.50969,
+          44.62232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saint-Cernin (bourg actuel)",
+        "sourceForm": "Saint-Cernin",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Saint-Cernin, 1.58157/44.5915) ; zone_d_activite_ou_d_interet Mairie + École (commune déléguée) ; église Saint-Saturnin OSM way/295779150, Wikidata Q60392164 ; cimetière CIMETIER0000000015046076 (1.58067/44.59289)",
+        "rank": 0,
+        "interpretation": "Chef-lieu de la commune déléguée Saint-Cernin (Les Pechs du Vers, fusion 01/01/2016). Le point-étiquette IGN du hameau tombe à ~110 m sous la limite sud de l'emprise, mais l'église Saint-Saturnin, le cimetière, la mairie et 79 % du polygone cadastral LE BOURG (46252) sont bien dans l'emprise. Hagiotoponyme (Saturninus, évêque de Toulouse) mais bourg actif — repère, pas un site à fouiller aux archives.",
+        "status": "[FAIT]",
+        "commune": "Les Pechs du Vers (46252)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.58165,
+          44.59273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Second édifice de culte de Saint-Cernin",
+        "sourceForm": "édifice avec clocher, Saint-Cernin",
+        "source": "WFS BDTOPO_V3:zone_d_activite_ou_d_interet (Culte chrétien, SURFACTI0000000349472682, 1.58301/44.59449)",
+        "rank": 0,
+        "interpretation": "Second bâtiment à vocation cultuelle recensé par l'IGN près du bourg de Saint-Cernin, nature exacte non précisée par la BD TOPO (chapelle ?).",
+        "status": "[À VÉRIFIER]",
+        "commune": "Les Pechs du Vers (46252)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.58301,
+          44.59449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lamothe-Cassel — bourg, église Saint-Georges",
+        "sourceForm": "Lamothe-Cassel",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Lamothe-Cassel, 1.50547/44.61105) ; zone_d_activite_ou_d_interet Église Saint-Georges (1.50597/44.61253) ; cadastre-46151 BOURG DE LAMOTHE (5,9 ha) ; Wikipédia FR « Lamothe-Cassel »",
+        "rank": 0,
+        "interpretation": "Chef-lieu de la commune déléguée Lamothe-Cassel. Toponyme issu de mota/moteta (motte castrale, « la Mothe-Cassel », érigée près d'un chemin de pèlerinage — cf. Wikipédia). Bourg actif, repère cartographique.",
+        "status": "[FAIT]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.50597,
+          44.61253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Motte castrale de la Mothe-Cassel — emplacement non localisé",
+        "sourceForm": "la Mothe-Cassel (motte castrale)",
+        "source": "Wikipédia FR « Lamothe-Cassel » (section Histoire, revérifié 2026-09-27) : « sur le territoire paroissial se dressait une motte castrale, la Mothe-Cassel, érigée aux abords d'un chemin de pèlerinage »",
+        "rank": 1,
+        "interpretation": "Butte artificielle médiévale attestée par la toponymie et l'histoire communale, mais emplacement précis non localisé par les sources consultées. À rechercher au LiDAR autour du bourg et des anciens chemins.",
+        "status": "[À VÉRIFIER]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.50624,
+          44.61264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ussel (bourg, église Saint-Martin)",
+        "sourceForm": "Ussel",
+        "source": "WFS BDTOPO_V3:zone_d_activite_ou_d_interet (Culte chrétien, 1.49943/44.59407) ; OSM way/505830028 (Église Saint-Martin) ; cadastre-46323 LE BOURG",
+        "rank": 0,
+        "interpretation": "Chef-lieu de la commune d'Ussel (non fusionnée). Bourg et église actifs — repère, pas une cible.",
+        "status": "[FAIT]",
+        "commune": "Ussel (46323)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.49943,
+          44.59407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grotte Bourrue",
+        "sourceForm": "Grotte Bourrue",
+        "source": "WFS BDTOPO_V3:detail_orographique (nature=Grotte, PAIOROGR0000000015021948, 1.51156/44.60957) — seule grotte nommée de l'emprise",
+        "rank": 0,
+        "interpretation": "Cavité karstique. Prudence : ce n'est pas une cible de prospection (statut archéologique et risques physiques inconnus). Signalée pour information/sécurité uniquement.",
+        "status": "[À VÉRIFIER]",
+        "commune": "Lamothe-Cassel (46151)",
+        "role": "exclusion",
+        "protection": "cavité — prudence sécurité, pas une cible"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.51156,
+          44.60957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Meylargues",
+        "sourceForm": "Meylargues (lieu-dit habité)",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Meylargues, 1.53948/44.62341) ; cadastre-46138 MEYLARGUES (24 ha, point BD TOPO à 269 m du centroïde, dans le polygone) ; Cassini (lecture « Maillargues », XVIIIe) ; État-major 40 (« Meylargue(s) ») ; Wikipédia FR Vendargues/Lansargues (type -anicum > -argues, formes datées 924–1536)",
+        "rank": 2,
+        "interpretation": "Hameau qui donne son nom au projet. Le suffixe -argues correspond, dans le sud-est occitan, au type gallo-romain -ANICUM/-ANICAS (nom de personne + suffixe de domaine), évolution attestée par des formes datées ailleurs (Vendargues : Venerianicus 924 → Vendrargues 1536 ; Lansargues : Lanzanegues 1152). Le type est donc plausible ([FAIT] pour le mécanisme général), mais l'anthroponyme sous-jacent à Meylargues reste inconnu — aucune forme ancienne locale antérieure à Cassini n'a été retrouvée, et Dauzat & Rostaing ne traitent que les noms de communes (pas les hameaux). Le poids de la seigneurie de 1690 relève de l'histoire, pas de la toponymie. Point corrigé sur le hameau BD TOPO (le point cadastral moyen tombait à 243 m à l'OSO, dans un champ).",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Saint-Sauveur-la-Vallée / Cœur de Causse (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.54042,
+          44.62303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Soyris (paroisse disparue, castrum)",
+        "sourceForm": "Soyris",
+        "source": "WFS BDTOPO_V3:toponymie/zone_d_habitation (Soyris, PAIHABIT0000000015052270, 1.57182/44.63903) ; cadastre-46138 SOYRIS (57,6 ha)",
+        "rank": 1,
+        "interpretation": "Paroisse primitive Saint-Étienne de Soyris, sur laquelle la bastide de Labastide-Murat fut fondée en 1238 ; église aujourd'hui disparue. Castrum et repaire de Soyris mentionnés en 1290 ; un château de Soyris encore habité en 1772. Zone à fort potentiel d'occupation continue (paroissiale puis seigneuriale).",
+        "status": "[À VÉRIFIER]",
+        "commune": "Labastide-Murat (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.57182,
+          44.63903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tour de Soyris",
+        "sourceForm": "Tour de Soyris",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (nature=Château, nature_detaillee=Tour, PAIHABIT0000002010659350, statut « Collecté », 1.57163/44.63901)",
+        "rank": 1,
+        "interpretation": "Tour répertoriée par l'IGN mais avec un statut « Collecté » (non validé). Rattachée au lieu-dit cadastral SOYRIS. Sensible : une église et un cimetière paroissial disparus sont probables à proximité immédiate (paroisse Saint-Étienne de Soyris) — prudence sur toute sépulture éventuelle avant prospection.",
+        "status": "[À VÉRIFIER]",
+        "commune": "Labastide-Murat (46138)",
+        "role": "sensible",
+        "protection": "cimetière paroissial disparu possible à proximité"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.57163,
+          44.63901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nougayrol (Soulomès)",
+        "sourceForm": "Nougayrol",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Nougayrol, 1.56586/44.62197) ; cadastre-46310 NOUGAYROL (14,9 ha)",
+        "rank": 1,
+        "interpretation": "Candidat pour la « terre et château de Nougayrols » mentionnée en 1465-1761. Second candidat homonyme (Nougeyral) à Lamothe-Cassel, voir ci-dessous — les deux restent à trancher.",
+        "status": "[À VÉRIFIER]",
+        "commune": "Soulomès (46310)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.56586,
+          44.62197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nougeyral (Lamothe-Cassel)",
+        "sourceForm": "Nougeyral",
+        "source": "Cadastre-46151 NOUGEYRAL ET CLOUP DE LEYGUE (7,05 ha)",
+        "rank": 1,
+        "interpretation": "Second candidat homonyme pour la « terre et château de Nougayrols » (1465-1761) — polygone partagé avec Cloup de Leygue (rang 3, ci-dessous).",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.50057,
+          44.61976
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "La Garnède",
+        "sourceForm": "la Garnède",
+        "source": "Cadastre-46310 LA GARNEDE (35,3 ha) ; WFS toponymie TRAVERS DE LAGARNEDE (46252, à proximité)",
+        "rank": 1,
+        "interpretation": "Seigneurie des Soyris mentionnée en 1550-1567. À croiser avec archives seigneuriales.",
+        "status": "[À VÉRIFIER]",
+        "commune": "Soulomès (46310)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.5683,
+          44.61878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "La Courtie (ruines)",
+        "sourceForm": "La Courtie",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (nature=Ruines, statut Validé, 1.58216/44.62493) — seul objet « Ruines » de l'emprise ; cadastre-46310 LA COURTIE (34 ha)",
+        "rank": 2,
+        "interpretation": "Ruine cartographiée par l'IGN. Datation et nature précises non connues. Groupe avec Pech Latour (631 m) et les Teulières (631 m).",
+        "status": "[FAIT]",
+        "commune": "Soulomès (46310)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.58216,
+          44.62493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Champ de l'Église (Saint-Sauveur-la-Vallée)",
+        "sourceForm": "Champ de l'Eglise",
+        "source": "Cadastre-46138 CHAMP DE L'EGLISE (72 ha) ; WFS BDTOPO_V3:lieu_dit_non_habite (le Champ de l'Église, 1.53532/44.61578, à 176 m du centroïde cadastral — même objet, deux graphies IGN/BAN)",
+        "rank": 2,
+        "interpretation": "Toponyme « champ de l'église » : peut signaler une église disparue OU une terre appartenant à une église existante (fabrique, cure) — le même nom existe à Lamothe-Cassel (ci-dessous), à 140 m d'une église toujours active. Aucune chapelle disparue signalée ici par les sources consultées. Aucune église actuelle à moins de 1,8 km (Saint-Vit de Puycalvel : 1812 m ; point de culte non identifié vers 1.5534/44.6059 : 1811 m). À traiter comme surface (72 ha), pas comme point unique.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Saint-Sauveur-la-Vallée / Cœur de Causse (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.53672,
+          44.61701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Champ de l'Église (Lamothe-Cassel)",
+        "sourceForm": "Champ de l'Eglise",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Champ de l'Eglise, PAIHABIT0000000227915352, 1.51054/44.62262) ; cadastre-46151 CHAMP DE L'EGLISE (5,8 ha) ; BAN (locality)",
+        "rank": 2,
+        "interpretation": "Homonyme du précédent, à 26-76 m de l'église de l'Assomption de Murat (active) et de son cimetière — illustre que ce toponyme ne signale pas toujours une église disparue.",
+        "status": "[À VÉRIFIER]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.51054,
+          44.62262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "La Tuilerie",
+        "sourceForm": "La Tuilerie",
+        "source": "Cadastre-46138 LA TUILERIE (10,8 ha) ; État-major 40 (« la Tuil[erie] »)",
+        "rank": 2,
+        "interpretation": "L'État-major (XIXe s.) porte déjà « la Tuilerie » en périphérie nord-est du bourg — probablement une tuilerie moderne/contemporaine, rien n'indique une villa gallo-romaine sous-jacente.",
+        "status": "[À VÉRIFIER]",
+        "commune": "Labastide-Murat (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.57595,
+          44.65275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Les Teulières (Soulomès)",
+        "sourceForm": "les Teulières / la Teulière",
+        "source": "WFS BDTOPO_V3:toponymie (les Teulières, 1.58445/44.61949) ; cadastre-46310 LA TEULIERE (18,1 ha)",
+        "rank": 2,
+        "interpretation": "Forme occitane de « tuilerie » (teulièra), homologue à La Tuilerie ci-dessus.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Soulomès (46310)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.58445,
+          44.61949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Les Bories",
+        "sourceForm": "les Bories",
+        "source": "WFS BDTOPO_V3:lieu_dit_non_habite (les Bories, 1.49639/44.62191) ; cadastre-46151 LES BORIES (33,2 ha)",
+        "rank": 2,
+        "interpretation": "Borie = métairie/ferme en Quercy (occitan bòria), pas « cabane en pierre sèche » (sens forgé au XIXe s. en Provence ; dans le Lot ces cabanes se nomment caselles/gariottes — Wikipédia FR « Borie », revérifié). Lieu-dit « non habité » : métairie désertée possible, à vérifier sur Cassini/État-major/cadastre napoléonien.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.49639,
+          44.62191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fontaine des Cayres",
+        "sourceForm": "Fontaine des Cayres",
+        "source": "WFS BDTOPO_V3:toponymie (fontaine des cayres, 1.51447/44.64056) ; cadastre-46138 FONTAINE DES CAYRES (11,8 ha), à 313 m du hameau Cayrès et 71 m du lieu-dit LES CAYRES",
+        "rank": 2,
+        "interpretation": "« Cayres » renvoie au lieu-dit voisin Les Cayres/Cayrès (313-71 m), pas à un aménagement de pierres isolé. Fontaine du hameau des Cayres, plausible point d'eau ancien ; tout usage cultuel de source reste une hypothèse non étayée.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Saint-Sauveur-la-Vallée / Cœur de Causse (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.51447,
+          44.64056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pièce de Capelle",
+        "sourceForm": "Pièce de Capelle",
+        "source": "Cadastre-46252 PIECE DE CAPELLE (11,1 ha)",
+        "rank": 1,
+        "interpretation": "Capela = chapelle. Pourrait aussi renvoyer aux seigneurs de Lacapelle (attestés à Puycalvel, 1457-1648, selon monographie Albe) — un patronyme, pas nécessairement un édifice.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Les Pechs du Vers (46252)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.57126,
+          44.59722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Moulin de Caviole (moulin hydraulique ancien)",
+        "sourceForm": "Moulin Caviole / le Moulin de Caviole",
+        "source": "Cadastre-46138 MOULIN CAVIOLE (22 ha) ; WFS BDTOPO_V3:zone_d_habitation (le Moulin de Caviole, 1.54579/44.61008) ; Cassini (moulins à eau sur le ruisseau) ; État-major (« M. […] Caviole » sur un cours d'eau)",
+        "rank": 2,
+        "interpretation": "Moulin hydraulique ancien, bien étayé par Cassini et l'État-major. Mobilier de circulation (monnaies, ferrures) aux abords reste une hypothèse, pas un fait établi.",
+        "status": "[FAIT]",
+        "commune": "Saint-Sauveur-la-Vallée / Cœur de Causse (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.54579,
+          44.61008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Le Moulin Neuf",
+        "sourceForm": "le Moulin Neuf",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (le Moulin Neuf, 1.55577/44.60038)",
+        "rank": 2,
+        "interpretation": "Moulin voisin du précédent, omis du relevé initial. Mobilier de circulation attendu aux abords — hypothèse.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Saint-Sauveur-la-Vallée / Cœur de Causse (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.55577,
+          44.60038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Le Moulin du Hasard (moulin à vent)",
+        "sourceForm": "le Moulin du Hasard",
+        "source": "WFS BDTOPO_V3:zone_d_activite_ou_d_interet (Construction, SURFACTI0000002491697663, 1.57936/44.65053)",
+        "rank": 2,
+        "interpretation": "Moulin à vent recensé par l'IGN en sortie nord-est du bourg de Labastide-Murat.",
+        "status": "[FAIT]",
+        "commune": "Labastide-Murat (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.57936,
+          44.65053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Moulin de Merle",
+        "sourceForm": "Moulin de Merle",
+        "source": "Cadastre-46113 MOULIN DE MERLE (18,6 ha)",
+        "rank": 2,
+        "interpretation": "Moulin en limite ouest de l'emprise (commune de Frayssinet).",
+        "status": "[À VÉRIFIER]",
+        "commune": "Frayssinet (46113)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.50429,
+          44.65265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rignac",
+        "sourceForm": "Rignac",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Rignac, 1.57241/44.59481) ; cadastre-46252 RIGNAC (7,3 ha) ; Wikipédia FR « Rignac (Lot) » : anthroponyme gaulois Renius + suffixe -acum",
+        "rank": 2,
+        "interpretation": "Type étymologique -acum confirmé pour la commune homonyme du Lot (Renius + -ac) — l'application à ce lieu-dit reste [À VÉRIFIER]. Piège Polge possible (patronyme tardif).",
+        "status": "[À VÉRIFIER]",
+        "commune": "Les Pechs du Vers (46252)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.57241,
+          44.59481
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cuzac",
+        "sourceForm": "Cuzac",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Cuzac, 1.54888/44.63330) ; cadastre-46138 CUZAC (31,8 ha) ; Wikipédia FR « Cuzac » : anthroponyme gallo-romain Cusius + -acum",
+        "rank": 2,
+        "interpretation": "Même type étymologique que Rignac (Cusius + -ac), confirmé pour la commune homonyme du Lot.",
+        "status": "[À VÉRIFIER]",
+        "commune": "Saint-Sauveur-la-Vallée / Cœur de Causse (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.54888,
+          44.6333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Foissac",
+        "sourceForm": "Foissac",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Foissac, 1.56996/44.62309, commune Soulomès) — aucun lieu-dit cadastral « Foissac » (le point tombe dans le polygone COMBENEYRE, 46310)",
+        "rank": 2,
+        "interpretation": "Suffixe -ac probable. Foissac est aussi un patronyme local (maire de Labastide-Murat 2001-2014) — piège Polge à garder en tête.",
+        "status": "[À VÉRIFIER]",
+        "commune": "Soulomès (46310)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.56996,
+          44.62309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Carniac",
+        "sourceForm": "Carniac",
+        "source": "Cadastre-46138 CARNIAC (28,9 ha) ; WFS toponymie « fontaine de carniac » (1.57871/44.64637, 171 m) ; second point BD TOPO source SGA « carniac » (1.57192/44.64927, à 3 m de la gendarmerie — probable artefact d'adressage) ; Wikipédia FR « Carnac-Rouffiac »",
+        "rank": 2,
+        "interpretation": "Suffixe -acum. La racine Carn- admet deux hypothèses documentées (Wikipédia « Carnac-Rouffiac ») : (1) anthroponyme gaulois *Carnus (majoritaire) ; (2) pré-celtique *karn « amas de pierres » (minoritaire, Dauzat). Aucune source ne mentionne un sens de « charnier »/dépôt pastoral.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Labastide-Murat (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.57961,
+          44.64711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brassac",
+        "sourceForm": "Brassac",
+        "source": "Cadastre-46138 BRASSAC (15,2 ha)",
+        "rank": 2,
+        "interpretation": "Suffixe -ac. Même réserve (piège Polge) que Rignac/Cuzac.",
+        "status": "[À VÉRIFIER]",
+        "commune": "Labastide-Murat (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.57568,
+          44.63677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Regagnac",
+        "sourceForm": "Regagnac",
+        "source": "Cadastre-46138 REGAGNAC (2 polygones, 43,4 et 25,4 ha) ; WFS toponymie point BD TOPO (à confirmer)",
+        "rank": 2,
+        "interpretation": "Suffixe -ac. Même réserve que ci-dessus.",
+        "status": "[À VÉRIFIER]",
+        "commune": "Cœur de Causse (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.54824,
+          44.64528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gauléjac",
+        "sourceForm": "Gauléjac / Gaullegeac",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Gauléjac, 1.52191/44.62064) ; cadastre-46151 GAULLEGEAC (18 ha)",
+        "rank": 2,
+        "interpretation": "Suffixe -ac. Aussi nom des vicomtes de Puycalvel (1457-1648, monographie Albe) — piège Polge patronymique probable.",
+        "status": "[À VÉRIFIER]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.52191,
+          44.62064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ravazac",
+        "sourceForm": "Ravazac",
+        "source": "WFS BDTOPO_V3:lieu_dit_non_habite (Ravazac, 1.51839/44.62719) ; cadastre-46151 RAVAZAC (8,5 ha)",
+        "rank": 2,
+        "interpretation": "Suffixe -ac. Même réserve.",
+        "status": "[À VÉRIFIER]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.51839,
+          44.62719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Madirac",
+        "sourceForm": "Madirac",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Madirac, 1.51662/44.59637) ; cadastre-46151 MADIRAC (31,2 ha)",
+        "rank": 2,
+        "interpretation": "Suffixe -ac. Même réserve.",
+        "status": "[À VÉRIFIER]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.51662,
+          44.59637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ferrières",
+        "sourceForm": "Ferrières",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Ferrières, 1.50751/44.60459) ; cadastre-46151 FERRIERES (33 ha)",
+        "rank": 2,
+        "interpretation": "Ferrièra = lieu du fer. Signal métallurgique potentiel (scories, minerai).",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.50751,
+          44.60459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Clos de Fargues",
+        "sourceForm": "Clos de Fargues",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Clos de Fargues, 1.57712/44.64222) ; cadastre-46138 CLOS DE FARGUES (34 ha)",
+        "rank": 2,
+        "interpretation": "Farga = forge. Signal métallurgique ou patronyme (Fargues).",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Labastide-Murat (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.57712,
+          44.64222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Camp de Lasfargues",
+        "sourceForm": "Camp de Lasfargues",
+        "source": "Cadastre-46151 CAMP DE LASFARGUES (9 ha)",
+        "rank": 2,
+        "interpretation": "Même racine farga (forge) ou patronyme Fargues.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.52012,
+          44.60061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lafaurie",
+        "sourceForm": "Lafaurie",
+        "source": "Cadastre-46252 LAFAURIE (15 ha) ; WFS detail_orographique Combe de Lafaurie (1.55794/44.59829)",
+        "rank": 2,
+        "interpretation": "Faure = forgeron. Signal métallurgique ou patronymique.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Les Pechs du Vers (46252)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.55925,
+          44.59666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Le Fournet",
+        "sourceForm": "le Fournet",
+        "source": "WFS BDTOPO_V3:lieu_dit_non_habite (le Fournet, 1.52575/44.61656) ; cadastre-46151 LE FOURNET (14,6 ha)",
+        "rank": 2,
+        "interpretation": "Fornet = petit four (à pain, à chaux ou artisanal). Signal artisanal générique.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.52575,
+          44.61656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pech Lagarde (Lamothe-Cassel)",
+        "sourceForm": "Pech Lagarde",
+        "source": "WFS BDTOPO_V3:detail_orographique (sommet, Pech Lagarde, 1.5239/44.62665) ; zone_d_habitation (hameau, 1.5166/44.62409) ; cadastre-46151 PECH LAGARDE (22,8 ha)",
+        "rank": 2,
+        "interpretation": "Sommet nommé + hameau + lieu-dit — homonyme du Pech la Garde de Labastide-Murat (rang 3, ci-dessous), à 3563 m. « Garde » = guet OU patronyme Lagarde.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.5239,
+          44.62665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mas Lagarde",
+        "sourceForm": "le Mas Lagarde",
+        "source": "WFS BDTOPO_V3:lieu_dit_non_habite (le Mas Lagarde, 1.53347/44.60807) ; cadastre-46151 MAS LAGARDE (30,3 ha)",
+        "rank": 2,
+        "interpretation": "Mas (métairie médiévale/moderne en Quercy — Lartigaut) + patronyme ou toponyme Lagarde probable.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.53347,
+          44.60807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pech Latour",
+        "sourceForm": "Pech Latour",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Pech Latour, 1.57619/44.62868)",
+        "rank": 2,
+        "interpretation": "Latour est aussi un patronyme local (maire de Labastide-Murat 1876-1882) — piège Polge. À 631 m de La Courtie et des Teulières.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Soulomès (46310)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.57619,
+          44.62868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Camp des Roumioux",
+        "sourceForm": "Camp des Roumioux",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Camp des Roumioux, 1.52666/44.60150) ; cadastre-46151 CAMP DES ROUMIOUX (7 ha)",
+        "rank": 2,
+        "interpretation": "Roumioux = pèlerins (occitan romieu). Camp = champ. Signal historique lié aux chemins de pèlerinage vers Rocamadour, sans mobilier attendu spécifique.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.52666,
+          44.6015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Les Justices",
+        "sourceForm": "Les Justices",
+        "source": "Cadastre-46138 LES JUSTICES (27 ha) ; WFS BDTOPO_V3:lieu_dit_non_habite (les Justices, 1.53782/44.60360) ; typologie Marmier 1881 (« la/les Justices » ~ fourches patibulaires)",
+        "rank": 2,
+        "interpretation": "Toponyme judiciaire — désigne fréquemment l'emplacement d'un ancien gibet seigneurial. Cohérent avec la haute justice attestée de la baronnie de Labastide (monographie Albe). Homologues : Lasjustices (Ussel) et Les Fourques (limite nord de l'emprise), tous deux hors emprise stricte.",
+        "status": "[À VÉRIFIER]",
+        "commune": "Saint-Sauveur-la-Vallée / Cœur de Causse (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.53782,
+          44.6036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Le Puech",
+        "sourceForm": "Le Puech",
+        "source": "WFS BDTOPO_V3:detail_orographique (Sommet, le Puech, 1.53189/44.62019) ; cadastre-46138 LE PUECH (21,5 ha)",
+        "rank": 3,
+        "interpretation": "Colline nommée, toponyme générique de relief — signal faible seul.",
+        "status": "[FAIT]",
+        "commune": "Saint-Sauveur-la-Vallée / Cœur de Causse (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.53189,
+          44.62019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cloup de Leygue",
+        "sourceForm": "Cloup de Leygue",
+        "source": "WFS BDTOPO_V3:lieu_dit_non_habite (Cloup de Leygue, 1.49964/44.62031) ; cadastre-46151 NOUGEYRAL ET CLOUP DE LEYGUE",
+        "rank": 3,
+        "interpretation": "Doline karstique (cloup = clòt). Leygue est aussi un patronyme attesté localement (Guillaume de Leygue, 1537, monographie Albe) — piège Polge possible sur le déterminant. Lieu-dit non habité, à Lamothe-Cassel (pas 46138).",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.49964,
+          44.62031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cinq Pierres (ensemble, 3 communes)",
+        "sourceForm": "les Cinq Pierres",
+        "source": "WFS BDTOPO_V3:lieu_dit_non_habite (les Cinq Pierres, étiquette IGN, 1.51966/44.63050, Lamothe-Cassel) ; cadastre CINQ PIERRES 46138 (18,7 ha, jointif) + LES CINQ PIERRES 46138 (28,7 ha, à 14 m) + CINQ PIERRES 46151 (16,7 ha, jointif) — ~64 ha au total ; tripoints Labastide-Murat/Saint-Sauveur/Lamothe-Cassel et Beaumat/Labastide-Murat/Lamothe-Cassel à proximité immédiate",
+        "rank": 3,
+        "interpretation": "ZONE À PRUDENCE. Ce n'est pas un doublon local mais un seul ensemble toponymique en 3 polygones cadastraux contigus, à la jonction de plusieurs anciennes communes/paroisses, longé par un grand chemin (Cassini, État-major). Aucun mégalithe recensé dans OSM ni dans les bases consultées à cette exécution, mais l'absence de source négative n'exclut rien : mégalithe (dolmen/menhir) OU bornage de limite paroissiale restent deux hypothèses concurrentes. NE PAS TRAITER COMME UNE CIBLE avant vérification (Atlas des patrimoines, SRA Occitanie, terrain).",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Labastide-Murat / Saint-Sauveur-la-Vallée / Lamothe-Cassel (46138 + 46151)",
+        "role": "sensible",
+        "protection": "mégalithe potentiel — prospection interdite si confirmé"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.51966,
+          44.6305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Croix de chemin sans nom (bourg de Labastide-Murat)",
+        "sourceForm": "wayside_cross, sans name (OSM)",
+        "source": "OSM node/6428876504 (historic=wayside_cross, aucun tag name, v1 2019) ; BD TOPO construction_ponctuelle correspondante (nature=Croix, sans toponyme, à 17 m)",
+        "rank": 3,
+        "interpretation": "Le nom « Croix Blanche » attribué à ce point est inventé : le nœud OSM ne porte aucun nom. Situé dans le bourg de Labastide-Murat, à 3227 m (pas ~2 km) du lieu-dit cadastral La Croix Blanche. Simple repère de circulation ancienne, pas une cible.",
+        "status": "[FAIT]",
+        "commune": "Labastide-Murat (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.56746,
+          44.6493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Croix Blanche (hameau)",
+        "sourceForm": "la Croix Blanche",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (la Croix Blanche, 1.52238/44.65021, statut Validé) ; cadastre-46138 LA CROIX BLANCHE (26 ha) ; croix BD TOPO à proximité (construction_ponctuelle, 1.52239/44.64977, à 55 m)",
+        "rank": 3,
+        "interpretation": "Point recentré sur le hameau IGN validé (le centroïde cadastral du doc initial tombait à 356 m). Une croix de chemin est cartographiée à 55 m — le lien nom/objet reste une hypothèse.",
+        "status": "[À VÉRIFIER]",
+        "commune": "Saint-Sauveur-la-Vallée / Cœur de Causse (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.52238,
+          44.65021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Le Camp Grand (hameau, Ussel)",
+        "sourceForm": "le camp grand",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (le Camp Grand, 1.50235/44.60001, commune Ussel) ; dans le polygone cadastral PECH MERLY (46323)",
+        "rank": 3,
+        "interpretation": "Camp = champ (latin campus), pas « champ clos ancien ». Hameau distinct du lieu-dit cadastral homonyme ci-dessous (2329 m d'écart).",
+        "status": "[FAIT]",
+        "commune": "Ussel (46323)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.50235,
+          44.60001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Camp Grand (lieu-dit, Lamothe-Cassel)",
+        "sourceForm": "Camp Grand",
+        "source": "Cadastre-46151 CAMP GRAND (10,8 ha) — distinct du hameau d'Ussel ci-dessus (2329 m)",
+        "rank": 3,
+        "interpretation": "Toponyme générique (camp = champ). Signal faible seul.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.53136,
+          44.60311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Roc de Bragues",
+        "sourceForm": "Roc de Bragues",
+        "source": "Cadastre-46138 ROC DE BRAGUES (5,1 ha)",
+        "rank": 3,
+        "interpretation": "Affleurement rocheux nommé, repère géologique/paysager plutôt qu'anthropique.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Saint-Sauveur-la-Vallée / Cœur de Causse (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.57334,
+          44.63028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Montcuq (lieu-dit)",
+        "sourceForm": "Montcuq",
+        "source": "Cadastre-46138 MONTCUQ (33,5 ha) ; WFS BDTOPO_V3:zone_d_habitation (hameau Montcuq, 1.54154/44.60782, à 256 m) ; Wikipédia FR « Montcuq » (Montecuco, 1257 ; type pléonastique mont + pré-celtique *kuk « hauteur »)",
+        "rank": 3,
+        "interpretation": "Étymologie établie pour la commune homonyme du Lot (mont + *kuk) — nom de relief générique, sans lien de proximité avec la commune de Montcuq-en-Quercy-Blanc (~43 km au sud-ouest).",
+        "status": "[FAIT]",
+        "commune": "Saint-Sauveur-la-Vallée / Cœur de Causse (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.54154,
+          44.60782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Le Cayrou (tumulus ou épierrement ?)",
+        "sourceForm": "le Cayrou",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (le Cayrou, 1.50879/44.61205) ; cadastre-46151 LE CAYROU (20,9 ha)",
+        "rank": 3,
+        "interpretation": "Cayrou = tas de pierres. Peut désigner un simple amas d'épierrement agricole OU se confondre avec un tumulus/pseudo-tumulus — à vérifier avant toute conclusion (pas une cible tant que la nature n'est pas établie).",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.50879,
+          44.61205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "La Borie",
+        "sourceForm": "La Borie",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (la Borie, 1.56161/44.65388, hameau habité) ; cadastre-46138 LA BORIE (7,2 ha)",
+        "rank": 3,
+        "interpretation": "Borie = métairie (voir Les Bories ci-dessus). Hameau actuellement habité — toponyme banal dans l'emprise (Laborie, Laborie Blanche, Pièce de Laborie, Lasbouriettes).",
+        "status": "[À VÉRIFIER]",
+        "commune": "Labastide-Murat (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.56161,
+          44.65388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pech la Garde (Labastide-Murat)",
+        "sourceForm": "Pech la Garde",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Pech la Garde, 1.55705/44.65101) ; cadastre-46138 PECH LA GARDE (41 ha)",
+        "rank": 3,
+        "interpretation": "Schéma colline + patronyme fréquent dans l'emprise (Pech Lagarde à Lamothe-Cassel, à 3563 m ; Pech Latour ; le Mas Lagarde) — piège Polge classique. Poste de guet possible OU simple patronyme Lagarde.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Labastide-Murat (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.55705,
+          44.65101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Les Cayres / Cayrès",
+        "sourceForm": "Les Cayres / Cayrès",
+        "source": "Cadastre-46138 LES CAYRES (25,5 ha) ; WFS toponymie hameau Cayrès et Combe des Cayres (1.51485/44.63899)",
+        "rank": 3,
+        "interpretation": "Lieu-dit dont dérive le nom de la Fontaine des Cayres (rang 1, ci-dessus).",
+        "status": "[FAIT]",
+        "commune": "Saint-Sauveur-la-Vallée / Cœur de Causse (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.51751,
+          44.63532
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chayroux / Chayroux-Bas",
+        "sourceForm": "Chayroux",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Chayroux, 1.55986/44.64376) ; cadastre-46138 CHAYROUX (39,5 ha) et CHAYROUX-BAS (7,3 ha)",
+        "rank": 3,
+        "interpretation": "Variante de cayrou/cairon (lieu pierreux). Position : [FAIT]. Sens précis : hypothèse.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Saint-Sauveur-la-Vallée / Cœur de Causse (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.55986,
+          44.64376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Le Cayrol",
+        "sourceForm": "Le Cayrol",
+        "source": "Cadastre-46323 LE CAYROL (16,1 ha)",
+        "rank": 3,
+        "interpretation": "Même racine que Cayrou/Chayroux (lieu pierreux).",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Ussel (46323)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4991,
+          44.59668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Laborie Blanche",
+        "sourceForm": "Laborie Blanche",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Laborie Blanche, 1.56710/44.60198) ; cadastre-46252 LABORIE BLANCHE (16,5 ha)",
+        "rank": 3,
+        "interpretation": "Borie = métairie. Toponyme banal de l'emprise.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Les Pechs du Vers (46252)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.5671,
+          44.60198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pièce de Laborie",
+        "sourceForm": "Pièce de Laborie",
+        "source": "WFS BDTOPO_V3:zone_d_habitation (Pièce de Laborie, 1.50609/44.59717) ; cadastre-46323 PIECE DE LABORIE (25,8 ha)",
+        "rank": 3,
+        "interpretation": "Même racine borie (métairie).",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Ussel (46323)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.50609,
+          44.59717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Les Jasses",
+        "sourceForm": "les Jasses",
+        "source": "WFS BDTOPO_V3:lieu_dit_non_habite (les Jasses, 1.53144/44.59977) ; cadastre-46151 LAS JASSES (13,3 ha)",
+        "rank": 3,
+        "interpretation": "Jasse = bergerie/parc à moutons en occitan. Signal pastoral générique.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Lamothe-Cassel (46151)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.53144,
+          44.59977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Foulon",
+        "sourceForm": "Foulon",
+        "source": "Cadastre-46138 FOULON (19,3 ha, centroïde plein 1.54608/44.65656 hors emprise — polygone à cheval sur la limite nord ; point recentré sur la partie interne à l'emprise)",
+        "rank": 3,
+        "interpretation": "Foulon = moulin à fouler (drap). Signal artisanal générique. Le lieu-dit déborde au nord de l'emprise d'étude.",
+        "status": "[HYPOTHÈSE]",
+        "commune": "Cœur de Causse (46138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.54589,
+          44.65471
         ]
       }
     }

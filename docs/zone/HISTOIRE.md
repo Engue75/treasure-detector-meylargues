@@ -1,326 +1,261 @@
-# Histoire d'Armous-et-Cau (Gers)
+# Histoire de Meylargues (Saint-Sauveur-la-Vallée, Cœur de Causse, Lot)
 
-Dossier historique approfondi pour le projet de prospection au détecteur de métaux. **Chaque affirmation porte sa source** ; les déductions sont étiquetées [HYPOTHÈSE] ou [À VÉRIFIER].
+Dossier historique pour le projet de prospection au détecteur de métaux. **Chaque affirmation porte sa source** ; les déductions sont étiquetées [HYPOTHÈSE] ou [À VÉRIFIER]. Statuts : **[FAIT]** = sourcé/vérifiable en ligne · **[À VÉRIFIER]** = plausible non confirmé · **[HYPOTHÈSE]** = déduction sans source.
 
-> Rédigé le 2026-08-08, basé sur recherche web + archives consultables en ligne. Les points non sourcés en ligne sont signalés comme nécessitant une visite aux Archives Départementales du Gers (AD32).
-
----
-
-## 1. Cadre géographique et hydrographie
-
-### 1.1 Localisation et dimensions
-
-**[FAIT]** Armous-et-Cau est une commune du département du Gers (32), code INSEE 32009, canton de Pardiac-Rivière-Basse, communauté de communes **Cœur d'Astarac en Gascogne** ([coeur-dastarac.fr](http://www.coeur-dastarac.fr/fr/territoire/1597/)) · Coordonnées : 43°34'27" N / 0°11'28" E ([Wikipedia](https://en.wikipedia.org/wiki/Armous-et-Cau)) · Surface 9,33 km² · Population actuelle ~95 habitants.
-
-La commune est située à **5,8 km** de Beaumarchés (au sud), dans le rayon proche de **Marciac** (8 km), **Bassoues** (10 km), **Montesquiou** (12 km), **Aignan** (14 km).
-
-### 1.2 Hydrographie : le Midour et ses affluents
-
-**[FAIT, correction d'erreur du plan §2.1]** Le **Midour** (ou Midou) prend sa source à **Armous-et-Cau** et constitue le marqueur hydrographique majeur de la commune. Ce n'est pas une mention approximative — c'est confirmé par le **SIA Midour-Douze** ([sia-rivieresarmagnac.fr](http://www.sia-rivieresarmagnac.fr/siamd/territoire_md.htm)) et le **Larousse** ([rivière Midouze](https://www.larousse.fr/encyclopedie/riviere-lac/la_Midouze/178806)).
-
-Le Midour parcourt **97 km** avant de rejoindre la **Douze** à Mont-de-Marsan, formant la **Midouze**, affluent de l'**Adour** (bassin aquitain). 
-
-**Affluents** dans la commune : **Guillembounet**, **Mauran**, **Hountan** (microtoponyme gascon `hont` = fontaine/source, confirmé par géonymes du plan §2.5bis). Une **source de rivière** est un marqueur archéologique de premier ordre — foyer naturel d'habitat, lieu fréquemment sanctifié à l'époque gallo-romaine (cultes de source). **Cette zone entre au rang A du scoring du projet** (voir [PLAN.md §7](../PLAN.md)).
+> Rédigé le 2026-09-27, corrigé le 2026-09-27 (relecture croisée). Zone d'étude : hameau de **Meylargues** (BD TOPO 1.53954/44.62313), commune déléguée **Saint-Sauveur-la-Vallée**, commune nouvelle **Cœur de Causse** (46240, Lot), causse de Gramat / secteur Labastide-Murat. Centre de config : lon 1.5405 / lat 44.6235. Emprise d'étude (lidarBbox) : lon 1.4963–1.5847 / lat 44.5921–44.6549 (~7×7 km, 48,9 km²). Environnement large (bbox) : lon 1.4405–1.6405 / lat 44.5235–44.7235. Les points nécessitant les Archives Départementales du Lot (AD46, Cahors) sont signalés comme tels.
 
 ---
 
-## 2. Antiquité gallo-romaine
+## 0. Réglementation — ce qui est interdit ici
 
-### 2.1 Contexte régional
+**[FAIT] Détection de métaux — autorisation préfectorale obligatoire, champ défini par la finalité.** L'article **L542-1 du code du patrimoine** soumet à autorisation préalable toute utilisation d'un détecteur de métaux **« à l'effet de recherches »** intéressant la préhistoire, l'histoire, l'art, l'archéologie ou la numismatique. Ce n'est pas un rayon ou une liste d'exceptions qui délimite le champ de la loi : c'est l'intention de recherche. Il n'existe **aucune exception légale de type « objet contemporain perdu » ou « dépollution »** dans le texte — ni dans L542-1, ni dans ses décrets d'application R542-1/R542-2. **[FAIT]** L'article **R542-1** précise le contenu du dossier soumis au **préfet de région Occitanie** : identité du demandeur, **compétences et expérience**, localisation précise, objectif scientifique, durée de la prospection, et **consentement écrit du propriétaire**. **[FAIT]** D'après la fiche officielle culture.gouv.fr, cette autorisation s'inscrit en pratique dans le cadre d'une **opération d'archéologie programmée**, évaluée sur la qualification du demandeur — ce n'est donc **pas une formalité de loisir**. La DRAC Grand Est le formule sans ambiguïté : *« la détection n'est pas un loisir »* ; creuser sans autorisation équivaut à une fouille clandestine. **Sanction** : contravention de **5<sup>e</sup> classe** (**art. R544-3**), amende pouvant atteindre **3 000 €** en cas de récidive, **confiscation possible** (non automatique) du matériel ([culture.gouv.fr — démarche d'autorisation](https://www.culture.gouv.fr/catalogue-des-demarches-et-subventions/autorisation/utilisation-de-materiel-permettant-la-detection-d-objets-metalliques-a-l-effet-de-recherches-de-monuments-et-d-objets-pouvant-interesser-la-prehist), [DRAC Grand Est](https://www.culture.gouv.fr/regions/drac-grand-est/services/patrimoine/archeo/l-utilisation-des-detecteurs-de-metaux-soumise-a-autorisation-prefectorale), [Légifrance R542-1/R542-2](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074236/LEGISCTA000024241655/)).
 
-**[FAIT]** Le Gers est l'un des départements français les plus denses en **villae gallo-romaines**. La région relevait de la **Novempopulanie** (province créée au III<sup>e</sup> siècle), avec **Elusa** (Éauze) pour capitale régionale ([mairie-eauze.fr](https://www.mairie-eauze.fr/ElusaCapitaleAntique)). La villa de Séviac (Montréal-du-Gers, IV<sup>e</sup> s.) est un type-site documenté de domaine gallo-romain ([tourisme-gers.com](https://www.tourisme-gers.com/le-gers-gallo-romain-montreal-du-gers-60640)).
+**[FAIT] Toute découverte doit être déclarée — pas d'appropriation possible.** L'article **L531-14** impose la déclaration **immédiate au maire de la commune** de toute découverte d'objets pouvant intéresser la préhistoire, l'histoire, l'art, l'archéologie ou la numismatique, par l'inventeur **et** par le propriétaire du terrain. L'article **L541-4** dispose que le **mobilier archéologique est présumé appartenir à l'État** : le régime civil du trésor (art. 552 et 716 du Code civil, partage inventeur/propriétaire) **ne s'applique pas** sur les terrains acquis après la loi n° 2016-925 du 7 juillet 2016 ([Légifrance L531-14](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006845749), [Légifrance L541-4](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032857657)).
 
-### 2.2 Signatures toponymiques de villas antiques
+**[FAIT] Propriété privée.** Toute prospection sur un terrain qui n'appartient pas au demandeur exige le **consentement écrit du propriétaire**, joint au dossier de demande d'autorisation (R542-1, même source que ci-dessus). **[HYPOTHÈSE]** La quasi-totalité des parcelles de la zone (causse, combes, abords des hameaux) est vraisemblablement privée ou en indivision agricole — non vérifié matrice par matrice ; à confirmer via la matrice cadastrale actuelle ou la mairie déléguée avant tout accès.
 
-**[FAIT]** Les **suffixes gascons `-an` et `-ac`** sont les dérivés de **`fundus` + `-anum`** latins et marquent statistiquement les domaines gallo-romains. C'est le sujet de la thèse de **Polge** (1965) : *Appellations de domaines antiques dans le département du Gers* ([Persée](https://www.persee.fr/doc/rio_0048-8151_1965_num_17_1_1876)).
+**[FAIT] Monuments historiques dans l'emprise — trois protections réelles, pas celles citées à l'origine.** Le château de Vaillac et l'église de Soulomès, souvent cités pour ce secteur, ont des périmètres qui **n'atteignent pas l'emprise d'étude** (voir plus bas). Trois monuments historiques touchent réellement le lidarBbox, via la servitude **AC1** (abords, couche `wfs_sup:assiette_sup_s`) :
+1. **Église Saint-Vit de Puycalvel** (Lamothe-Cassel), inscrite MH le **28/06/1927**, réf. **PA00095121** — coord. 1.52417/44.60361 (Wikipedia) / 1.52402/44.60348 (BD TOPO) — ses abords AC1 (0,81 km²) sont **entièrement dans le bbox**. Chapelle commandée en 1485 par Jean de Gauléjac, seigneur de Puycalvel.
+2. **Château de Labastide-Murat et son parc** (Paul de Choulot, 3<sup>e</sup> quart XIX<sup>e</sup> s.), réf. **PA00095306** — façades, toitures et pièces inscrites le **16/09/1991**, parc (cad. A 599, 600) inscrit le **24/03/1992** — coord. 1.56222/44.64167 (Wikipedia) / 1.55964/44.64043 (BD TOPO) — emprise MH (0,18 km²) + abords AC1 (1,84 km²) dans le bbox.
+3. **Église Saint-Jean-Baptiste de Goudou**, inscrite le **15/11/1993**, réf. **PA00125599** — coord. 1.58472/44.65667 (Wikipedia) / 1.58487/44.65656 (BD TOPO), à ~0,2 km hors du coin nord-est du bbox ; **0,11 km² de ses abords AC1 mordent sur l'angle NE** de l'emprise.
 
-Polge documente comment le Gers **conserve les formes latines antiques mieux que d'autres régions occitanes**, malgré l'évolution phonétique gasconne (réduction des groupes consonantiques, métathèse d'r, etc.). L'article insiste : **attention aux noms antroponymiques** — en Gascogne, un microtoponyme est souvent un patronyme de propriétaire, pas une indication de type de site. C'est le piège classique du relevé toponymique.
+**Hors emprise, contexte seulement** : **château de Vaillac** (classé 16/12/1958, PA00095277, 1.53215/44.67376) — à **2,08 km au nord** du bord nord du bbox ; **église Sainte-Marie-Madeleine + presbytère de Soulomès** (église classée 1944, presbytère inscrit 1925, PA00095266, 1.59485/44.63255) — à **0,81–0,82 km à l'est** du bord est ; les **« Bâtiments dits La Commanderie » de Soulomès** (inscrits en 2022, PA46000081) — hors emprise. Notices consultées et confirmées HTTP 200 le 2026-09-27 : [PA00095306](https://pop.culture.gouv.fr/notice/merimee/PA00095306), [PA00095121](https://pop.culture.gouv.fr/notice/merimee/PA00095121), [PA00125599](https://pop.culture.gouv.fr/notice/merimee/PA00125599), [PA00095277](https://pop.culture.gouv.fr/notice/merimee/PA00095277), [PA00095266](https://pop.culture.gouv.fr/notice/merimee/PA00095266).
 
-**[À VÉRIFIER]** Sur la base du plan §2.5bis : **Bazian** (suffixe `-an` → *Basianum*) est une piste toponyymique pour villa. **Autres candidats** : `Bilas`, `Caubet` [ATTENTION : `cau` = creux/abri en gascon, ne pas confondre avec le village disparu]. Aucune attribution ferme sans confrontation aux formes anciennes du cadastre.
+**[FAIT] Périmètre de protection — critère cumulatif, pas un rayon automatique.** En l'absence de périmètre délimité des abords (PDA), l'art. **L621-30** protège un immeuble **visible du monument (ou visible en même temps que lui) ET situé à moins de 500 m** — un critère **cumulatif**, pas un simple disque de 500 m ([Légifrance L621-30](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032860394)). L'art. **L621-32** ne soumet à autorisation de l'ABF que les **travaux modifiant l'aspect extérieur** ([Légifrance L621-32](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037667575)) — la détection au sol n'est pas un « travail » au sens de ce texte. L'interdiction de fond vient de **L542-1**, qui s'applique **partout**, pas du régime des abords. Ce qui reste absolument exclu : **tout creusement sur les parcelles protégées elles-mêmes** (le monument et son emprise cadastrale), car il s'agirait de travaux sur un MH — château de Labastide-Murat et son parc (cad. A 599, 600), église de Puycalvel. **[HYPOTHÈSE de prudence]** Écarter par précaution une bande de 500 m autour de chaque MH, sans en faire une règle de droit absolue.
 
-### 2.3 Indices de présence antique
+**[FAIT] Une ZPPA n'est pas une interdiction de détection.** Une **zone de présomption de prescription archéologique (ZPPA)**, définie par l'art. **L522-5**, désigne des secteurs où les **projets d'aménagement affectant le sous-sol** (permis de construire, travaux) sont présumés faire l'objet de prescriptions archéologiques — c'est un outil d'urbanisme, pas une interdiction de detecting ([Légifrance L522-5](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006845689)). L'interdiction qui s'applique à la détection reste **L542-1**, en tout point du territoire. La couche ZPPA du service national data.geopf.fr n'existe que pour le Centre-Val de Loire — les ZPPA du Lot restent à obtenir via l'**Atlas des patrimoines** ([atlas.patrimoines.culture.fr — nouvelle URL http](http://atlas.patrimoines.culture.fr/atlas/trunk/), l'ancienne URL en https échoue en TLS) ou la DRAC.
 
-[À COMPLÉTER PAR T2.4 — CAG 32]
+**[FAIT, BD TOPO + Wikipedia] Aucun mégalithe connu dans les 6 communes de l'emprise.** Le plus proche est le **dolmen de la Pechette** (Montfaucon), 1.56083/44.68500, à **7,0 km au nord** de Meylargues (3,3 km au-delà du bord nord du bbox). Le **dolmen de Combescure** (souvent cité pour ce secteur) est en réalité à 1.63944–1.63968/44.6714 (Wikipedia/BD TOPO), à **~9,5 km** de Meylargues, largement hors emprise même large. **[HYPOTHÈSE]** Le lieu-dit « **les Cinq Pierres** » (Lamothe-Cassel, 1.51966/44.63050) est à contrôler au LiDAR.
 
----
+**[FAIT, INPN — WFS data.geopf.fr] Natura 2000 : le site concerné est FR7300910, pas FR7300909.** La **ZSC FR7300910 « Vallées de la Rauze et du Vers et vallons tributaires »** (4 807 ha) est le **seul site Natura 2000 qui intersecte l'emprise stricte** — vérifié par requête WFS le 2026-09-27 (`patrinat_sic:sic`, bbox de l'emprise). Elle couvre environ **33 % du lidarBbox** (~16,1 km², lon 1.5017–1.5847 / lat 44.5921–44.6416), passe à **~110–140 m du centroïde de Meylargues**, ~90 m de l'église de Puycalvel et ~45 m de Nougayrol. Elle concerne **11 communes** dont Cœur de Causse, Lamothe-Cassel, Les Pechs du Vers et Soulomès, et est **animée par le PNR des Causses du Quercy**. DOCOB : [occitanie.developpement-durable.gouv.fr — DOCOB FR7300910](https://www.occitanie.developpement-durable.gouv.fr/IMG/pdf/docob_fr_7300910.pdf) (HTTP 200 vérifié) ; fiche du site : [reseaunatura2000lot.n2000.fr](https://reseaunatura2000lot.n2000.fr/reseau-lotois/vallees-de-la-rauze-et-du-vers-et-vallons-tributaires) ; [INPN FR7300910](https://inpn.mnhn.fr/site/natura2000/FR7300910). La **ZSC « Zone centrale du Causse de Gramat » (FR7300909)**, souvent citée par erreur pour ce secteur, **n'intersecte pas l'emprise** — au plus près à **≥ 2,25 km à l'est** (6 413 ha, confirmé WFS `area_sig=6413`, absent de la requête sur le bbox strict, présent seulement sur le bbox large) — donc **hors emprise**, ~3,8 km du bourg de Labastide-Murat, ~7,2 km de Meylargues ([INPN FR7300909](https://inpn.mnhn.fr/site/natura2000/FR7300909), [DOCOB ZCCG](https://reseaunatura2000lot.n2000.fr/sites/reseaunatura2000lot.n2000.fr/files/documents/page/docob_zccg_vf.pdf)). **Contexte non réglementaire** : la **ZNIEFF I « Vallée du Vers » (730010297)** couvre 17,9 km² de l'emprise (36,6 % du bbox large) et la **ZNIEFF I 730010296** (Combes de Lagasse…) environ 1 % — inventaires **non opposables** aux particuliers. **[À VÉRIFIER]** Sur un site Natura 2000, une prospection à pied avec détecteur ne nécessite en général pas d'évaluation d'incidences (pas de travaux, pas de destruction de milieu) — à confirmer via l'art. **L414-4** du code de l'environnement et la liste locale préfectorale du Lot. **Tout creusage dans un habitat sensible (pelouse sèche, dépression humide) doit être évité** par précaution — reboucher systématiquement, ne jamais creuser en dehors des sols déjà labourés.
 
-## 3. Haut Moyen Âge — émergence des deux villages
+**[FAIT, WFS data.geopf.fr] PNR des Causses du Quercy / Géoparc mondial UNESCO — 75 % de l'emprise, pas l'intégralité.** Le PNR (**FR8000039**) et le Géoparc (**FR0200001**, périmètre identique) couvrent **75,3 % du lidarBbox** (36,8 km² sur 48,9 km²). Le **quart sud-ouest de l'emprise est hors parc** (lon 1.4963–1.5422 / lat 44.5921–44.6342) : les communes de **Lamothe-Cassel** (10,5 km², 0 % en PNR — dont Puycalvel, Murat, Lamothe) et **Ussel** (1,6 km², 0 %). La limite passe à ~0,9 km à l'ouest de Meylargues (point 1.52888/44.62387). **Conséquence** : les inventaires/chartes du PNR (lavognes, cazelles, mégalithes) **ne couvrent pas** ce quart sud-ouest. Un label PNR/Géoparc n'est **pas une servitude opposable** aux particuliers — ce n'est pas un bloquant réglementaire, à la différence de Natura 2000 ou d'un classement MH. Métadonnées : modif_geo 2013-04-23, acte_fin 2024-10-23 ; la charte (en vigueur jusqu'en 2027) est en révision pour 2027–2042 ([parc-causses-du-quercy.fr — révision de la charte](https://www.parc-causses-du-quercy.fr/comprendre-le-parc/le-projet/revision/)).
 
-### 3.1 Noyau d'Armous
-
-**[FAIT]** Au **XI<sup>e</sup> siècle**, l'**église d'Armous** était rattachée à l'**abbaye bénédictine de Saint-Mont** ([Persée — cartulaire Saint-Mont](https://www.persee.fr/doc/bec_0373-6237_1952_num_110_1_449456), [Wikipedia — Saint-Mont](https://en.wikipedia.org/wiki/Abbaye_du_Saint-Mont)).
-
-**Abbaye de Saint-Mont** : fondée **vers 1050** par **Raymond de Saint-Mont**, soutenu par **Bernard Tumapaler**, comte d'Armagnac ([Wikipedia](https://en.wikipedia.org/wiki/Abbaye_du_Saint-Mont)). Statut d'abbaye depuis 1050, église attachée construite entre 1100 et 1250. À l'époque clunisienne, réduite au rang de prieuré. Archives perdues sauf un **cartulaire du XII<sup>e</sup> siècle**, rescapé par l'un des derniers moines et décrit par Samaran (1952).
-
-**Implication pour le projet** : le cartulaire de Saint-Mont (XI-XIII<sup>e</sup> siècles) est une source directe pour les possessions de l'abbaye. Les origines documentées d'Armous remontent au moins au XI<sup>e</sup> siècle.
-
-### 3.2 Noyau de Cau — possession ecclésiale
-
-**[FAIT]** L'**église de Cau** était une **possession de l'archevêché d'Auch**, desservie par des vicaires amovibles ([tourisme-mirande-astarac.com](https://www.tourisme-mirande-astarac.com/en/discover-astarac/communes/armous-et-cau/)).
-
-**[À VÉRIFIER]** Cette distinction entre Armous (bénédictine, Saint-Mont) et Cau (archevêché) suggère deux origines institutionnelles différentes. Aucune section cadastrale « de Cau » n'existe dans le cadastre napoléonien d'Armous-et-Cau ([memory/DECISIONS.md](../../memory/DECISIONS.md)) — le noyau de Cau serait soit dans une autre section, soit en limite de commune. C'est le **point dur de la localisation**.
+**Résumé opérationnel avant toute sortie** :
+1. Vérifier le propriétaire de la parcelle visée + obtenir son accord écrit.
+2. Obtenir l'autorisation préfectorale (préfet de région Occitanie) — condition légale absolue, aucune exception « loisir » ; le dossier est évalué comme une opération d'archéologie programmée.
+3. Exclure tout creusement sur les parcelles MH elles-mêmes (château de Labastide-Murat et son parc, église de Puycalvel) ; écarter par prudence une bande de 500 m autour des 3 MH réellement dans l'emprise (Puycalvel, Labastide, Goudou) et de tout mégalithe répertorié (aucun connu dans l'emprise à ce jour).
+4. Éviter tout creusage dans un habitat sensible du site Natura 2000 FR7300910 (33 % de l'emprise) — rester sur sols déjà labourés, reboucher systématiquement.
+5. **Toute découverte doit être déclarée immédiatement au maire** (L531-14) — le mobilier archéologique est présumé appartenir à l'État (L541-4), pas d'appropriation possible.
 
 ---
 
-## 4. XII<sup>e</sup>–XIV<sup>e</sup> siècles : abbaye La Case-Dieu et restructuration foncière
+## 1. Cadre géographique
 
-### 4.1 Fondation et domaine de La Case-Dieu
+**[FAIT, BD TOPO/ADMIN EXPRESS]** Meylargues (1.53954/44.62313) est un hameau de la commune déléguée de **Saint-Sauveur-la-Vallée** (INSEE 46291), elle-même rattachée depuis le 1<sup>er</sup> janvier 2016 à la commune nouvelle **Cœur de Causse** (fusion de Labastide-Murat, Beaumat, Fontanes-du-Causse, Saint-Sauveur-la-Vallée et Vaillac) ([Wikipedia — Cœur de Causse](https://en.wikipedia.org/wiki/C%C5%93ur_de_Causse), [Wikipedia — Saint-Sauveur-la-Vallée](https://en.wikipedia.org/wiki/Saint-Sauveur-la-Vall%C3%A9e) — ces deux pages ne mentionnent pas Meylargues nommément, la localisation vient de la BD TOPO/ADMIN EXPRESS). Code postal 46240. **[FAIT]** Le secteur appartient au **causse de Gramat**, plateau calcaire karstique situé **entre les vallées de la Dordogne et du Célé** (et non « Lot et Dordogne ») ([tourisme-lot.com](https://www.tourisme-lot.com/les-villages-des-causses-du-quercy/les-villages-du-causse-de-gramat/)).
 
-**[FAIT]** L'**abbaye La Case-Dieu** (Premonstratensian) a été **fondée vers 1135** par **Bernard de Troncens** sur une donation de terre en Gascogne ([Wikipedia — La Case-Dieu](https://fr.wikipedia.org/wiki/Abbaye_de_la_Case_Dieu), thèse Abadie 2016 — *Un temporel monastique dans l'espace médiéval gascon* ([HAL](https://theses.hal.science/tel-01843381v1/file/Abadie_Stephane.pdf))).
+**[À VÉRIFIER — divergence de sources]** Deux généalogies communales s'opposent pour Saint-Sauveur-la-Vallée. La fiche **EHESS Cassini** (n° 34577) indique : municipalité « Saint Sauveur » dès **1793** (339 hab., canton de Montfaucon), nom révolutionnaire **« Puyvalon »** (pas « Puy-Valon »), réunie à **Soulomès avant 1806**, puis **recréée en 1865 à partir de Soulomès** — aucune population propre listée entre 1806 et 1872. Wikipedia (article Soulomès) donne aussi une séparation en 1865. À l'inverse, **Albe** et **Combarieu (1881)** écrivent une érection en commune en **1845**. Le dépliant de l'office de tourisme dit également « section de Soulomès jusqu'en 1865 ». **Conséquence pratique** : pendant toute la levée du cadastre napoléonien du Lot (1808–1842), le territoire de Saint-Sauveur (et donc Meylargues) faisait administrativement partie de **Soulomès** — c'est sous cette commune qu'il faut chercher les plans aux AD46, pas sous « Saint-Sauveur-la-Vallée » (voir §8 et §9.2). Elle a porté le nom révolutionnaire de **Puyvalon** ([EHESS Cassini](http://cassini.ehess.fr/cassini/fr/html/fiche.php?select_resultat=34577), [Wikipedia — Soulomès](https://fr.wikipedia.org/wiki/Soulom%C3%A8s), [monographie Albe](http://www.archives.quercy.net/qmedieval/histoire/monog_albe/saintsauveur.html)).
 
-La Société archéologique du Midi a publié une **monographie de référence** : Balagna, *L'ancienne abbaye de la Case-Dieu (Gers)* ([Mémoires SAMF t.64](https://societearcheologiquedumidi.fr/_samf/memoires/t_64/balagna.pdf)) — ce fichier PDF est lisible en salle d'archives mais l'OCR web le rend inaccessible. À consulter aux **AD32** ou demander copie à la Société archéologique du Midi.
+**[FAIT — intersection contours geo.api.gouv.fr, 2026-09-27] Communes du lidarBbox (48,9 km²)** : **Cœur de Causse** 25,7 km² (52,5 %) ; **Lamothe-Cassel** 10,5 km² (21,4 %, dont le hameau de Puycalvel) ; **Les Pechs du Vers** (ex-Saint-Cernin / Saint-Martin-de-Vers) 6,2 km² (12,7 %) ; **Soulomès** 2,8 km² (5,8 % — Nougayrol, la Garnède, la Courtie, Foissac, Curgalou) ; **Frayssinet** 2,1 km² (4,3 %) ; **Ussel** 1,6 km² (3,3 %).
 
-L'abbaye devint **chef-lieu de la province prémontrée de Gascogne** et accumula des donations substantielles aux XII<sup>e</sup>–XIII<sup>e</sup> siècles, formant un **réseau dense de dépendances** : prieurés (Vic-Fezensac), abbaye filiale (La Capelle, Grenade-sur-Garonne en 1154), domaines foncieres, **granges monastiques**, **moulins** (Houga, Espalanque, Plaisance).
+**Points BD TOPO utiles** (lon/lat) : Meylargues 1.53954/44.62313 ; Saint-Sauveur bourg 1.55298/44.60653 (église 1.55342/44.60590) ; Labastide-Murat bourg 1.56773/44.64654 (église 1.56742/44.64597) ; Lamothe-Cassel bourg 1.50523/44.61107 (église Saint-Georges 1.50595/44.61256) ; Murat (église) 1.50968/44.62231 ; Saint-Cernin (église) 1.58300/44.59450 (limite SE) ; Ussel (église) 1.49940/44.59408 (limite SO). **Hors emprise, contexte** : Vaillac (château 1.53215/44.67376, 2,1 km au nord du bbox) ; Soulomès (église 1.59485/44.63255, 0,81 km à l'est).
 
-### 4.2 Armous-et-Cau : passage à La Case-Dieu
-
-**[FAIT]** Armous et Cau, **initialement possédés par les seigneurs de Saint-Christaud**, passèrent au **XII<sup>e</sup> siècle à l'abbaye La Case-Dieu** ([tourisme-mirande-astarac.com](https://www.tourisme-mirande-astarac.com/en/discover-astarac/communes/armous-et-cau/)).
-
-**[HYPOTHÈSE — non confirmée directement en ligne]** Si La Case-Dieu possédait Armous et Cau au XII<sup>e</sup>–XIII<sup>e</sup> siècles, elle y exploitait vraisemblablement :
-- une **grange monastique** (domaine agricole directement géré) ;
-- un ou plusieurs **moulins** sur le Midour (confirmation partielle : la thèse Abadie mentionne un réseau de moulins abbatiaux, et le Midour est présent dès la source à Armous).
-
-**À confirmer par** :
-- Cartulaire de La Case-Dieu (AD32, fonds monastiques) ;
-- Monographie Balagna (SAMF t.64, salle d'archives) ;
-- Mentions nominatives dans le Bulletin de la Société archéologique du Gers (Gallica, recherche plein texte).
-
-### 4.3 Fondation de bastides sur les granges
-
-**[FAIT]** La Case-Dieu fonda trois bastides sur ses propres granges au XIII<sup>e</sup> siècle : **Mourède** (1286), **Marciac** (1298, sur les granges du Houga et d'Andenac), **Plaisance** (1322) ([Wikipedia](https://fr.wikipedia.org/wiki/Abbaye_de_la_Case_Dieu)).
-
-Marciac, **distante de ~8 km d'Armous-et-Cau**, illustre le modèle économique abbatial. **[À VÉRIFIER]** : Armous-et-Cau a-t-elle reçu une bastide ? Pas de mention claire. Cela conforte l'hypothèse d'un domaine agricole sans urbanisation planifiée.
+**[HYPOTHÈSE]** Labastide-Murat (bourg-centre, dans l'emprise, bord nord), Vaillac (château) et Soulomès (commanderie) marquaient des pôles historiques (seigneurial, ecclésial, castral) — mais **Puycalvel** (Lamothe-Cassel), lui aussi dans l'emprise, est un pôle seigneurial au moins aussi important pour la zone (voir §4.2) et n'apparaissait pas dans la version précédente de ce dossier.
 
 ---
 
-## 5. XIV<sup>e</sup>–XV<sup>e</sup> siècles : Guerre de Cent Ans
+## 2. Occupation préhistorique — mégalithisme du causse de Gramat
 
-### 5.1 Contexte militaire et monétaire
+**[À VÉRIFIER]** Le causse de Gramat concentre, avec les causses de Saint-Chels et de Limogne, l'essentiel du mégalithisme du Lot ([Wikipedia — Sites mégalithiques du Lot](https://fr.wikipedia.org/wiki/Sites_m%C3%A9galithiques_du_Lot)). La page indexée comme « ADLFI — Causse de Gramat » (adlfi.revues.org/10912) est en réalité inaccessible en ligne (OpenEdition oppose un défi anti-robot Anubis, non contourné) ; les métadonnées OAI-PMH de cette notice montrent qu'il s'agit d'une **prospection diachronique de G. Maynard, menée par secteurs entre 1989 et 1991**, avec des exemples de nécropoles à Rocamadour et En Caminou — ce n'est donc **pas un inventaire exhaustif du causse entier**, et les chiffres « 36 dolmens, 243 tumulus » qui lui étaient attribués sont à traiter comme **[À VÉRIFIER]**, pas comme un fait établi. La notice réellement indexée par les moteurs pour ce secteur est « **Causse de Gramat et causse de Martel** » (J.-P. Girault, prospection-inventaire 1988–1991, [journals.openedition.org/adlfi/10772](https://journals.openedition.org/adlfi/10772)) — à consulter au navigateur (le mur anti-robot bloque `curl`).
 
-**[FAIT]** La Gascogne connaît des **passages de routiers, raids anglais et français, dépôts de crise de monnaies d'argent et d'or** ([plan §2.3](../PLAN.md)). Les **châteaux et bastides** (Bassoues, Beaumarchés 1288, **Marciac 1298**) se fortifient.
+**[FAIT, PDF du PNR]** Le PNR des Causses du Quercy recense **environ 600 dolmens dans le Lot** (604 selon la base de données du ministère de la Culture, citée dans le PDF du PNR) — le chiffre de « 365 dolmens » attribué à paysud.com est erroné : cet article (communiqué du 3 mai 2017 sur le label Géoparc) **ne contient aucun chiffre de dolmens**. Wikipedia donne 498 (inventaire Clottes, 1977) et environ 600 (étude SRA 2004–2009). ([PDF PNR — mégalithes](https://www.parc-causses-du-quercy.fr/wp-content/uploads/2023/06/decouvrir_megalithes2014.pdf) p. 4 et 6, [Wikipedia — Sites mégalithiques du Lot](https://fr.wikipedia.org/wiki/Sites_m%C3%A9galithiques_du_Lot)).
 
-**Implications prospection** : enfouissements de petit numéraire (billon, jetons de compte), monnaies d'argent égarées, militaria anglo-gascon.
+**[FAIT, PDF du PNR]** Les dolmens du causse sont construits **à partir d'environ 3500 av. J.-C.** (Néolithique final–Chalcolithique), souvent **réutilisés** ensuite jusqu'à l'âge du Fer et l'Antiquité (Wikipedia). Le plus grand exemple régional, le dolmen de **Pierre-Martine** (Livernon), a une table de couverture de **plus de 22 tonnes**. La fourchette « 2500–1800 av. J.-C. / jusqu'à 20 tonnes » précédemment citée, attribuée à une simple page-photo sans texte (lot-46.com), n'est confirmée par aucune source ([PDF PNR](https://www.parc-causses-du-quercy.fr/wp-content/uploads/2023/06/decouvrir_megalithes2014.pdf) p. 4, 10, 18 ; [tourisme-lot.com — patrimoine bâti](https://www.tourisme-lot.com/parc-naturel-regional-des-causses-du-quercy/geoparc-mondial-unesco/patrimoine-bati/)).
 
----
+**[FAIT, BD TOPO + Wikipedia]** Aucun mégalithe connu (Clottes 1977) n'existe dans les 6 communes de l'emprise (Cœur de Causse, Lamothe-Cassel, Les Pechs du Vers, Soulomès, Frayssinet, Ussel). Le **dolmen de Combescure** est à 1.63944/44.67139 (Wikipedia, calé sur la carte IGN), soit ~4,7 km hors du lidarBbox et **~9,6 km au nord-est** de Meylargues — hors emprise, même large. Le plus proche mégalithe connu est le **dolmen de la Pechette** (Montfaucon), 1.56083/44.68500, à 3,3 km au nord du bbox (7,0 km de Meylargues). **[HYPOTHÈSE]** Le lieu-dit « **les Cinq Pierres** » (Lamothe-Cassel, 1.51966/44.63050) est à contrôler au LiDAR — vérifier aussi les notices communales dans Clottes 1977 ([Persée](https://www.persee.fr/doc/galip_0072-0100_1977_sup_1_5)).
 
-## 6. XVI<sup>e</sup> siècle : Guerres de Religion
-
-### 6.1 Destruction et ravages
-
-**[FAIT]** L'abbaye **La Case-Dieu fut gravement endommagée** :
-- **1558** : **incendie dévastateur** ([Wikipedia](https://fr.wikipedia.org/wiki/Abbaye_de_la_Case_Dieu))
-- **1570** : **attaques protestantes** ([Wikipedia](https://fr.wikipedia.org/wiki/Abbaye_de_la_Case_Dieu))
-
-**1648** : tempête supplémentaire qui dommages aux structures.
-
-**Implications archéologiques** : l'abbaye cessa progressivement sa fonction. Les églises paroissiales d'Armous et de Cau furent peut-être elles aussi endommagées ou en déclin de fonction à cette époque.
+**Implication prospection** : aucune fouille sur mégalithe (interdit, voir §0, et de toute façon aucun connu dans l'emprise) ; les **abords non protégés** de zones à forte densité mégalithique régionale restent statistiquement des zones de fréquentation ancienne longue durée — pertinent pour le scoring de fond (rang C), pas comme cible ponctuelle géolocalisée.
 
 ---
 
-## 7. Révolution — fusion administrative des deux villages
+## 3. Protohistoire et Antiquité gallo-romaine
 
-### 7.1 Fin du régime seigneurial
+**[À VÉRIFIER]** Le Quercy antique était le territoire des **Cadurques** (peuple gaulois), avec pour capitale antique **Divona** (Cahors). L'oppidum majeur de la région, **Murcens** (commune de Cras), est doté d'un *murus gallicus* sur 80 ha ([jc-michel.fr — CAG Lot, résumé de l'édition 1990](http://jc-michel.fr/themes/Gaule%20romaine/CAG/LOT.html)).
 
-**[FAIT]** La **Révolution française dissout l'abbaye La Case-Dieu** (bien national, vendu en 1791). Les possessions sont **auctionnées** ; la **Marquis Pierre Clair de Fondeville** (1755–1829) en acquiert une partie ([tourisme-mirande-astarac.com](https://www.tourisme-mirande-astarac.com/en/discover-astarac/communes/armous-et-cau/)).
+**[FAIT, WFS BD TOPO]** Murcens est en réalité à **~8,7 km au sud** (léger est, azimut 171°) de Meylargues — et non « ~20 km au sud-ouest » — soit ~5,2 km sous le bord sud du lidarBbox : « oppidum de murcens », vestige archéologique BD TOPO à 1.55685/44.54556. Albe appelle d'ailleurs la paroisse voisine « **S-Sauveur de Vers** (*de Averso*) », dans la même vallée du Vers qui traverse l'emprise (voir §5.1) — le rattachement au réseau gaulois de la vallée du Vers est donc plausible bien que non démontré. **[FAIT]** L'**aqueduc de Divona** (33 km), qui partait de **Font Polémie** (BD TOPO 1.56853/44.54702, 8,8 km SSE de Meylargues) au pied de Murcens, avec une prise sur le Vers ([Wikipedia — Aqueduc romain de Divona](https://fr.wikipedia.org/wiki/Aqueduc_romain_de_Divona)) — l'attribution de ce fait à l'AIBL, pas aux sources précédemment citées (jc-michel.fr, lepechdevigne.fr), qui n'en parlent pas.
 
-### 7.2 Fusion administrative
+**[FAIT]** **Segodunum est Rodez** (capitale des Rutènes), **pas Figeac** — erreur à corriger dans toute mention de voie antique Cahors–Figeac ([Wikipedia — Segodunum](https://fr.wikipedia.org/wiki/Segodunum)).
 
-**[FAIT]** Armous et Cau, initialement deux **communes ou deux sections**, fusionnent entre **1790 et 1794** pour former **Armous-et-Cau** ([plan §2.2](../PLAN.md)).
+**[À VÉRIFIER]** La **Carte archéologique de la Gaule — 46. Le Lot** (AIBL) est la référence académique pour l'inventaire commune par commune des sites antiques. Il s'agit de la **2<sup>e</sup> édition, 2011** (A. Filippini, avec J.-P. Girault, J.-M. Pailler, D. Rigal, AIBL, 264 p., intégrant l'archéologie préventive) — et non une simple « réédition récente » ; la 1<sup>re</sup> édition date de 1990. Non consultée en détail ici (accès payant/bibliothèque, [AIBL](https://aibl.fr/collections/carte-archeologique-de-la-gaule-46-le-lot/)). **Aucune villa gallo-romaine nommément localisée à Saint-Sauveur-la-Vallée ou Meylargues n'a été trouvée en ligne.**
 
-**Cadastre napoléonien** : la fusion s'observe clairement. AD32 détient **9 planches** du cadastre d'Armous-et-Cau (cote **3P**, géomètre Daubas), consultables en visionneuse ([archives32.fr](https://www.archives32.fr/)) :
-- `3P_..._1` : tableau d'assemblage, 1/10000, 1813
-- `3P_..._7` + `_8` : **section C1/C2 « dite d'Armous »** — nomme et localise directement le vieux village, y compris un « Bourg »
-- `_2/_3/_4` : section A « de Barroles »
-- `_5/_6` : section B « de Rozes » (1819)
-- `_9` : section D « de Mauran »
-
-**Point dur** : **aucune section « de Cau »** — le noyau de Cau n'est pas une section cadastrale complète. Pistes possibles : en limite de commune, intégré à une autre section, ou abandonné avant la levée cadastrale.
+**[FAIT, WFS BD TOPO troncon_de_route] Voies modernes traversant l'emprise.** L'**autoroute A20** traverse l'emprise sur toute sa hauteur (~8 km de tracé, 16,7 km de chaussées, entre lon 1.500 et 1.564), avec la **sortie 56 Labastide-Murat** ; la section Souillac–Francoulès a été ouverte en **2001** ([Wikipedia — Autoroute A20](https://fr.wikipedia.org/wiki/Autoroute_A20_(France))). Deux tranchées couvertes s'y trouvent : « **de la Garenne** » (hameau à 1.52210/44.60457, à 0,2 km de l'église de Puycalvel) et « **de Sol de Roques** » (1.56580/44.64988). **[HYPOTHÈSE]** Des diagnostics et fouilles préventives AFAN ont probablement eu lieu entre 1997 et 2001 sur ce tracé ; référence à vérifier : *Histoire des sites, histoire des hommes. Découvertes archéologiques réalisées lors de la construction de l'autoroute A20 en Quercy* (ASF – DRAC Midi-Pyrénées – Archéologies, éd. du Rouergue, 2003) — la brochure « A20, le passé retrouvé » (patrimoine-lot.com) n'est plus en ligne. **[FAIT]** La **D820** (ex-RN20 Paris–Toulouse) traverse l'angle sud-ouest de l'emprise (Lamothe-Cassel, 2,8 km) ; la **D677** traverse l'emprise du sud-ouest au nord-est par Labastide (7,9 km) ([Wikipedia — RD 820 (Lot)](https://fr.wikipedia.org/wiki/Route_d%C3%A9partementale_820_(Lot))). **[HYPOTHÈSE]** La D677 pourrait reprendre le « grand chemin » figuré sur Cassini et la « route dép. n° 5 de Cahors à Clermont » citée par Combarieu (1881).
 
 ---
 
-## 8. XIX<sup>e</sup>–XX<sup>e</sup> siècles : dépeuplement et réutilisation de pierre
+## 4. Haut Moyen Âge et Moyen Âge central
 
-### 8.1 L'église actuelle, construite des deux églises
+### 4.1 Origines paroissiales — Saint-Sauveur et Soulomès
 
-**[FAIT]** L'**église Saint-Martin actuelle** (19<sup>e</sup> siècle) a été **construite avec les pierres des deux anciennes églises d'Armous et de Cau** ([tourisme-mirande-astarac.com](https://www.tourisme-mirande-astarac.com/en/discover-astarac/communes/armous-et-cau/), [Wikipedia — Armous-et-Cau](https://en.wikipedia.org/wiki/Armous-et-Cau)).
+**[FAIT]** L'église de Saint-Sauveur (vocable **Saint-Sixte**) relevait de l'archiprêtré de Saint-André de Cahors ; en 1373, un *Pierre Brun de Villeta* en était le recteur, prêtre du diocèse de Lodève, avant de permuter avec un autre titulaire (source : monographie d'**Edmond Albe**, [archives.quercy.net](http://www.archives.quercy.net/qmedieval/histoire/monog_albe/saintsauveur.html)). L'édifice conservait des **reliques de Saint-Sixte et de Saint-Clair**.
 
-**Implication archéologique majeure** : les **élévations des deux églises médiévales ont été arasées**, mais **le sol n'a jamais été fouillé**. Les deux sites d'église représentent les deux meilleures cibles de prospection de la commune.
+**[FAIT]** À **Soulomès**, l'église actuelle (Sainte-Marie-Madeleine) et une ancienne commanderie forment le noyau historique dès les XII<sup>e</sup>–XIII<sup>e</sup> siècles. Les dates précises (implantation templière discutée, présence hospitalière avérée, cession de l'église, résidence du commandeur) sont **recâblées vers de meilleures sources** : [passion-patrimoine.fr](https://www.passion-patrimoine.fr/spip.php?article164), [Wikipedia — Liste des commanderies templières en Midi-Pyrénées](https://fr.wikipedia.org/wiki/Liste_des_commanderies_templi%C3%A8res_en_Midi-Pyr%C3%A9n%C3%A9es) (note N19) et la notice Mérimée **[PA00095266](https://pop.culture.gouv.fr/notice/merimee/PA00095266)**, qui confirme l'**absence des Templiers**, une cession de l'église entre **1250 et 1280 environ**, et la **résidence du commandeur à partir de 1315**. La commanderie comprenait un château, une église, la métairie de Lolmède, des terres labourables et les rentes d'une centaine de tenanciers. L'église est **classée MH en 1944** (peintures murales du XVI<sup>e</sup> s.), le presbytère **inscrit en 1925**. **[À VÉRIFIER, Wikipedia]** Une **nécropole du IX<sup>e</sup> siècle** (une vingtaine de sarcophages) aurait été découverte à Soulomès en 1995.
 
-### 8.2 Dépeuplement et fermes abandonnées
+**Implication prospection** : la commanderie de Soulomès (hors emprise stricte, à l'est) reste un site majeur de circulation de numéraire médiéval — mais protégée MH, donc uniquement un marqueur de contexte.
 
-**[FAIT]** La commune connaît un **dépeuplement continu** : 95 habitants en 2024. Les fermes et métairies disparaissent progressivement, identifiables par **différentiel entre Cassini (1750-ish), état-major (1820-ish), orthos 1950-65, et ortho actuelle** ([plan §2.3](../PLAN.md)).
+### 4.2 La seigneurie de Saint-Sauveur, Puycalvel et Nougayrol (XIII<sup>e</sup>–XVIII<sup>e</sup> s.)
 
-Les microtoponymes du cadastre contiennent des **`borde`, `bordeneuve`, `casau`** (métairies) et **`cementeri`** (cimetières) — à inventorier systématiquement.
+**[FAIT]** Chronologie de la seigneurie de Saint-Sauveur, d'après Albe : la seigneurie appartient de **1302 à 1360** à **Gasbert de Dôme** sur **trois générations** (1302, puis son fils en 1331, puis son petit-fils en 1360 — pas deux). Héritage passé aux **Pélegri du Vigan**, puis aux **Pélegri de Valsergues**. Le **27 avril 1476**, l'évêque de Cahors Antoine certifie qu'Aymeric de Pélegri a **affermé** (Albe : « affermé », pas « arrenté ») une maison **« au pech de Gerle, sur le chemin de Soulomès »**. Par mariage, passage aux **Hébrard de Saint-Sulpice**, puis aux **Lostanges de Saint-Alvère** (Albe écrit « St Alvèze », normalisé ici) — hommage rendu en 1687 ; coseigneurie partagée avec les **Toucheboeuf de Clermont** et les **de Castro (de Castel)**. En 1473, Jean de Toucheboeuf vend à Foix de Castro les cens et rentes qu'il a sur Saint-Sauveur.
 
----
+**[FAIT, BD TOPO] « Pech de Gerle » — localisation probable.** Le hameau **Gerles** existe en BD TOPO à 1.54912/44.61334, à 1,3 km SSE de Meylargues et 0,8 km NNO de l'église de Saint-Sauveur ; Combarieu (1881, Gallica) le rattache à la commune de Soulomès. **[HYPOTHÈSE]** C'est ce lieu qui correspond au « pech de Gerle » cité en 1476. **[FAIT]** Autres chemins anciens cités par Albe : chemin de Saint-Sauveur (terre de Lafage, 1458) ; chemin de Labastide à Saint-Sauveur (menant à la léproserie de Goudou, voir §4.4) ; chemin de Gourdon (moulin à vent, voir §5.1) ; chemin de Labastide à Goudou. En 1881 (Combarieu) : chemin vicinal n° 2 de Vers passant par Saint-Sauveur ; auberge de diligences au XIX<sup>e</sup> s. à Saint-Sauveur, « lieu de passage entre Labastide-Murat et Vers » (dépliant de l'office de tourisme, 2013).
 
-## 9. Localisation des deux noyaux : Armous et Cau
+**[FAIT — pièce maîtresse pour Meylargues, mais pas la seule mention]** *« **Maylargues**. Domaine faisant partie de la **seigneurie de Puycalvel**, acquis par messire **Louis de Cugnac de Giversac** de noble **Jacques de Toucheboeuf de Clermont** (Hommage de **décembre 1690**) »* ([monographie Albe](http://www.archives.quercy.net/qmedieval/histoire/monog_albe/saintsauveur.html)) ; en **1729**, un hommage rendu par **Emmanuel de Cugnac de Giversac**, vicomte de Puycalvel (probablement un renouvellement d'hommage, pas une seconde acquisition). **[HYPOTHÈSE]** Cette mention implique un **domaine seigneurial constitué avant 1690** ; elle **n'implique pas nécessairement** de bâti de type manoir — un « domaine » peut n'être qu'un ensemble de terres et de rentes. La qualification en « repaire noble » n'apparaît qu'en 1560 (voir ci-dessous), sans localisation du bâti correspondant.
 
-### 9.1 Armous — localisé avec certitude
+**[FAIT] Mentions de Meylargues plus anciennes ou complémentaires à 1690**, toutes issues d'Albe (monographies Saint-Sauveur et Labastide-Murat) sauf indication contraire :
+- **1341** : échange entre Bernard de Casnac et Raymond de Rassiols portant sur des « terres à Maylargues ».
+- **Fin XV<sup>e</sup> s.** (cahier pour Raymond d'Hébrard) : « deux moliniers du côté de Maylargues ».
+- **30 janvier 1560** : **Gilles de Bessac, seigneur de Meylargues**, fait appel d'une sentence du sénéchal en faveur du seigneur de Puycalvel — première mention d'un « repaire noble » sans localisation du bâti.
+- **XVI<sup>e</sup> s.** : **Géraud Meulet, du village de Maylargues, paroisse de Saint-Sauveur**, acte devant Jehan Dutilh, notaire royal d'Ussel (**AD46 J 2847**). **[HYPOTHÈSE]** Lien possible avec Me Durand Meulet, prêtre de Saint-Sauveur (testament 1554, Albe).
+- **Cassini** : « **Maillargues** », bâti figuré avec un fanion. **[À VÉRIFIER]** Signification exacte du fanion dans la légende Cassini (gentilhommière ?).
+- **Cadastre napoléonien de 1840** : Section D « **de Meylargues** », 2 feuilles (15/07 et 05/11/1840), sous la commune de **Soulomès** (voir §8, §9.2).
+- **1881** (Combarieu, Gallica) : « **Maylargues et Roquesude** (98 hab.) ».
 
-**[FAIT]** Le **noyau d'Armous est nommé et clairement localisé** dans la **section C1/C2 « dite d'Armous »** du cadastre napoléonien d'Armous-et-Cau (AD32, cote 3P, planches `_7/_8`). Un « **Bourg** » est explicitement cartographié.
+**[À VÉRIFIER — priorité haute]** Localiser le bâti historique de Meylargues (manoir/métairie/repaire noble) sur le cadastre napoléonien **de Soulomès** (AD46, 3 P 2731, section D — voir [SOURCES.md](SOURCES.md)) et vérifier sa continuité ou son abandon jusqu'à l'ortho actuelle.
 
-**[À VÉRIFIER]** Localiser précisément ce Bourg par :
-1. Calage du cadastre napoléonien sur ortho IGN (T3.1 du plan) ;
-2. Recherche de marqueurs de sol en ortho moderne (taches claires d'épandage de tuile) ;
-3. Consultation du LiDAR HD du Gers (disponible, rang C du scoring débloqué).
+**[FAIT, BD TOPO/Mérimée] Puycalvel — la seigneurie dont dépendait Meylargues, jamais localisée dans la version précédente.** Puycalvel est un **hameau de Lamothe-Cassel** (BD TOPO 1.52300/44.60280 ; le Mas de Puycalvel 1.52762/44.60435 ; église Saint-Vit MH 1.52404/44.60345), à **2,5 km au sud-sud-ouest de Meylargues**, hors PNR. Cadastre de 1827 : « Section C de Puicalvel ». **Chaîne seigneuriale** : **1457** hommage de Bernard de Gaulejac « seigneur de Puycalvel » ; **1525** M. de Gaulejac de Puycalvel ; **1586** lettre de M. de Gaulejac de Puycalvel (contexte des guerres de Religion, voir §6.2) ; **1620** Jean de Gaulejac « vicomte de Puycalvel, Nougayrols et S. Sauveur » ; **1648** Jean-Gabriel de Gaulejac, dont la fille épouse un Toucheboeuf ; puis **Toucheboeuf de Clermont**, puis **Cugnac** (1690/1729, voir ci-dessus). **[HYPOTHÈSE]** Le hameau « **Gauléjac** » (BD TOPO 1.52192/44.62065, à 1,4 km à l'ouest de Meylargues) pourrait porter le nom de cette famille. **[À VÉRIFIER — notice vue en extrait seulement, serveur en 502 lors de la vérification]** D'après la notice Inventaire Occitanie **IA46100265**, Puycalvel aurait été occupé par les Anglais jusqu'en 1430, rançonné, et ruiné à l'exception d'une tour.
 
-### 9.2 Cau — localisé par élimination
+**[FAIT, BD TOPO/Mailhol] Nougayrol — également localisé.** Nougayrol est un **hameau de Soulomès** (BD TOPO 1.56584/44.62200), à **2,1 km à l'est de Meylargues**, dans l'emprise. Albe le désigne comme « la terre et château de N. ». Mentions : **XIII<sup>e</sup> s.** Hugues de Cardaillac, seigneur « Nougairols (près Soulomès) », au temps d'Alphonse de Poitiers ; **1391** Arnaud de Felenon « s. de Nogayrols » ; **1456–1457** Raymond de Felenor ; **1465** Raymond de Cosnac alias de Felenon. Les ruines ont été photographiées par Mailhol (**AD46 34 Fi 2/897, 898, 901** : « tour-pigeonnier et ruines du château de Nougayrol, borne en pierre portant la croix de Malte »). BD TOPO recense 2 bâtiments « Tour, donjon » à 1.56323/44.62122 et 1.56770/44.62145. Cadastre 1840 : « Section B de Nougayrol » (4 feuilles, 3 P 2731). 66 habitants en 1881 ; avant 1789, « communauté de Soulomès et Nougayrol ». Cassini : « Nougairol », bâti à fanion. **Attention** : à ne pas confondre avec **Nougayrac** (Fontanes-du-Causse), toponyme proche mais distinct.
 
-**[HYPOTHÈSE À TESTER]** Le noyau de Cau n'a pas sa propre section cadastrale. Plusieurs pistes :
+### 4.3 Le château de Vaillac
 
-1. **Cau est en limite de commune** → consulter le cadastre des communes limitrophes (Beaumarchés, Montesquiou, Mirepoix-sur-Tarn ?)
+**[FAIT]** Le château de Vaillac (commune de Vaillac, aujourd'hui Cœur de Causse) est construit au XIII<sup>e</sup> siècle, mentionné pendant la guerre de Cent Ans, puis reconstruit par la famille **Ricard** peu après 1450. La notice Mérimée **PA00095277** (classé le **16/12/1958**) précise que le château est bâti à environ **200 m du castrum** médiéval — choix expliqué par la volonté des Ricard-Gourdon-Genouillac de se tenir à l'écart de la co-seigneurie, le chantier ne commençant pas avant les années 1460. **Aucune mention du Céou** dans les sources consultées — l'affirmation « pour mieux dominer la vallée du Céou » est retirée. En 1597, Anne de Montberon fait reconstruire le château avec un décor sculpté commandé à Mathieu Jacquet de Grenoble ([Mérimée PA00095277](https://pop.culture.gouv.fr/notice/merimee/PA00095277), [historyhit.com](https://www.historyhit.com/locations/vaillac-castle/)).
 
-2. **Cau est intégré à une autre section** → relire attentivement les états de sections pour un microtoponyme `cau`, `cau-*`, ou une mention d'église/cimetière sans section dédiée.
+**Implication** : hors emprise stricte (~2,1 km au nord), protégé MH — contexte seulement.
 
-3. **La toponymie locale peut aider** : le suffixe gascon **`cau`** = creux, abri, gouffre (naturel). C'est un **piège classique** : un lieu-dit « Cau » n'indique pas nécessairement un village du même nom — c'est une caractéristique topographique. En parallèle, le microtoponyme **`Caubet`** (plan §2.5bis) pourrait être une trace relictuelle (petit creux = *Cau-bet*), ou un patronyme sans lien.
+### 4.4 La bastide de Labastide-Murat et ses paroisses disparues
 
-**À confirmer par T2.3 (toponymie complète) et consultation des fichiers Polge** (AD32, non consultables en ligne).
+**[À VÉRIFIER]** Albe situe la fondation au **début du XIII<sup>e</sup> siècle** par **Fortanier I<sup>er</sup> de Gourdon** ; les **coutumes** de la bastide ont été données en **1238** par **Bertrand de Gourdon**, confirmées en **1266**. La date « fondée en 1238 » (précédemment donnée comme un fait) mélange fondation et confirmation des coutumes — à traiter comme [À VÉRIFIER]. **[FAIT, Albe]** La bastide fut **constituée sur la paroisse Saint-Étienne de Soyris, qui a aujourd'hui complètement disparu** ; les actes de 1290 mentionnent les « **castra et repaires de Goudou et de Soyris** ». **Piège** : un autre « Goudou (près Corn) », sur le Célé, apparaît dans les mêmes actes — ne pas confondre.
 
-### 9.3 Vocables des églises — piste Polge
+**[FAIT, BD TOPO]** **Tour de Soyris** (clocher ou tour de château), BD TOPO 1.57164/44.63901, à 3,1 km au nord-est de Meylargues ; le château de Soyris était encore habité en 1772. **Paroisse Saint-Jean de Goudou** : église donnée vers 945 ; Albe mentionne une « grande et haute tour de Goudou, fossés » et une **léproserie de Goudou** (1310). **Hôpital de Labastide** attesté en 1312/1345. **[HYPOTHÈSE]** La léproserie évoquée « au sud, sur le chemin de Labastide à Saint-Sauveur » pourrait correspondre au lieu-dit « **Place de Lestombe** » (BD TOPO 1.56520/44.64390). Chapelle **Notre-Dame de Soubirous** (entrée nord, sur le chemin roumieu) et chapelle « de Roumieu » (chemin de Goudou). Albe évoque aussi un « château ou réduit environné de fossés, grosse tour » et un « fort de Labastide ». **[FAIT, Combarieu]** **Régagnac** : « au XII<sup>e</sup> siècle un petit hameau doté d'une église … fief noble » (BD TOPO 1.54569/44.64777, 2,8 km au nord).
 
-**[À VÉRIFIER — accès AD32 requis]** Le **Répertoire des patronages anciens et modernes des églises et chapelles** maintenu par **Henri Polge** (chercheur en onomastique et histoire religieuse du Gers) et conservé aux AD32 devrait donner les **vocables des deux églises disparues**.
+**[À VÉRIFIER]** L'église actuelle (Sainte-Catherine) date de **1869–1875** selon Albe — la qualification précédente d'« église fortifiée » est à confirmer, pas à considérer comme acquise. Les affirmations sur des pèlerins accueillis dès la fondation et sur un « plan en damier caractéristique conservé » (le damier décrit par la source appartient en fait à la bastide voisine de **Montfaucon**, 1292, pas à Labastide-Murat) sont **retirées** ; la source note au contraire que certains spécialistes voient plutôt Labastide-Murat comme un **village castral**. Cadastre 1840 : sections **B de Goudou** et **F de Soyris** (3 P 2619, voir §9.2). **[FAIT]** Renommée **Labastide-Murat** en 1852 en hommage à **Joachim Murat**, né sur place en 1767 ([Albe — Labastide-Murat](http://www.archives.quercy.net/qmedieval/histoire/monog_albe/labastide_murat.html), [Combarieu 1881, Gallica](https://gallica.bnf.fr/ark:/12148/bpt6k939800h)).
 
-Un vocable oriente la **datation de l'église** (saints paléochrétiens = fondation alto-médiévale) et parfois la localisation (églises au nom du saint patron local, souvent placées en point haut).
-
-**Implication T2.4** : consulter ce répertoire est une priorité pour affiner la localisation.
-
----
-
-## 10. Via Tolosana — le corridor de circulation
-
-### 10.1 Tracé moderne (GR 653)
-
-**[FAIT]** La **Via Tolosana** (voie de pèlerinage vers Compostelle) emprunte le tracé moderne du **GR 653**, qui passe par :
-- Auch → Barran → L'Isle-de-Noé → **Montesquiou** (12 km d'Armous) → **Bassoues** (10 km) → **Marciac** (8 km) → Maubourguet ([gr-infos](https://www.gr-infos.com/en/gr653.htm), [hikamp](https://www.hikamp.com/randonnee/gr653-la-via-tolosana/)).
-
-### 10.2 Tracé médiéval — à vérifier
-
-**[À VÉRIFIER — priorité haute]** Le **tracé médiéval n'est pas identique au GR 653 moderne**. Un chemin de pèlerinage fréquenté pendant des siècles par des **pèlerins porteurs de petite monnaie** est un générateur classique de **pertes d'objets** aux points de friction (gués, carrefours, abords d'hôpitaux, sorties de bourg).
-
-**Questions clés** :
-- Quelle est la **distance exacte entre Armous-et-Cau et le GR 653** ?
-- La Via Tolosana médiévale passe-t-elle **plus proche** ou **plus loin** du village disparu ?
-- Peut-on identifier des **microtoponymes du cadastre** (`camin roumiou`, `camin ferrat`, `hourc` = carrefour) qui marquent une voie ancienne alternative ?
-
-**Méthode T2.2 / T2.3** :
-1. Cartographier le GR 653 actuel ;
-2. Confronter à Cassini (1750) et état-major (1820) pour tracer variances ;
-3. Croiser toponymie gascon (`camin*`, `hourc`, `bidau`/`via`) ;
-4. Consulter les monographies locales (CAG 32, Bulletin SAMF) pour mentions de haltes pèlerinage ou d'aumôneries.
+**Implication** : Labastide-Murat (bourg-centre, dans l'emprise, bord nord) porte plusieurs paroisses et repaires disparus (Soyris, Goudou, Régagnac) à fort potentiel de scoring de contexte, en plus du bourg lui-même.
 
 ---
 
-## 11. Synthèse : ce qu'on sait et ce qui reste à confirmer
+## 5. Le chemin de pèlerinage — variante de Rocamadour (GR46/GR36), pas le GR65
 
-### 11.1 Certitudes pour la prospection
+**[FAIT]** Le **GR65 (Via Podiensis, Figeac → Cahors)** ne traverse **pas** l'emprise : il passe par Béduer, Gréalou/Cajarc ou la variante GR651 du Célé, rejoint le Lot en amont de Cahors, et passe par **Labastide-Marnhac** — probable source de la confusion avec « Labastide-Murat » dans la version précédente de ce dossier. Le chemin balisé qui traverse réellement l'emprise est la **variante de Rocamadour** (**GR46/GR36**), qui rejoint la Via Podiensis à Cahors en 3 étapes : **Rocamadour → Labastide-Murat** (~26 km, via Montfaucon), **Labastide-Murat → Vers** (~24 km, via la Combe de Londès (1.55115/44.62426), la Combe de Mazard (1.53463/44.63114), Montcuq (1.54154/44.60782) et la croix de Bel-Air), puis Vers → Cahors. Le tracé passe à **~1 km de Meylargues** [tracé fin **À VÉRIFIER** sur le terrain]. Confirmé par Overpass (miroir overpass.kumi.systems, overpass-api.de renvoyant 406 depuis cette machine) : relations `route=hiking` **3371974, 3372015, 6439814** dans l'emprise (© contributeurs OpenStreetMap, ODbL) ([chemin-de-st-jacques-voie-de-rocamadour…fr](https://www.chemin-de-st-jacques-voie-de-rocamadour-limousin-haut-quercy.fr/pratique-35-presentation.html), [Wikipedia — Via Podiensis](https://fr.wikipedia.org/wiki/Via_Podiensis)). Le lien précédemment cité vers `tourisme-lot.com/.../iti-gr65/` renvoie une erreur **HTTP 404**.
 
-1. **Deux noyaux villageois médiévaux** confirmés ; le premier (Armous) nommé au cadastre.
-2. **Deux églises disparues** dont les pierres ont été réutilisées — leurs **sites sont des cibles A**.
-3. **Une abbaye prémontrée puissante** (La Case-Dieu) à proximité immédiate (Beaumarchés), propriétaire probable d'Armous-Cau aux XII–XVI<sup>e</sup> siècles.
-4. **Une abbaye bénédictine** (Saint-Mont) documentée comme propriétaire d'Armous au XI<sup>e</sup> siècle.
-5. **Une source de rivière** (Midour) — marqueur de habitat ancien.
-6. **Corridor de circulation majeur** (Via Tolosana) à distance vérifiable.
-7. **Cadastre napoléonien** géoréférençable, sections nommées.
+**[FAIT, Albe]** Tracé médiéval attesté : « chemin roumieu de ce lieu à Roc Amadour » mentionné dès **1345** ; « rue publique par où l'on va de La Bastide à la Roque Saint-Amadour » (**1473**). **[HYPOTHÈSE]** Le lieu-dit « **Camp des Roumioux** » (BD TOPO 1.52667/44.60150, Lamothe-Cassel) pourrait faire référence à des pèlerins (*roumieux*).
 
-### 11.2 Cibles potentielles localisables
+**[FAIT — légende locale, hors emprise]** La légende de **Saint Namphaise** (ermite creuseur de mares pour le bétail) est associée aux « lacs de Saint-Namphaise », dans la Braunhie : chapelle Saint-Namphaise BD TOPO 1.65095/44.62166, à **~8,8 km à l'est** de Meylargues — **hors emprise**. **[FAIT]** Quissac s'appelle aujourd'hui **Quissac-en-Quercy** (INSEE 46233), centre 1.7177/44.6239, à **~14,3 km à l'est** — hors emprise large (lon max 1.6405) ; **Caniac-du-Causse**, lieu supposé du culte de Saint Namphaise [**À VÉRIFIER**], est à ~9,7 km à l'est. À garder uniquement comme légende régionale de contexte, sans lien démontré avec le tracé du pèlerinage qui traverse l'emprise.
 
-- **Noyau d'Armous** : section C du cadastre, « Bourg » nommé → calage et prospection
-- **Noyau de Cau** : non encore localisé, piste en limite de commune ou sous autre section
-- **Églises disparues** : deux sites d'élévation arasée, sols intacts
-- **Granges monastiques** : si présentes, auréoles de tuile au sol (épandage labour)
-- **Moulins** : hypothétiquement sur le Midour ; traces présentes ?
-- **Via Tolosana** : tracé médiéval à préciser
+**Implication prospection** : la variante Rocamadour–Labastide-Murat–Vers passe à proximité immédiate de Meylargues — générateur classique de numéraire de pèlerinage sur son tracé et aux carrefours, mais le tracé médiéval exact reste à confronter à Cassini/état-major (T3.1).
 
-### 11.3 Points non tranchés et requérant sources archivales
+### 5.1 Le Vers et ses moulins
 
-| Question | Source requise | Localisation |
-|---|---|---|
-| Vocables des deux églises d'Armous et de Cau | Répertoire Polge | AD32 en salle |
-| Cartulaire de La Case-Dieu — possessions à Armous-Cau | Cartulaire (copie XVIIe–XVIIIe) + monographie Balagna | AD32, SAMF |
-| Cartulaire Saint-Mont — possessions d'Armous | Cartulaire du XIIe s. | AD32, Persée article 1952 |
-| Cadastre ancien avant Napoléon | Terriers médiévaux, censiers | AD32 |
-| Traces de moulins abbatiaux | Cartulaire, terriers | AD32 |
-| Tracé médiéval Via Tolosana vs actuel | Voies anciennes, itinéraires pèlerinage | Études archéologiques régionales, CAG 32 |
+**[FAIT, WFS BD TOPO]** **Le Vers** (cours d'eau permanent, code BD TOPO 05C0000002000884088) traverse l'emprise depuis son point le plus au nord, **1.58251/44.63681** (près de Soyris), jusqu'à la limite sud vers **1.55/44.592**. Affluents dans l'emprise : ruisseau de Nougayrol (4,9 km) et ruisseau de Puycalvel (3,2 km). Albe désigne la paroisse voisine « **S-Sauveur de Vers** (*de Averso*) », confirmant l'ancrage du toponyme « Saint-Sauveur-la-Vallée » sur cette rivière.
+
+**[FAIT] Moulins.** Combarieu (1881) recense « **6 moulins à farine sur le Vert** » (pour « Vers ») ; le dépliant de l'office de tourisme (2013) confirme « jusqu'à six moulins à eau ». BD TOPO localise le **Moulin de Caviole** (1.54579/44.61008), le **Moulin Neuf** (1.55577/44.60039) et **Roudayrès** (1.55478/44.59684) ; plusieurs roues de moulin figurent sur Cassini le long du Vers. Albe (fin XV<sup>e</sup> s.) mentionne un « moulin à vent sur le chemin de Gourdon » — **[HYPOTHÈSE]** son successeur pourrait être le **Moulin du Hasard** (BD TOPO 1.57936/44.65053). Soulomès comptait 2 moulins à vent en 1881.
+
+**[FAIT]** Des crues historiques (1960, 1908 — tradition locale du presbytère emporté) ont provoqué des remaniements alluviaux le long du Vers. **Partage des eaux** : le nord-ouest de l'emprise (secteur du Tirelire) s'écoule vers le Céou/Dordogne, le reste vers le Vers/Lot ; un PPRI Céou-Bléou couvre 0,17 km² au nord-ouest de l'emprise.
+
+**Implication prospection** : les abords des moulins et des passages à gué du Vers sont des points de fréquentation longue durée (monnaie perdue, outillage) — à croiser avec le cadastre napoléonien.
 
 ---
 
-## 12. Bibliographie et sources consultées (2026-08-08)
+## 6. Guerre de Cent Ans et guerres de Religion
 
-### Éditions imprimées (à consulter aux AD32 ou directement)
+### 6.1 Guerre de Cent Ans (XIV<sup>e</sup>–XV<sup>e</sup> s.)
 
-- **Balagna**, *L'ancienne abbaye de la Case-Dieu (Gers)*, Mémoires de la Société archéologique du Midi, t. 64 (SAMF, date à vérifier) — monographie de référence, non accessible en OCR web.
-- **Lapart, J. & Petit, C.**, *Carte archéologique de la Gaule 32 — Le Gers*, Académie des Inscriptions et Belles-Lettres (AIBL). Pré-inventaire commune par commune, site par site.
-- **Polge, H.**, *Appellations de domaines antiques dans le département du Gers*, Revue Internationale d'Onomastique, t. 17 (1965) — fondamental pour l'attribution toponymique gallo-romaine.
-- **Samaran, C.**, *Le plus ancien cartulaire de Saint-Mont (Gers) (XIe–XIIIe siècles)*, Bibliothèque de l'École des chartes, vol. 110 (1952) — édition et analyse du cartulaire.
+**[FAIT]** Le Quercy, en bordure de l'Aquitaine anglaise, subit le harcèlement de compagnies de routiers, dont **Bertrucat d'Albret** et **Bernardon de la Salle** ([lepechdevigne.fr — héritage guerre de Cent Ans dans le Lot](https://lepechdevigne.fr/histoire-et-patrimoine-du-lot/heritage-de-la-guerre-de-cent-ans-dans-le-lot/)). Le **traité de Brétigny (1360)** cède temporairement le Quercy à la couronne anglaise ; la **peste de 1347–1352** frappe la région. **[FAIT, hautquercy.com]** **Gramat** ne compte plus que **cinq foyers** à la fin du XIV<sup>e</sup> siècle (et non « 7 habitants », et sans siège de trois jours par le Prince de Galles, affirmation non retrouvée dans les sources) ([hautquercy.com — Gramat](https://www.hautquercy.com/gramat.html)).
 
-### Sources en ligne (accessibles août 2026)
+**[FAIT, Albe] Événements localisés dans l'emprise ou à ses limites.** **Saint-Sernin** (bourg à la limite sud-est de l'emprise) est pris en **1369** à Guillaume de Cardaillac ; une tentative anglaise est repoussée en **1388** contre « une tour et la maison forte des seigneurs ». **Labastide** : « 1344 et suivantes, guerre de Cent ans ». **Peste de 1505–1506** à Saint-Sauveur, Labastide et Saint-Sernin (remises de taille accordées). L'église de **Saint-Martin-de-Vers** (1,3 km au sud du bbox) aurait été ruinée pendant la guerre de Cent Ans. **Contexte de frontière** : en **1286**, des rentes du Quercy sont assignées au roi d'Angleterre, dont les villas de **Saint-Sernin et de Soulomès** ; la « bastide anglaise de **Montfaucon** » est fondée en 1298 (8,2 km au nord-nord-est) ([Albe — Saint-Cernin, Labastide-Murat, Saint-Sauveur, Saint-Martin-de-Vers](http://www.archives.quercy.net/qmedieval/histoire/monog_albe/)).
 
-- **Archives Départementales du Gers** : [archives32.fr](https://www.archives32.fr/) — cadastre napoléonien en visionneuse, plans librement consultables.
-  - Cote : 3P_..., géomètre Daubas, 1813, 9 planches numérisées
+**Implication prospection** : dépôts de crise (numéraire enfoui, militaria anglo-gascon) probables sur les points fortifiés du causse (Saint-Sernin, Labastide) et le long des axes de circulation — pas nommément localisés à Meylargues même.
 
-- **Wikipedia (articles en français)** :
-  - [Abbaye de la Case-Dieu](https://fr.wikipedia.org/wiki/Abbaye_de_la_Case_Dieu)
-  - [Abbaye du Saint-Mont](https://en.wikipedia.org/wiki/Abbaye_du_Saint-Mont)
-  - [Armous-et-Cau](https://en.wikipedia.org/wiki/Armous-et-Cau)
+### 6.2 Guerres de Religion (XVI<sup>e</sup> s.)
 
-- **Gallica (BnF)** — Bulletin de la Société archéologique du Gers, 65 années numérisées
-  - [Accès collection](https://gallica.bnf.fr/ark:/12148/cb34451430x/date)
-  - Recherche plein texte sur « Armous », « Cau », « Saint-Christaud », « La Case-Dieu »
-
-- **Persée** :
-  - [Samaran, 1952 — Cartulaire Saint-Mont](https://www.persee.fr/doc/bec_0373-6237_1952_num_110_1_449456)
-  - [Polge, 1965 — Appellations de domaines](https://www.persee.fr/doc/rio_0048-8151_1965_num_17_1_1876)
-
-- **Thèses en ligne (HAL)** :
-  - Abadie, S., *Un temporel monastique dans l'espace médiéval gascon : l'abbaye prémontrée de La Casedieu (Gers), XIIe–XVIe siècles*, 2016, Université Toulouse — Jean Jaurès
-    - [Thèse complète (PDF)](https://theses.hal.science/tel-01843381v1/file/Abadie_Stephane.pdf)
-    - **Accès difficile en web, consulter en AD32 ou via la bibliothèque universitaire**
-
-- **Organismes régionaux** :
-  - [Cœur d'Astarac en Gascogne](http://www.coeur-dastarac.fr/fr/territoire/1597/) — contexte communautaire
-  - [SIA Midour-Douze](http://www.sia-rivieresarmagnac.fr/siamd/territoire_md.htm) — hydrographie
-  - [Tourisme Mirande-Astarac](https://www.tourisme-mirande-astarac.com/en/discover-astarac/communes/armous-et-cau/) — synthèse touristique
-  - [GR-Infos](https://www.gr-infos.com/en/gr653.htm) — tracé GR 653
-
-- **Dictionnaires et encyclopédies** :
-  - [Larousse — Rivière Midouze](https://www.larousse.fr/encyclopedie/riviere-lac/la_Midouze/178806)
-  - [Lexilogos — Gers](https://www.lexilogos.com/gers.htm)
+**[FAIT]** Le Quercy est coupé entre un Haut-Quercy catholique et un Bas-Quercy protestant. **Gramat** est pillée alternativement par catholiques et protestants au cours du siècle ([hautquercy.com](https://www.hautquercy.com/gramat.html)). **[FAIT, Albe]** À **Puycalvel** (dans l'emprise), une tentative huguenote est signalée en **mai 1586** (lettre de M. de Gaulejac de Puycalvel, voir §4.2). À **Labastide** : passage de **Monluc en 1568** ; **ligueurs du marquis de Villars en 1592** ; maisons brûlées par les Huguenots en **1593**. **[À VÉRIFIER]** Aucune mention spécifique trouvée pour Saint-Sauveur-la-Vallée ou Vaillac durant cette période — à rechercher aux AD46 (registres paroissiaux, actes notariés).
 
 ---
 
-## Annexe : Chronologie synthétique
+## 7. Activité agropastorale, bâti rural et sites relictes
 
-| Période | Événements clés | Implication prospection |
-|---|---|---|
-| **Antiquité (I–V<sup>e</sup> s.)** | Novempopulanie, villae gallo-romaines, cultes de source du Midour | Monnaies de bronze bas-empire, fibules, tuiles (épandage) |
-| **V–X<sup>e</sup> s.** | [Données manquantes] | [À éclaircir par T2.4] |
-| **XI<sup>e</sup> s.** | Saint-Mont fondée (~1050), Armous rattachée ; possessions St-Christaud | Église d'Armous XI<sup>e</sup>, site d'élévation arasée |
-| **XII s.** | La Case-Dieu fondée (~1135), Armous-Cau à l'abbaye | Grange monastique probable, moulins, domaine géré |
-| **XIII<sup>e</sup> s.** | Bastides La Case-Dieu (Marciac 1298), donations accumulées | Monnaies de circulation, petit numéraire |
-| **XIV–XV<sup>e</sup> s.** | Guerre de Cent Ans, mouvements de routiers | Dépôts de crise, monnaies d'or/argent, militaria |
-| **XVI<sup>e</sup> s.** | La Case-Dieu incendiée (1558), protestants (1570) | Dégats structures ecclésiales |
-| **1790–1794** | Révolution, fusion Armous + Cau en commune | Cadastre napoléonien (1813) |
-| **XIX<sup>e</sup> s.** | Église actuelle (pierre des deux églises), dépeuplement | Métairies abandonnées, repérables au LiDAR |
-| **XX–XXI<sup>e</sup> s.** | 95 habitants, agriculture intensive | Sites labourés depuis deux siècles |
+**[FAIT]** Le causse de Gramat est structuré par des siècles d'élevage ovin (brebis caussenarde) : **caselles/gariottes** (cabanes de pierre sèche à voûte encorbellée), **murets de pierre sèche**, croix de chemin ([tourisme-lot.com — patrimoine bâti rural](https://www.tourisme-lot.com/parc-naturel-regional-des-causses-du-quercy/geoparc-mondial-unesco/patrimoine-bati/), [jalladeauj.fr — caselles](https://jalladeauj.fr/caselles/styled-2/)). **[FAIT — correction de vocabulaire]** Une **igue** est un **gouffre/aven** karstique (pas une mare) ; le **cloup** est le terme quercynois pour une **doline** — ce n'est pas un synonyme d'igue ([Wikipedia — Igue](https://fr.wikipedia.org/wiki/Igue), [Wikipedia — Doline](https://fr.wikipedia.org/wiki/Doline)). Les « lacs de Saint-Namphaise » (§5) sont des **bassins creusés dans la dalle calcaire**, distincts des **lavognes** (mares imperméabilisées à l'argile pour l'abreuvement du bétail) ([quercy.net — légende de Saint-Namphaise](https://www.quercy.net/la-legende-de-st-namphaise/)). **[À VÉRIFIER]** L'existence d'un inventaire du PNR chiffrant précisément les lavognes/mares n'a pas été retrouvée — à confirmer avant de la citer comme un fait.
+
+**Implication prospection** : ce bâti pastoral (caselles, murets) structure le parcellaire depuis probablement le XVIII<sup>e</sup>–XIX<sup>e</sup> siècle au moins ; leurs abords sont des points de passage répété — cible de rang C, à croiser avec le cadastre napoléonien pour dater les enclos.
+
+### 7.1 Habitats désertés et toponymes-indices
+
+**[FAIT, Albe]** Église **Saint-Étienne de Soyris**, aujourd'hui disparue (voir §4.4). **[FAIT, Combarieu]** **Régagnac** : hameau avec église dès le XII<sup>e</sup> s. (voir §4.4). **[FAIT, BD TOPO]** **La Courtie** (nature « Ruines », commune de Soulomès, 1.58217/44.62494). **[FAIT, Albe]** **La Garnède** : seigneurie « Lagarnède » de François de Soyris en 1562–1567 (BD TOPO 1.57109/44.61840). **[FAIT, BD TOPO]** Une croix de chemin est recensée à 0,27 km au sud-sud-est de Meylargues (1.54161/44.62124).
+
+**[HYPOTHÈSE]** Le lieu-dit « **le Champ de l'Église** » (BD TOPO 1.53532/44.61578, 0,9 km SSO de Meylargues) pourrait marquer un lieu de culte disparu. « **Les Justices** » (1.53782/44.60360) évoquerait d'anciennes fourches patibulaires. « **Les Cinq Pierres** » (Lamothe-Cassel, 1.51966/44.63050) — mégalithe possible, à contrôler au LiDAR (voir §2). « **Ferrières** » (1.50752/44.60459) et « **Clos de Fargues** » (1.57713/44.64222) évoqueraient un ancien travail du fer. **[À VÉRIFIER]** « la Gache », bâti à fanion sur Cassini vers 1.5585/44.6275 (lecture visuelle, absent de BD TOPO). **[À VÉRIFIER]** Selon le PNR, les phosphatières du Quercy sont situées plus au sud, entre l'Aveyron et le Célé — a priori absentes de l'emprise ([PNR — les phosphatières](https://www.parc-causses-du-quercy.fr/wp-content/uploads/2023/06/3-les-phosphatieres.pdf)).
+
+### 7.2 Contexte numismatique et foires
+
+**[FAIT, Albe]** Vente de 1299 « pour 5000 livres de bons caorsins » — la monnaie de Cahors était donc en circulation dans le secteur. **[FAIT]** Le **trésor de Lalbenque** (Lot), découvert en janvier 2022 près de l'église Saint-Quirin : environ **200 deniers** des évêques de Cahors et des comtes de Rodez, fin XII<sup>e</sup>–début XIII<sup>e</sup> s. — un faciès de référence pour ce qui peut être trouvé dans le Quercy médiéval. **[À VÉRIFIER]** Le même article évoque un trésor antérieur découvert près de Gramat. Sources générales : [BnF — Trouvailles monétaires](https://www.bnf.fr/fr/trouvailles-monetaires) ; Duplessy, *Les trésors monétaires médiévaux et modernes découverts en France* ([BnF Éditions](https://editions.bnf.fr/les-trésors-monétaires-médiévaux-et-modernes-découverts-en-france)).
+
+**[FAIT, Combarieu 1881]** Foires de Labastide : 4 février, 5 et 25 mai, 10 juin, et le 2<sup>e</sup> lundi de chaque mois ; marché le lundi, halle aux grains. Ancienne foire de Goudou à la Saint-Georges. Fêtes patronales : Labastide 3 août, Goudou 29 août, Saint-Sauveur 6 août, Soulomès 22 juillet. **[HYPOTHÈSE]** « Cloûteries » signalées à Labastide en 1881 — beaucoup de clous forgés autour du bourg, bruit de fond probable pour le détecteur.
 
 ---
 
-## Notes pour l'orchestrateur (T2.1 terminé)
+## 8. Révolution et période moderne
 
-**Fichier créé** : `docs/zone/HISTOIRE.md`
+**[À VÉRIFIER]** Saint-Sauveur porte le nom révolutionnaire de **Puyvalon** (voir §1, divergence de sources sur 1793/1845/1865). Elle reste rattachée administrativement à **Soulomès** au moins jusqu'en 1845 (Albe/Combarieu) ou 1865 (EHESS/Wikipedia) — à trancher via le Bulletin des lois ou les registres EDT 291.
 
-**Conclusions principales** :
-1. **[FAIT]** Deux noyaux documentés (Armous clairement localisé au cadastre ; Cau à confirmer en limite/autre section).
-2. **[HYPOTHÈSE]** La Case-Dieu possédait Armous-Cau au XII–XVI<sup>e</sup> s., avec granges et moulins — à confirmer par cartulaire.
-3. **[À VÉRIFIER — priorité haute]** Tracé médiéval Via Tolosana ; vocables des églises (Polge) ; cadastre ancien pré-napoléonien.
+**[FAIT, base « Cadastre napoléonien » AD46]** Le cadastre napoléonien se recherche **sur la commune qui existait au moment du levé**. Meylargues et Saint-Sauveur sont donc dans le cadastre de **Soulomès (1840)**, cote **3 P 2731** : Section A de Soulomès (3 f.), B de Nougayrol (4 f.), C de Saint-Sauveur (4 f.), D de Meylargues (2 f., 15/07 et 05/11/1840). État de sections A–D de 1842 : **3 P 2309** ; matrices 1842–1932 : **3 P 2304 à 2308**. Levés entre **1808 et 1842** (pas 1807–1842). Détail des autres communes de l'emprise : voir [SOURCES.md](SOURCES.md) §1.
 
-**Points durs** :
-- Noyau de Cau non localisé en section cadastrale ; piste en limite ou autre section
-- Cartulaire La Case-Dieu non consultable en ligne ; AD32 salle d'archives requise
-- Monographie Balagna (SAMF t.64) non OCRisée, PDF lisible seulement en AD32
+---
 
-**Recommandations T2.2 / T2.3 / T2.4** :
-- T2.2 : valider accès cartulaires aux AD32 + couverture LiDAR HD Gers
-- T2.3 : relevé toponymique complet cadastre napoléonien + sections anciennes (terriers)
-- T2.4 : CAG 32 + Bulletin Gallica + consultation Polge en AD32
+## 9. Synthèse — ce qu'on sait et ce qui reste à confirmer
+
+### 9.1 Certitudes pour la prospection
+
+1. **Meylargues est documenté de 1341 à la fin du XIX<sup>e</sup> siècle**, avec une pièce maîtresse en 1690 (domaine seigneurial rattaché à la vicomté de Puycalvel, Toucheboeuf de Clermont puis Cugnac de Giversac) — mais l'existence d'un bâti continu (manoir/repaire) reste une **[HYPOTHÈSE]**, pas un fait.
+2. **Puycalvel** (Lamothe-Cassel, dans l'emprise, 2,5 km SSO de Meylargues) est le siège de la seigneurie dont dépendait Meylargues depuis au moins 1457 (Gaulejac → Toucheboeuf → Cugnac) ; église Saint-Vit protégée MH ; **[À VÉRIFIER]** tenu par les Anglais jusqu'en 1430, ruiné sauf une tour — piste prioritaire.
+3. **Nougayrol** (Soulomès, 2,1 km E de Meylargues) est un second site seigneurial documenté (XIII<sup>e</sup>–XV<sup>e</sup> s.), avec ruines de tour photographiées au XX<sup>e</sup> s.
+4. **Le causse de Gramat concentre le mégalithisme du Lot (~600 dolmens)**, mais **aucun mégalithe connu ne se trouve dans les 6 communes de l'emprise** — contexte régional seulement.
+5. **Labastide-Murat (bourg, dans l'emprise) est une bastide du XIII<sup>e</sup> s.**, bâtie sur les paroisses disparues de Soyris et Goudou (léproserie, hôpital, tours) — fondation précise et « église fortifiée » restent [À VÉRIFIER].
+6. **Trois monuments historiques touchent réellement l'emprise** (Puycalvel, château de Labastide-Murat, église de Goudou) — creusement exclu sur leurs parcelles ; Vaillac et Soulomès restent des repères de contexte hors emprise.
+7. **La variante de Rocamadour du chemin de Compostelle (GR46/GR36, pas le GR65)** passe à ~1 km de Meylargues, via la vallée du Vers.
+8. **Le Vers traverse l'emprise et alimentait au moins six moulins** — abords de moulins et de gués pertinents pour le scoring.
+9. **Guerre de Cent Ans et guerres de Religion** ont affecté Saint-Sernin, Labastide et Puycalvel — contexte de dépôts de crise, sans site précisément localisé à Meylargues même.
+10. **Toute découverte doit être déclarée à la mairie** (L531-14) ; le mobilier archéologique est présumé appartenir à l'État (L541-4), sans appropriation possible par l'inventeur.
+
+### 9.2 Points non tranchés nécessitant les Archives Départementales du Lot (AD46, Cahors) ou une vérification au navigateur
+
+| Question | Source requise |
+|---|---|
+| Localisation exacte du bâti seigneurial de Meylargues (manoir/repaire noble, mention 1560) | Cadastre napoléonien de **Soulomès**, section D (AD46 3 P 2731) |
+| Cote d'archive et transcription fidèle des monographies Albe (la version Quercy.net est retravaillée, sans référence d'archive) | Archives diocésaines de Cahors / AD46 |
+| Année d'édition exacte et notices communales de la CAG 46 (Saint-Sauveur, Soulomès, Lamothe-Cassel) | AIBL — Carte archéologique de la Gaule, 46. Le Lot, 2<sup>e</sup> éd. |
+| Divergence 1793/1845/1865 sur la création de la commune de Saint-Sauveur-la-Vallée | Bulletin des lois, registres EDT 291 (AD46) |
+| Vérification terrain/LiDAR des toponymes-indices (Les Cinq Pierres, le Champ de l'Église, la Gache) | LiDAR HD + terrain |
+| Chiffres ADLFI (36 dolmens, 243 tumulus) — notice correcte probable : adlfi/10772 (Girault 1988-1991) | journals.openedition.org (au navigateur, mur anti-robot Anubis bloque `curl`) |
+| Notices Inventaire Occitanie IA46100265 (Puycalvel, occupation anglaise) et IA46100729 (A20) | inventaire.patrimoines.laregion.fr (serveur en 502 lors de la recherche, à revérifier) |
+| Compoix de Saint-Sauveur/Soulomès/Labastide ; « cadastre de Goudou » de 1788 cité par Albe | AD46 (aucun trouvé dans BACH à ce stade) |
+| Événements des guerres de Religion à Saint-Sauveur-la-Vallée et Vaillac | Registres paroissiaux, actes notariés (AD46) |
+| Évaluation d'incidences Natura 2000 pour une prospection pédestre (art. L414-4) | Liste locale préfectorale du Lot |
+
+---
+
+## 10. Bibliographie et sources consultées (2026-09-27, corrigée le 2026-09-27)
+
+**Sources primaires et de référence** (à privilégier) :
+- **Albe, Edmond**, monographies *Saint-Sauveur-la-Vallée*, *Labastide-Murat*, *Saint-Cernin*, *Saint-Martin-de-Vers*, transcription Quercy.net (texte retravaillé, sans cote d'archive) : [archives.quercy.net/qmedieval/histoire/monog_albe/](http://www.archives.quercy.net/qmedieval/histoire/monog_albe/albe_presentation.html) — présentation de la source et limites : [albe_presentation.html](http://www.archives.quercy.net/qmedieval/histoire/monog_albe/albe_presentation.html), [sommaire_albe.html](http://www.archives.quercy.net/qmedieval/histoire/monog_albe/sommaire_albe.html). Pas de monographie en ligne pour Soulomès, Lamothe-Cassel/Puycalvel, Ussel, Vaillac, Frayssinet, Montfaucon (HTTP 404) — à chercher aux archives diocésaines de Cahors ou aux AD46.
+- **Combarieu, L.**, *Dictionnaire des communes du Lot*, 1881, [Gallica bpt6k939800h](https://gallica.bnf.fr/ark:/12148/bpt6k939800h) (hameaux, population, moulins, voies, foires).
+- **Clottes, J.**, *Inventaire des mégalithes de la France, 5 — Lot*, 1<sup>er</sup> suppl. à Gallia Préhistoire, CNRS, 1977 : [Persée](https://www.persee.fr/doc/galip_0072-0100_1977_sup_1_5).
+- **Lartigaut, J.**, *Les campagnes du Quercy après la guerre de Cent Ans (vers 1440–vers 1500)*, Toulouse, 1978 (rééd. Quercy Recherche 2001) — baux collectifs de repeuplement, clé pour les mas désertés puis refondés.
+- **Carte archéologique de la Gaule, 46 — Le Lot**, 2<sup>e</sup> éd., A. Filippini et al., AIBL, 2011 : [aibl.fr](https://aibl.fr/collections/carte-archeologique-de-la-gaule-46-le-lot/).
+- **Bulletin de la Société des études du Lot**, numérisé sur Gallica (118 années disponibles) : [gallica.bnf.fr/ark:/12148/cb343873149/date](https://gallica.bnf.fr/ark:/12148/cb343873149/date).
+- **EHESS — Cassini**, fiche communale Saint-Sauveur-la-Vallée (n° 34577) : [cassini.ehess.fr](http://cassini.ehess.fr/cassini/fr/html/fiche.php?select_resultat=34577).
+- **POP-Mérimée** — notices consultées : [PA00095306](https://pop.culture.gouv.fr/notice/merimee/PA00095306) (château de Labastide-Murat), [PA00095121](https://pop.culture.gouv.fr/notice/merimee/PA00095121) (église de Puycalvel), [PA00125599](https://pop.culture.gouv.fr/notice/merimee/PA00125599) (église de Goudou), [PA00095277](https://pop.culture.gouv.fr/notice/merimee/PA00095277) (château de Vaillac), [PA00095266](https://pop.culture.gouv.fr/notice/merimee/PA00095266) (église et presbytère de Soulomès).
+- **BACH — moteur d'inventaires AD46** : [bach.lot.fr/archives/search](https://bach.lot.fr/archives/search) (chartrier de Vaillac 20 J, fonds Mailhol 34 Fi 2, J 2847, etc. — voir [SOURCES.md](SOURCES.md) §8).
+- **INPN / WFS data.geopf.fr** — Natura 2000 (`patrinat_sic:sic`), ZNIEFF (`patrinat_znieff1:znieff1`), PNR/Géoparc (`patrinat_pnr:pnr`, `patrinat_geoparc:geoparc`), LiDAR HD (`IGNF_LIDAR-HD_METADONNEE:metadata`), servitudes AC1/PPRI (`wfs_sup:assiette_sup_s`) — requêtes vérifiées le 2026-09-27.
+- **Légifrance** — L542-1, R542-1/R542-2, R544-3, L531-14, L541-4, L621-30, L621-32, L522-5.
+
+**Sources secondaires retenues avec prudence** (recoupées, jamais seules) : [passion-patrimoine.fr](https://www.passion-patrimoine.fr/spip.php?article164), [reves-de-compostelle.fr](https://reves-de-compostelle.fr/pelerinage-compostelle-chemin-puy-velay-via-podiensis-itineraire/1259/), [chemin-de-st-jacques-voie-de-rocamadour…fr](https://www.chemin-de-st-jacques-voie-de-rocamadour-limousin-haut-quercy.fr/), [PDF PNR — mégalithes](https://www.parc-causses-du-quercy.fr/wp-content/uploads/2023/06/decouvrir_megalithes2014.pdf), [hautquercy.com](https://www.hautquercy.com/gramat.html), Wikipedia (FR/EN — Cœur de Causse, Saint-Sauveur-la-Vallée, Soulomès, Vaillac, Segodunum, Aqueduc de Divona, Sites mégalithiques du Lot, Igue, Doline).
+
+**Sources écartées comme trop faibles pour porter un [FAIT] seules** (agrégateurs ou blogs sans matière vérifiable, conservés seulement s'ils sont recoupés par une source primaire) : charles-de-flahaut.fr, lepechdevigne.fr, hunza.pro, lot-46.com (page-photo sans texte), paysud.com (chiffre de dolmens introuvable dans le texte).
+
+---
+
+## Notes pour l'orchestrateur
+
+**Correction du 2026-09-27** : la version précédente de ce dossier contenait plusieurs erreurs factuelles significatives, corrigées ci-dessus après re-vérification (WFS data.geopf.fr, notices POP-Mérimée, Légifrance, monographies Albe recoupées à d'autres sources) : mauvais site Natura 2000 (FR7300909 → FR7300910), monuments historiques mal identifiés (Vaillac/Soulomès hors emprise remplacés par Puycalvel/Labastide/Goudou dans l'emprise), périmètre du PNR/Géoparc surestimé (100 % → 75 %), régime juridique de la détection mal formulé (exceptions inventées, ZPPA mal définie), Murcens et le GR65 mal positionnés, chiffres de dolmens et de la guerre de Cent Ans non sourcés.
+
+**Conclusion principale actualisée** : contrairement à ce qui était écrit précédemment, **plusieurs sites sont désormais géolocalisés avec un bon niveau de confiance à l'intérieur de l'emprise stricte** : le hameau et probable domaine seigneurial de Meylargues lui-même, la seigneurie de Puycalvel (Lamothe-Cassel), le site de Nougayrol (Soulomès), le bourg de Labastide-Murat avec ses paroisses disparues de Soyris et Goudou, et le tracé du chemin de Rocamadour le long du Vers. La phrase « aucun site géolocalisé dans l'emprise en dehors du bourg de Labastide-Murat » est **retirée** car fausse.
+
+**Point dur restant** : l'accès à la **CAG 46** (ouvrage papier) et à l'**Atlas des patrimoines DRAC Occitanie** (pas d'endpoint WFS/WMS public confirmé, la couche ZPPA du service national ne couvre que le Centre-Val de Loire) reste la dette principale à combler avant un scoring fin sur l'Antiquité et la Préhistoire. Le portail **archives.lot.fr / francearchives.gouv.fr** oppose un mur anti-robot (`curl` → 403 « Attack detected ») — toute consultation doit se faire au navigateur.
