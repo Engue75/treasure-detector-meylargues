@@ -58,9 +58,17 @@
   @media (prefers-reduced-motion: reduce){.pin .ring{animation:none;opacity:.6}}
   .niah{width:11px;height:11px;background:var(--niah);border:2px solid #fff;box-sizing:border-box;border-radius:2px;margin:-5.5px 0 0 -5.5px;box-shadow:0 0 0 1px rgba(0,0,0,.4)}
   @media (max-width: 700px){ .panel{width:calc(100% - 24px);max-height:62%} }
+  .moved{position:absolute;top:0;left:0;right:0;z-index:1200;display:block;background:var(--accent);color:#1d1504;font-size:13px;font-weight:600;text-align:center;
+    padding:10px 12px;padding-top:calc(10px + env(safe-area-inset-top,0px));line-height:20px;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+  .moved:hover,.moved:focus-visible{text-decoration:underline;outline:none}
+  #map{top:calc(40px + env(safe-area-inset-top,0px))}
+  .panel,.toggle{top:calc(52px + env(safe-area-inset-top,0px))}
+  .panel{max-height:calc(100% - 64px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px))}
+  @media (max-width: 700px){ .moved{font-size:12px} .moved .long{display:none} .panel{max-height:58%} }
 </style>
 </head>
 <body>
+<a class="moved" href="https://carte-grove-production.up.railway.app"><span class="long">Cette carte a déménagé et n'est plus mise à jour. </span>Version à jour : carte-grove-production.up.railway.app →</a>
 <div id="map"></div>
 <button id="open" class="btn toggle hidden" type="button" aria-controls="panel">Légende et couches</button>
 <div id="panel" class="panel">
